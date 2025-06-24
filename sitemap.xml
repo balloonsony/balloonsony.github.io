@@ -7,21 +7,23 @@
   <url><loc>https://balloonsony.com/balloon.html</loc><priority>0.80</priority></url>
   <url><loc>https://balloonsony.com/bubble.html</loc><priority>0.80</priority></url>
   <url><loc>https://balloonsony.com/decor.html</loc><priority>0.80</priority></url>
-  <url><loc>https://balloonsony.com/faq.html</loc><priority>0.60</priority></url>
-  <url><loc>https://balloonsony.com/blog.html</loc><priority>0.70</priority></url>
 
-  <!-- 活動紀錄頁 -->
-  <url><loc>https://balloonsony.com/daan-zhua-zhou-2025.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/nurse-day-2025.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/taibei-maji-2025-05-30.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/taichung-ikea-2024.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/xindian-beerfest-2025.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/taoyuan-daxi-graduation-2025.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/taoyuan-newresidents-2024.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/ikea-10th-2023.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/taoyuan-dwarfkids-2025.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/taichung-xitun-party-2025.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/taoyuan-gloria-polo-2021-10-30.html</loc><priority>0.70</priority></url>
+  <!-- FAQ 與活動總覽頁（新的路徑） -->
+  <url><loc>https://balloonsony.com/blog/faq.html</loc><priority>0.60</priority></url>
+  <url><loc>https://balloonsony.com/blog/blog.html</loc><priority>0.70</priority></url>
+
+  <!-- 活動紀錄頁（全在 /blog/） -->
+  <url><loc>https://balloonsony.com/blog/2025-taipei-daan-ceremony-decor.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/blog/2025-sanxia-nurse-day-decor.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/blog/2025-taipei-maji-market-show.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/blog/2025-taichung-xitun-birthday-show.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/blog/2025-xindian-beerfest-show.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/blog/2025-taoyuan-daxi-graduation.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/blog/2025-taoyuan-dwarfkids-family.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/blog/2024-taoyuan-newresidents-family.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/blog/2024-taichung-ikea-anniversary.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/blog/2023-taichung-ikea-10th-show.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/blog/2021-taoyuan-qingpu-gloria-polo.html</loc><priority>0.70</priority></url>
 
   <!-- 分公司服務頁 -->
   <url><loc>https://balloonsony.com/service/keelung-party-service.html</loc><priority>0.75</priority></url>
