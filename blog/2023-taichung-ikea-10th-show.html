@@ -14,6 +14,13 @@
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": "IKEA 台中十週年親子活動紀錄｜氣球大叔 Sony 氣球魔術秀 × 品牌互動亮點",
+    "description": "氣球大叔 Sony 於 IKEA 台中十週年慶帶來親子氣球魔術表演，結合氣球創作、現場互動與品牌主題，成為台中親子活動中的人氣亮點演出。",
+    "datePublished": "2023-09-08",
+    "url": "https://balloonsony.com/blog/2023-taichung-ikea-10th-show.html",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://balloonsony.com/blog/2023-taichung-ikea-10th-show.html"
+    },
     "author": {
       "@type": "Person",
       "name": "氣球大叔 Sony"
@@ -22,16 +29,10 @@
       "@type": "Organization",
       "name": "氣球大叔 Sony"
     },
-    "datePublished": "2023-09-08",
     "image": [
       "https://balloonsony.com/images/taichung-ikea10th-group-2023.webp",
       "https://balloonsony.com/images/taichung-ikea10th-stage-2023.webp"
-    ],
-    "description": "氣球大叔 Sony 於 IKEA 台中十週年慶帶來親子氣球魔術表演，結合氣球創作、現場互動與品牌主題，成為台中親子活動中的人氣亮點演出。",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://balloonsony.com/blog/2023-taichung-ikea-10th-show.html"
-    }
+    ]
   }
   </script>
   <style>
@@ -51,7 +52,6 @@
 </head>
 <body class="is-preload">
   <div id="wrapper">
-    <!-- 主內容 -->
     <div id="main">
       <div class="inner">
         <header>
@@ -92,21 +92,17 @@
 
           <blockquote>「這場表演太精彩了！孩子們開心極了，連我們 IKEA 同仁都拍手叫好～」－ IKEA 台中活動負責人</blockquote>
 
-          <p>
-  氣球大叔 Sony 的活動紀錄，橫跨 <strong>台北、新北、桃園、新竹、台中、基隆</strong> 各地，無論是 <strong>氣球魔術、手折氣球、泡泡秀、會場佈置、婚禮爆破</strong>，歡迎找找看有沒有您熟悉的活動現場！
-          </p>
+          <p>氣球大叔 Sony 的活動紀錄，橫跨 <strong>台北、新北、桃園、新竹、台中、基隆</strong> 各地，無論是 <strong>氣球魔術、手折氣球、泡泡秀、會場佈置、婚禮爆破</strong>，歡迎找找看有沒有您熟悉的活動現場！</p>
           <p>👉 <a href="../blog.html">回到活動足跡總覽，繼續看更多精彩紀錄</a></p>
-
         </section>
       </div>
     </div>
 
-    <!-- 側邊選單 -->
     <div id="sidebar">
       <div class="inner"></div>
     </div>
     <script>
-      fetch('sidebar.html')
+      fetch('../sidebar.html')
         .then(res => res.text())
         .then(data => {
           document.querySelector('#sidebar .inner').innerHTML = data;
@@ -116,7 +112,6 @@
         });
     </script>
 
-    <!-- Scripts -->
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/browser.min.js"></script>
     <script src="../assets/js/breakpoints.min.js"></script>
