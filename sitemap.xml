@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- 首頁與主服務頁 -->
+  <url><loc>https://balloonsony.com/</loc><priority>1.00</priority></url>
+  <url><loc>https://balloonsony.com/magic.html</loc><priority>0.80</priority></url>
+  <url><loc>https://balloonsony.com/balloon.html</loc><priority>0.80</priority></url>
+  <url><loc>https://balloonsony.com/bubble.html</loc><priority>0.80</priority></url>
+  <url><loc>https://balloonsony.com/decor.html</loc><priority>0.80</priority></url>
+  <url><loc>https://balloonsony.com/faq.html</loc><priority>0.60</priority></url>
+  <url><loc>https://balloonsony.com/blog.html</loc><priority>0.70</priority></url>
+
+  <!-- 活動紀錄頁 -->
+  <url><loc>https://balloonsony.com/daan-zhua-zhou-2025.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/nurse-day-2025.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/taibei-maji-2025-05-30.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/taichung-ikea-2024.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/xindian-beerfest-2025.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/taoyuan-daxi-graduation-2025.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/taoyuan-newresidents-2024.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/ikea-10th-2023.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/taoyuan-dwarfkids-2025.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/taichung-xitun-party-2025.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/taoyuan-gloria-polo-2021-10-30.html</loc><priority>0.70</priority></url>
+
+  <!-- 分公司服務頁 -->
+  <url><loc>https://balloonsony.com/service/keelung-party-service.html</loc><priority>0.75</priority></url>
+  <url><loc>https://balloonsony.com/service/taipei-party-service.html</loc><priority>0.75</priority></url>
+  <url><loc>https://balloonsony.com/service/newtaipei-party-service.html</loc><priority>0.75</priority></url>
+  <url><loc>https://balloonsony.com/service/taoyuan-party-service.html</loc><priority>0.75</priority></url>
+  <url><loc>https://balloonsony.com/service/hsinchu-party-service.html</loc><priority>0.75</priority></url>
+  <url><loc>https://balloonsony.com/service/miaoli-party-service.html</loc><priority>0.75</priority></url>
+  <url><loc>https://balloonsony.com/service/taichung-party-service.html</loc><priority>0.75</priority></url>
+
+</urlset>
