@@ -26,7 +26,7 @@
   <meta property="og:url" content="https://balloonsony.com/decor.html" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- 結構化資料：WebPage 與服務 -->
+  <!-- 結構化資料 -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,19 +38,39 @@
         "description": "氣球拱門、拍照牆與主題佈置服務，專業設計適用於婚禮、親子活動、百貨快閃與學校典禮。"
       },
       {
+        "@type": "LocalBusiness",
+        "@id": "https://balloonsony.com/#LocalBusiness",
+        "name": "氣球大叔 Sony",
+        "url": "https://balloonsony.com/",
+        "image": "https://balloonsony.com/images/og-balloon-sony.jpg",
+        "telephone": "+886-930733100",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "TW",
+          "addressRegion": "台灣",
+          "addressLocality": "新北市"
+        },
+        "openingHours": "Mo-Su 08:00-21:00"
+      },
+      {
         "@type": "Service",
         "name": "氣球會場佈置服務",
         "serviceType": "氣球拱門、主題牆設計、品牌快閃拍照牆、婚禮爆破、抓週場地佈置",
         "provider": {
-          "@type": "Organization",
-          "name": "氣球大叔 Sony",
-          "url": "https://balloonsony.com/"
+          "@id": "https://balloonsony.com/#LocalBusiness"
         },
         "areaServed": {
           "@type": "Place",
           "name": "台灣中部與北部"
         },
-        "description": "氣球大叔 Sony 提供活動與抓週專用會場氣球佈置，包含迎賓拱門、爆破氣球與拍照背景牆。"
+        "description": "氣球大叔 Sony 提供活動與抓週專用會場氣球佈置，包含迎賓拱門、爆破氣球與拍照背景牆。",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "TWD",
+          "price": "依佈置需求報價",
+          "availability": "https://schema.org/InStock"
+        }
       }
     ]
   }
