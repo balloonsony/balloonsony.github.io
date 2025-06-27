@@ -19,36 +19,66 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "氣球大叔 Sony",
-  "url": "https://balloonsony.com",
-  "logo": "https://balloonsony.com/images/og-balloon-sony.jpg",
-  "image": "https://balloonsony.com/images/og-balloon-sony.jpg"
-}
-</script>
-    <style>
-    @media (min-width: 981px) {
-      #sidebar .toggle {
-        display: none !important;
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://balloonsony.com/#LocalBusiness",
+      "name": "氣球大叔 Sony",
+      "image": "https://balloonsony.com/images/og-balloon-sony.jpg",
+      "url": "https://balloonsony.com/",
+      "telephone": "+886-930733100",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "新北市",
+        "addressRegion": "新北",
+        "addressCountry": "TW"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.0169,
+        "longitude": 121.4628
+      },
+      "areaServed": [
+        {"@type": "Place","name": "新北市"},
+        {"@type": "Place","name": "板橋區"},
+        {"@type": "Place","name": "新店區"},
+        {"@type": "Place","name": "中和區"},
+        {"@type": "Place","name": "新莊區"},
+        {"@type": "Place","name": "三重區"},
+        {"@type": "Place","name": "土城區"},
+        {"@type": "Place","name": "淡水區"},
+        {"@type": "Place","name": "永和區"},
+        {"@type": "Place","name": "蘆洲區"}
+      ],
+      "openingHours": "Mo-Su 08:00-21:00",
+      "hasMap": "https://maps.google.com/?q=氣球大叔+Sony"
+    },
+    {
+      "@type": "Service",
+      "name": "新北氣球魔術 × 小丑表演 × 抓週佈置 × 泡泡秀演出",
+      "serviceType": "氣球魔術表演、造型氣球、泡泡秀、小丑互動演出、主題會場佈置與開幕抓週設計",
+      "provider": {
+        "@id": "https://balloonsony.com/#LocalBusiness"
+      },
+      "areaServed": [
+        {"@type": "Place","name": "新北市"},
+        {"@type": "Place","name": "板橋區"},
+        {"@type": "Place","name": "淡水區"},
+        {"@type": "Place","name": "三重區"}
+      ],
+      "description": "氣球大叔 Sony 提供新北地區氣球魔術、泡泡秀、生日派對佈置與親子表演，服務涵蓋板橋、中和、新莊、淡水等地，適合兒童活動與開幕演出。",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "TWD",
+        "price": "依演出與佈置需求報價",
+        "availability": "https://schema.org/InStock"
       }
     }
-  </style>
-
- <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "氣球大叔 Sony｜新北氣球魔術 × 泡泡秀 × 造型氣球與佈置",
-  "description": "新北地區氣球魔術、泡泡秀、造型氣球與主題佈置服務，遍及板橋、新店、中和、新莊、三重、土城與淡水，適合親子活動與開幕派對演出。",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "新北市",
-    "addressCountry": "台灣"
-  },
-  "areaServed": ["新北市", "板橋區", "新店區", "中和區", "永和區", "新莊區", "三重區", "蘆洲區", "土城區", "淡水區"],
-  "url": "https://balloonsony.com/service/newtaipei-party-service.html"
+  ]
 }
 </script>
+
 </head>
 <body class="is-preload">
   <div id="wrapper">
