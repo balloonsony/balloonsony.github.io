@@ -19,40 +19,61 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "氣球大叔 Sony",
-  "url": "https://balloonsony.com",
-  "logo": "https://balloonsony.com/images/og-balloon-sony.jpg",
-  "image": "https://balloonsony.com/images/og-balloon-sony.jpg"
-}
-</script>
-    <style>
-    @media (min-width: 981px) {
-      #sidebar .toggle {
-        display: none !important;
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://balloonsony.com/#LocalBusiness",
+      "name": "氣球大叔 Sony",
+      "image": "https://balloonsony.com/images/og-balloon-sony.jpg",
+      "url": "https://balloonsony.com/",
+      "telephone": "+886-930733100",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "桃園市",
+        "addressRegion": "桃園",
+        "addressCountry": "TW"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.9934,
+        "longitude": 121.3000
+      },
+      "areaServed": [
+        {"@type": "Place","name": "桃園市"},
+        {"@type": "Place","name": "中壢區"},
+        {"@type": "Place","name": "平鎮區"},
+        {"@type": "Place","name": "八德區"},
+        {"@type": "Place","name": "蘆竹區"},
+        {"@type": "Place","name": "龜山區"},
+        {"@type": "Place","name": "楊梅區"},
+        {"@type": "Place","name": "大溪區"}
+      ],
+      "openingHours": "Mo-Su 08:00-21:00",
+      "hasMap": "https://maps.google.com/?q=氣球大叔+Sony"
+    },
+    {
+      "@type": "Service",
+      "name": "桃園氣球魔術 × 抓週派對 × 泡泡秀演出",
+      "serviceType": "氣球魔術表演、泡泡秀、小丑表演、造型氣球、生日場佈、抓週活動佈置",
+      "provider": {
+        "@id": "https://balloonsony.com/#LocalBusiness"
+      },
+      "areaServed": [
+        {"@type": "Place","name": "桃園市"},
+        {"@type": "Place","name": "中壢區"},
+        {"@type": "Place","name": "平鎮區"},
+        {"@type": "Place","name": "八德區"}
+      ],
+      "description": "氣球大叔 Sony 提供桃園市各區氣球魔術、泡泡秀與抓週派對服務，適合兒童生日、百貨開幕、幼兒園畢業活動與親子節演出。",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "TWD",
+        "price": "依派對需求報價",
+        "availability": "https://schema.org/InStock"
       }
     }
-  </style>
-
- <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "桃園氣球魔術與泡泡秀｜氣球大叔 Sony",
-  "description": "桃園地區氣球魔術表演、泡泡秀、抓週派對與會場佈置服務，適合兒童生日、親子活動與開幕活動。",
-  "provider": {
-    "@type": "Organization",
-    "name": "氣球大叔 Sony",
-    "url": "https://balloonsony.com",
-    "logo": "https://balloonsony.com/images/og-balloon-sony.jpg"
-  },
-  "areaServed": ["桃園市", "中壢區", "平鎮區", "八德區", "蘆竹區", "龜山區", "楊梅區", "大溪區"],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "桃園市",
-    "addressCountry": "台灣"
-  },
-  "url": "https://balloonsony.com/service/taoyuan-party-service.html"
+  ]
 }
 </script>
 
