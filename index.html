@@ -31,84 +31,104 @@
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
   <!-- JSON-LD 結構化資料 -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "name": "氣球大叔 Sony",
+      "image": "https://balloonsony.com/images/cover.webp",
+      "url": "https://balloonsony.com/",
+      "telephone": "0930733100",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "台灣",
+        "addressLocality": "桃園市",
+        "addressCountry": "TW"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "台北市" },
+        { "@type": "Place", "name": "新北市" },
+        { "@type": "Place", "name": "基隆市" },
+        { "@type": "Place", "name": "桃園市" },
+        { "@type": "Place", "name": "新竹市" },
+        { "@type": "Place", "name": "苗栗縣" },
+        { "@type": "Place", "name": "台中市" }
+      ],
+      "hasMap": "https://www.google.com/maps/place/氣球大叔+Sony｜氣球魔術・泡泡秀・會場佈置/@24.6496395,120.5743822,9z",
+      "sameAs": [
+        "https://www.facebook.com/BalloonSony/",
+        "https://www.instagram.com/balloonsony/",
+        "https://www.youtube.com/@氣球大叔Sony",
+        "https://www.pixnet.net/pcard/balloonsony",
+        "https://www.pro360.com.tw/service/39936"
+      ],
+      "description": "氣球大叔 Sony 提供氣球魔術、泡泡秀、造型氣球、會場佈置與抓週活動設計等親子活動服務，跨足台北、新北、桃園、新竹、台中等多縣市到府演出。",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "08:00",
+          "closes": "21:00"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "氣球魔術表演｜泡泡秀｜造型氣球｜會場佈置",
+      "serviceType": "氣球魔術表演、泡泡秀演出、卡通造型氣球、小丑互動、小朋友抓週佈置與親子活動裝置",
+      "provider": {
         "@type": "LocalBusiness",
         "name": "氣球大叔 Sony",
-        "image": "https://balloonsony.com/images/cover.webp",
-        "url": "https://balloonsony.com/",
-        "telephone": "0930733100",
-        "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": "台灣",
-          "addressLocality": "桃園市",
-          "addressCountry": "TW"
-        },
-        "areaServed": ["台北市", "新北市", "基隆市", "桃園市", "新竹市", "苗栗縣", "台中市"],
-        "hasMap": "https://www.google.com/maps/place/氣球大叔+Sony｜氣球魔術・泡泡秀・會場佈置/@24.6496395,120.5743822,9z",
-        "sameAs": [
-          "https://www.facebook.com/BalloonSony/",
-          "https://www.instagram.com/balloonsony/",
-          "https://www.youtube.com/@氣球大叔Sony",
-          "https://www.pixnet.net/pcard/balloonsony",
-          "https://www.pro360.com.tw/service/39936"
-        ],
-        "description": "氣球大叔 Sony 提供氣球魔術、泡泡秀、造型氣球、會場佈置與抓週活動設計等親子活動服務，跨足台北、新北、桃園、新竹、台中等多縣市到府演出。",
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "08:00",
-            "closes": "21:00"
-          }
-        ]
+        "url": "https://balloonsony.com/"
       },
-      {
-        "@type": "Service",
-        "name": "氣球魔術表演｜泡泡秀｜造型氣球｜會場佈置",
-        "serviceType": "氣球魔術表演、泡泡秀演出、卡通造型氣球、小丑互動、小朋友抓週佈置與親子活動裝置",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "氣球大叔 Sony",
-          "url": "https://balloonsony.com/"
-        },
-        "areaServed": {
-          "@type": "Place",
-          "name": "台灣全區"
-        },
-        "description": "結合氣球魔術、泡泡秀與造型氣球等多元演出服務，專為親子活動、市集、百貨、幼兒園、學校園遊會與婚禮設計打造。"
+      "areaServed": {
+        "@type": "Place",
+        "name": "台灣全區"
       },
-      {
-        "@type": "Person",
-        "name": "氣球大叔 Sony",
-        "alternateName": "吳宏謚",
-        "jobTitle": "親子活動表演者",
-        "image": "https://balloonsony.com/images/pic01.webp",
-        "sameAs": [
-          "https://www.facebook.com/BalloonSony/",
-          "https://www.instagram.com/balloonsony/",
-          "https://www.youtube.com/@氣球大叔Sony",
-          "https://www.pixnet.net/pcard/balloonsony",
-          "https://www.pro360.com.tw/service/39936"
-        ],
-        "worksFor": {
-          "@type": "LocalBusiness",
-          "name": "氣球大叔 Sony",
-          "url": "https://balloonsony.com/"
+      "description": "結合氣球魔術、泡泡秀與造型氣球等多元演出服務，專為親子活動、市集、百貨、幼兒園、學校園遊會與婚禮設計打造。",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "TWD",
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": 0,
+          "priceCurrency": "TWD",
+          "name": "多項表演與佈置客製化報價",
+          "description": "演出與布置均依活動內容、地點與規模報價，歡迎聯繫氣球大叔 Sony 取得專屬方案。"
         }
-      },
-      {
-        "@type": "WebSite",
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "氣球大叔 Sony",
+      "alternateName": "吳宏謚",
+      "jobTitle": "親子活動表演者",
+      "image": "https://balloonsony.com/images/pic01.webp",
+      "sameAs": [
+        "https://www.facebook.com/BalloonSony/",
+        "https://www.instagram.com/balloonsony/",
+        "https://www.youtube.com/@氣球大叔Sony",
+        "https://www.pixnet.net/pcard/balloonsony",
+        "https://www.pro360.com.tw/service/39936"
+      ],
+      "worksFor": {
+        "@type": "LocalBusiness",
         "name": "氣球大叔 Sony",
         "url": "https://balloonsony.com/"
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "WebSite",
+      "name": "氣球大叔 Sony",
+      "url": "https://balloonsony.com/"
+    }
+  ]
+}
+</script>
 </head>
 
   <style>
