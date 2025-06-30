@@ -27,7 +27,8 @@
   <link rel="manifest" href="site.webmanifest" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/main.css" />
+ <link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
   <!-- JSON-LD 結構化資料 -->
@@ -235,17 +236,18 @@
         無論您需要的是 <strong>氣球老師、泡泡表演、到府親子演出</strong>，我都用最真誠的心，讓活動現場充滿魔法與回憶。
       </p>
     </div>
-    <div class="image-block">
-      <img src="images/index6.webp" alt="親子活動 氣球大叔 Sony 表演互動" />
-    </div>
+<div class="image-block">
+  <img src="images/index6.webp" alt="親子活動 氣球大叔 Sony 表演互動" loading="lazy" />
+</div>
   </div>
 </section>
 
       <!-- 父女故事 + 證照 -->
       <section id="story-cert" style="margin:-4rem 1rem 0 1rem;">
-        <div class="story-img">
-          <img src="images/sonydaughter.webp" alt="氣球大叔 Sony 與女兒的溫馨時刻，手持造型氣球行李箱" style="width:100%;height:auto;border-radius:8px;" />
-        </div>
+<div class="story-img">
+  <img src="images/sonydaughter.webp" alt="氣球大叔 Sony 與女兒的溫馨時刻，手持造型氣球行李箱" style="width:100%;height:auto;border-radius:8px;" loading="lazy" />
+</div>
+
         <div class="story-text">
           <p>一切的起點，是為了讓女兒開心，我親手折出第一顆氣球。當她開心大笑、眼睛彎成一條線的那瞬間，我知道——<strong>這份純粹的快樂，我想帶給更多孩子與家庭。</strong></p>
           <p>從街頭開始，我帶著行李箱與氣球一場場演出累積經驗與信任，並考取 <strong>基隆、台北、新北、桃園、新竹、台中</strong> 六縣市的街頭藝人證照。<br>每一張證照都是對安全與專業的承諾，也讓每一位家長都能安心邀演。</p>
@@ -268,12 +270,33 @@
       <section id="portfolio">
         <header class="major"><h2>作品集</h2></header>
         <p>點擊照片查看更多</p>
-        <div class="gallery">
-          <figure><a href="https://photos.app.goo.gl/P4qoZASn8RbBZQJR9" target="_blank" rel="noopener noreferrer"><img src="images/index1.webp" alt="氣球大叔 Sony 在舞台上進行氣球魔術秀，與小朋友互動熱烈" /></a><figcaption>舞台氣球魔術秀，孩子們笑聲不斷。</figcaption></figure>
-          <figure><a href="https://photos.app.goo.gl/UbhgkK45wfSU5xYT9" target="_blank" rel="noopener noreferrer"><img src="images/index2.webp" alt="活動現場 Sony 親手發送造型氣球，小朋友開心合照" /></a><figcaption>現場發送造型氣球，小朋友超開心。</figcaption></figure>
-          <figure><a href="https://photos.app.goo.gl/J9r64s9SD4RbMqkeA" target="_blank" rel="noopener noreferrer"><img src="images/index3.webp" alt="Sony 施展泡泡魔法，小朋友置身透明巨型泡泡中，現場驚呼連連" /></a><figcaption>泡泡魔法包覆孩子，現場驚呼連連！</figcaption></figure>
-          <figure><a href="https://photos.app.goo.gl/hpEsUR6r3SDYQR27" target="_blank" rel="noopener noreferrer"><img src="images/index4.webp" alt="生日現場由 Sony 設計的氣球拱門與拍照區，色彩繽紛、充滿喜氣" /></a><figcaption>氣球佈置拱門＋拍照區，熱鬧又繽紛。</figcaption></figure>
-        </div>
+  <div class="gallery">
+  <figure>
+    <a href="https://photos.app.goo.gl/P4qoZASn8RbBZQJR9" target="_blank" rel="noopener noreferrer">
+      <img src="images/index1.webp" alt="氣球大叔 Sony 在舞台上進行氣球魔術秀，與小朋友互動熱烈" loading="lazy" />
+    </a>
+    <figcaption>舞台氣球魔術秀，孩子們笑聲不斷。</figcaption>
+  </figure>
+  <figure>
+    <a href="https://photos.app.goo.gl/UbhgkK45wfSU5xYT9" target="_blank" rel="noopener noreferrer">
+      <img src="images/index2.webp" alt="活動現場 Sony 親手發送造型氣球，小朋友開心合照" loading="lazy" />
+    </a>
+    <figcaption>現場發送造型氣球，小朋友超開心。</figcaption>
+  </figure>
+  <figure>
+    <a href="https://photos.app.goo.gl/J9r64s9SD4RbMqkeA" target="_blank" rel="noopener noreferrer">
+      <img src="images/index3.webp" alt="Sony 施展泡泡魔法，小朋友置身透明巨型泡泡中，現場驚呼連連" loading="lazy" />
+    </a>
+    <figcaption>泡泡魔法包覆孩子，現場驚呼連連！</figcaption>
+  </figure>
+  <figure>
+    <a href="https://photos.app.goo.gl/hpEsUR6r3SDYQR27" target="_blank" rel="noopener noreferrer">
+      <img src="images/index4.webp" alt="生日現場由 Sony 設計的氣球拱門與拍照區，色彩繽紛、充滿喜氣" loading="lazy" />
+    </a>
+    <figcaption>氣球佈置拱門＋拍照區，熱鬧又繽紛。</figcaption>
+  </figure>
+</div>
+
       </section>
 
       <!-- 聯絡方式 -->
