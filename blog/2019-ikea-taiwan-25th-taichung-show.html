@@ -91,24 +91,25 @@
   <div class="inner"></div>
 </div>
 
-<!-- 動態載入 sidebar.html 並掛上 main.js -->
+<!-- 先載入 sidebar，再馬上載入 main.js -->
 <script>
   fetch('sidebar.html')
     .then(res => res.text())
     .then(data => {
       document.querySelector('#sidebar .inner').innerHTML = data;
+
+      // sidebar HTML 已插入後，馬上注入 main.js
       const script = document.createElement('script');
       script.src = '../assets/js/main.js';
       document.body.appendChild(script);
     });
 </script>
 
-<!-- 其他 JS 加上 defer，提升速度 -->
+<!-- 其他 JS 延後載入，不影響主功能 -->
 <script src="../assets/js/jquery.min.js" defer></script>
 <script src="../assets/js/browser.min.js" defer></script>
 <script src="../assets/js/breakpoints.min.js" defer></script>
 <script src="../assets/js/util.js" defer></script>
 </body>
 </html>
-
 
