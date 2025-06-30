@@ -87,31 +87,28 @@
       </div>
     </div>
 
-<div id="sidebar">
-  <div class="inner"></div>
-</div>
+    <!-- 側邊選單（引用 sidebar.html） -->
+    <div id="sidebar">
+      <div class="inner"></div>
+    </div>
+    <script>
+      fetch('sidebar.html')
+        .then(res => res.text())
+        .then(data => {
+          document.querySelector('#sidebar .inner').innerHTML = data;
+          const script = document.createElement('script');
+          script.src = '../assets/js/main.js';
+          document.body.appendChild(script);
+        });
+    </script>
 
-<!-- step1: 載入 sidebar.html -->
-<script>
-  fetch('sidebar.html')
-    .then(res => res.text())
-    .then(html => {
-      document.querySelector('#sidebar .inner').innerHTML = html;
-
-      // step2: 延遲一點時間後，再載 main.js（確保 sidebar 元素都已加入）
-      setTimeout(() => {
-        const script = document.createElement('script');
-        script.src = '../assets/js/main.js';
-        document.body.appendChild(script);
-      }, 50); // 延遲 50ms 或 100ms
-    });
-</script>
-
-<!-- 其他 JS 延遲載入 -->
-<script src="../assets/js/jquery.min.js" defer></script>
-<script src="../assets/js/browser.min.js" defer></script>
-<script src="../assets/js/breakpoints.min.js" defer></script>
-<script src="../assets/js/util.js" defer></script>
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </div>
 </body>
 </html>
 
