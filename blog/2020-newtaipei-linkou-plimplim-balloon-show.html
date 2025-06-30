@@ -98,24 +98,22 @@
   <div class="inner"></div>
 </div>
 
-<!-- 動態載入 sidebar.html 並掛上 main.js -->
-<script defer>
+<!-- ✅ 不要用 defer，立即執行 -->
+<script>
   fetch('sidebar.html')
     .then(res => res.text())
     .then(data => {
       document.querySelector('#sidebar .inner').innerHTML = data;
       const script = document.createElement('script');
       script.src = '../assets/js/main.js';
-      script.defer = true;
       document.body.appendChild(script);
     });
 </script>
 
-<!-- 其他 JS 加上 defer，移除重複載入 main.js -->
+<!-- 其餘 JS 可用 defer -->
 <script src="../assets/js/jquery.min.js" defer></script>
 <script src="../assets/js/browser.min.js" defer></script>
 <script src="../assets/js/breakpoints.min.js" defer></script>
 <script src="../assets/js/util.js" defer></script>
 </body>
 </html>
-
