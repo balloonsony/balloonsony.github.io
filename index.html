@@ -309,12 +309,18 @@
     </div></div>
   </div>
 
-  <!-- 載入 JS -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script>function toggleSEO(){const e=document.getElementById("seo-keywords");e.style.display=e.style.display==="none"||e.style.display===""?"block":"none";}</script>
+<!-- 載入 JS -->
+<script src="assets/js/jquery.min.js" defer></script>
+<script src="assets/js/browser.min.js" defer></script>
+<script src="assets/js/breakpoints.min.js" defer></script>
+<script src="assets/js/util.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+
+<script defer>
+  function toggleSEO() {
+    const e = document.getElementById("seo-keywords");
+    e.style.display = (e.style.display === "none" || e.style.display === "") ? "block" : "none";
+  }
+</script>
 </body>
 </html>
