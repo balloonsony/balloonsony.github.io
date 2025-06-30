@@ -109,9 +109,10 @@
     .then(data => {
       document.querySelector('#sidebar .inner').innerHTML = data;
 
-      const script = document.createElement('script');
-      script.onload = () => console.log('✅ main.js 載入成功');
-      document.body.appendChild(script);
+const script = document.createElement('script');
+script.src = '../assets/js/main.js';  // 👉 一定要指定 src
+script.onload = () => console.log('✅ main.js 載入成功');
+document.body.appendChild(script);
     })
     .catch(err => console.error('❌ sidebar 載入錯誤', err));
 </script>
