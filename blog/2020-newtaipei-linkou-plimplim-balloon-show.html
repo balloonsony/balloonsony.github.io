@@ -98,7 +98,7 @@
   <div class="inner"></div>
 </div>
 
-<!-- 🔧 確保 sidebar 有載入 -->
+<!-- 🔧 載入 sidebar.html 並掛上 main.js（只載一次） -->
 <script>
   console.log('📦 sidebar 載入準備中...');
   fetch('sidebar.html')
@@ -108,17 +108,20 @@
     })
     .then(data => {
       document.querySelector('#sidebar .inner').innerHTML = data;
+
       const script = document.createElement('script');
       script.src = '../assets/js/main.js';
+      script.onload = () => console.log('✅ main.js 載入成功');
       document.body.appendChild(script);
     })
     .catch(err => console.error('❌ sidebar 載入錯誤', err));
 </script>
 
-<!-- 其餘腳本延後執行 -->
+<!-- 其餘腳本加上 defer，最佳化載入效能 -->
 <script src="../assets/js/jquery.min.js" defer></script>
 <script src="../assets/js/browser.min.js" defer></script>
 <script src="../assets/js/breakpoints.min.js" defer></script>
 <script src="../assets/js/util.js" defer></script>
+
 </body>
 </html>
