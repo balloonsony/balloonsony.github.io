@@ -98,19 +98,24 @@
   <div class="inner"></div>
 </div>
 
-<!-- ✅ 不要用 defer，立即執行 -->
+<!-- 🔧 確保 sidebar 有載入 -->
 <script>
+  console.log('📦 sidebar 載入準備中...');
   fetch('sidebar.html')
-    .then(res => res.text())
+    .then(res => {
+      console.log('✅ sidebar 成功載入！');
+      return res.text();
+    })
     .then(data => {
       document.querySelector('#sidebar .inner').innerHTML = data;
       const script = document.createElement('script');
       script.src = '../assets/js/main.js';
       document.body.appendChild(script);
-    });
+    })
+    .catch(err => console.error('❌ sidebar 載入錯誤', err));
 </script>
 
-<!-- 其餘 JS 可用 defer -->
+<!-- 其餘腳本延後執行 -->
 <script src="../assets/js/jquery.min.js" defer></script>
 <script src="../assets/js/browser.min.js" defer></script>
 <script src="../assets/js/breakpoints.min.js" defer></script>
