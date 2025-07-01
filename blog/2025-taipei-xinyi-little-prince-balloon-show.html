@@ -65,22 +65,54 @@
       <p>👉 <a href="blog.html">回到活動紀錄總覽</a></p>
     </section>
   </div></div>
-  
-  <div id="sidebar"><div class="inner"></div></div>
+    <!-- 側邊選單 -->
+    <div id="sidebar">
+      <div class="inner">
+        <!-- 漢堡按鈕（手機版） -->
+        <a href="#menu" class="toggle"><span>選單</span></a>
 
-  <script>
-    fetch('sidebar.html').then(r=>r.text()).then(d=>{
-      document.querySelector('#sidebar .inner').innerHTML = d;
-      const s = document.createElement('script');
-      s.src = '../assets/js/main.js';
-      document.body.appendChild(s);
-    });
-  </script>
-  <script src="../assets/js/jquery.min.js"></script>
-  <script src="../assets/js/browser.min.js"></script>
-  <script src="../assets/js/breakpoints.min.js"></script>
-  <script src="../assets/js/util.js"></script>
-  <script src="../assets/js/main.js"></script>
+        <!-- 主選單內容 -->
+        <nav id="menu">
+          <header class="major"><h2>選單</h2></header>
+          <ul>
+            <li><a href="../index.html">首頁</a></li>
+            <li><span class="opener">表演項目</span>
+              <ul>
+                <li><a href="../magic.html">魔術表演</a></li>
+                <li><a href="../bubble.html">泡泡秀</a></li>
+                <li><a href="../balloon.html">造型氣球</a></li>
+                <li><a href="../decor.html">會場佈置</a></li>
+              </ul>
+            </li>
+            <li><span class="opener">服務地區</span>
+              <ul>
+                <li><a href="../service/keelung-kids-party-show.html">基隆表演服務</a></li>
+                <li><a href="../service/taipei-kids-party-show.html">台北表演服務</a></li>
+                <li><a href="../service/newtaipei-kids-party-show.html">新北表演服務</a></li>
+                <li><a href="../service/taoyuan-kids-party-show.html">桃園表演服務</a></li>
+                <li><a href="../service/hsinchu-kids-party-show.html">新竹表演服務</a></li>
+                <li><a href="../service/miaoli-kids-party-show.html">苗栗表演服務</a></li>
+                <li><a href="../service/taichung-kids-party-show.html">台中表演服務</a></li>
+              </ul>
+            </li>
+            <li><a href="../index.html#portfolio">作品集</a></li>
+            <li><a href="faq.html">FAQ 常見問題</a></li>
+            <li><a href="blog.html">活動足跡</a></li>
+            <li><a href="../index.html#contact">聯絡方式</a></li>
+          </ul>
+        </nav>
+
+        <!-- footer -->
+        <footer id="footer"><p>&copy; 氣球大叔 Sony. All rights reserved.</p></footer>
+      </div>
+    </div>
   </div>
+
+<!-- JS -->
+<script src="../assets/js/jquery.min.js" defer></script>
+<script src="../assets/js/browser.min.js" defer></script>
+<script src="../assets/js/breakpoints.min.js" defer></script>
+<script src="../assets/js/util.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
 </body>
 </html>
