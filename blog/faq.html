@@ -42,60 +42,7 @@
   }
   </script>
 
-<style>
-  img {
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    display: block;
-    margin: 0 auto;
-  }
-
-  figure {
-    max-width: 100%;
-    margin: 1em auto;
-    text-align: center;
-  }
-
-  details {
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    margin-bottom: 2em;
-    background: #f9f9f9;
-    padding: 1em;
-  }
-
-  summary {
-    font-weight: bold;
-    font-size: 1.1em;
-    cursor: pointer;
-  }
-
-  summary:hover {
-    color: #0077cc;
-  }
-
-  figcaption {
-    font-size: 0.9em;
-    color: #666;
-    margin-top: 0.5em;
-  }
-
-  @media screen and (min-width: 768px) {
-    img {
-      max-width: 800px;
-      margin: 0 0 1em 20px;
-    }
-
-    figure {
-      max-width: 800px;
-      margin-left: 20px;
-      margin-right: auto;
-      text-align: left;
-    }
-  }
-
-  /* 📌 補上桌機版固定側邊欄與顯示漢堡按鈕 */
+ <style>
   @media (min-width: 981px) {
     #sidebar {
       position: fixed;
@@ -108,6 +55,9 @@
     #wrapper {
       margin-left: 22em;
     }
+  }
+
+  @media (min-width: 981px) {
     #sidebar .toggle {
       display: block !important;
     }
