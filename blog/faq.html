@@ -42,22 +42,28 @@
   }
   </script>
 
-  <style>
-    @media (min-width: 981px) {
-      #sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        overflow-y: auto;
-        z-index: 1000;
-      }
-      #wrapper {
-        margin-left: 22em;
-      }
+ <style>
+  @media (min-width: 981px) {
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      overflow-y: auto;
+      z-index: 1000;
     }
-  </style>
-</head>
+    #wrapper {
+      margin-left: 22em;
+    }
+  }
+
+  @media (min-width: 981px) {
+    #sidebar .toggle {
+      display: block !important;
+    }
+  }
+</style>
+
 
 <body class="is-preload">
   <!-- 側邊選單 sidebar -->
