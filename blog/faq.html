@@ -42,7 +42,7 @@
   }
   </script>
 
- <style>
+<style>
   @media (min-width: 981px) {
     #sidebar {
       position: fixed;
@@ -62,7 +62,13 @@
       display: block !important;
     }
   }
+
+  /* ✅ 強制讓 toggle 一直顯示（避免被 main.css 蓋掉） */
+  #sidebar .toggle {
+    display: block !important;
+  }
 </style>
+
 </head>
 
 
