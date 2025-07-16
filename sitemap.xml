@@ -12,18 +12,18 @@
   <url><loc>https://balloonsony.com/blog/faq.html</loc><priority>0.60</priority></url>
   <url><loc>https://balloonsony.com/blog/blog.html</loc><priority>0.70</priority></url>
 
-  <!-- 活動紀錄頁（請務必確認檔案名稱與實際路徑一致） -->
+  <!-- 活動紀錄頁（已依據您提供的正確網址進行修正） -->
   <url><loc>https://balloonsony.com/blog/2025-taipei-daan-ceremony-decor.html</loc><priority>0.70</priority></url>
   <url><loc>https://balloonsony.com/blog/2025-sanxia-nurse-day-decor.html</loc><priority>0.70</priority></url>
   <url><loc>https://balloonsony.com/blog/2025-taipei-maji-market-show.html</loc><priority>0.70</priority></url>
   <url><loc>https://balloonsony.com/blog/2025-taichung-xitun-birthday-show.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/blog/2025-xindian-beerfest-show.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/blog/2025-taoyuan-daxi-graduation.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/blog/2025-taoyuan-dwarfkids-family.html</loc><priority>0.70</priority></url> <!-- 請確認此檔案名稱是否正確 -->
+  <url><loc>https://balloonsony.com/blog/2025-xindian-beerfest-show.html</loc><priority>0.70</priority></url> <!-- 已更新為您提供的正確網址 -->
+  <url><loc>https://balloonsony.com/blog/2025-taoyuan-daxi-graduation-decor.html</loc><priority>0.70</priority></url> <!-- 已更新為您提供的正確網址 -->
+  <url><loc>https://balloonsony.com/blog/2025-taoyuan-dwarfkids-family-show.html</loc><priority>0.70</priority></url> <!-- 已更新為您提供的正確網址 -->
   <url><loc>https://balloonsony.com/blog/2024-taoyuan-newresidents-family-show.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/blog/2024-taichung-ikea-anniversary-show.html</loc><priority>0.70</priority></url> 
+  <url><loc>https://balloonsony.com/blog/2024-taichung-ikea-anniversary-show.html</loc><priority>0.70</priority></url>
   <url><loc>https://balloonsony.com/blog/2023-taichung-ikea-10th-show.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/blog/2021-taoyuan-qingpu-gloria-polo-event.html</loc><priority>0.70</priority></url> 
+  <url><loc>https://balloonsony.com/blog/2021-taoyuan-qingpu-gloria-polo-event.html</loc><priority>0.70</priority></url>
   <url><loc>https://balloonsony.com/blog/2022-zhubei-hueiyu-autumn-show.html</loc><priority>0.70</priority></url>
   <url><loc>https://balloonsony.com/blog/2025-zhubei-hueiyu-qianhe-spring-show.html</loc><priority>0.70</priority></url>
   <url><loc>https://balloonsony.com/blog/2021-hsinchu-bigcity-swatch-xmas.html</loc><priority>0.70</priority></url>
@@ -38,12 +38,12 @@
   <url><loc>https://balloonsony.com/blog/2022-keelung-midautumn-bear-balloon-selfie-show.html</loc><priority>0.70</priority></url>
   <url><loc>https://balloonsony.com/blog/2025-taipei-xinyi-little-prince-balloon-show.html</loc><priority>0.70</priority></url>
   <url><loc>https://balloonsony.com/blog/2022-keelung-city-expo-balloon-show.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/blog/2025-taipei-esun-family-balloon-welcome.html</loc><priority>0.70</priority></url> 
-  <url><loc>https://balloonsony.com/blog/2025-nantun-kindergarten-balloon-party.html</loc><priority>0.70</priority></url> 
-  <url><loc>https://balloonsony.com/blog/2023-hsinchu-elmor-wedding-balloon-welcome.html</loc><priority>0.70</priority></url> 
+  <url><loc>https://balloonsony.com/blog/2025-taipei-esun-family-balloon-welcome.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/blog/2025-nantun-kindergarten-balloon-party.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/blog/2023-hsinchu-elmor-wedding-balloon-welcome.html</loc><priority>0.70</priority></url>
   <url><loc>https://balloonsony.com/blog/2025-longtan-kangchiao-kindergarten-balloon-party.html</loc><priority>0.70</priority></url>
-  <url><loc>https://balloonsony.com/blog/2025-taipei-w-hotel-birthday-balloon-decor.html</loc><priority>0.70</priority></url> 
-  <url><loc>https://balloonsony.com/blog/2025-sanxia-newtaipei-balloon-magic.html</loc><priority>0.70</priority></url> 
+  <url><loc>https://balloonsony.com/blog/2025-taipei-w-hotel-birthday-balloon-decor.html</loc><priority>0.70</priority></url>
+  <url><loc>https://balloonsony.com/blog/2025-sanxia-newtaipei-balloon-magic.html</loc><priority>0.70</priority></url>
 
   <!-- 分公司服務頁 -->
   <url><loc>https://balloonsony.com/service/keelung-kids-party-show.html</loc><priority>0.75</priority></url>
