@@ -25,65 +25,6 @@
   <meta property="og:url" content="https://balloonsony.com/balloon.html" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- 結構化資料 -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebPage",
-        "name": "造型氣球表演｜卡通角色 × 氣球派送 × 親子互動 - 氣球大叔 Sony",
-        "url": "https://balloonsony.com/balloon.html",
-        "description": "氣球大叔 Sony 提供造型氣球與互動表演，專長卡通人物、角色花束與劍氣球，適合百貨、學校與市集親子活動。"
-      },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://balloonsony.com/#LocalBusiness",
-        "name": "氣球大叔 Sony",
-        "url": "https://balloonsony.com/",
-        "image": "https://balloonsony.com/images/og-balloon-sony.jpg",
-        "telephone": "+886-930733100",
-        "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "TW",
-          "addressRegion": "台灣",
-          "addressLocality": "桃園市"
-        },
-        "openingHours": "Mo-Su 08:00-21:00"
-      },
-      {
-        "@type": "Service",
-        "name": "造型氣球互動與卡通角色表演",
-        "serviceType": "造型氣球捏製、卡通氣球派送、現場互動表演、花束與劍氣球創作",
-        "provider": {
-          "@id": "https://balloonsony.com/#LocalBusiness"
-        },
-        "areaServed": {
-          "@type": "Place",
-          "name": "全台灣"
-        },
-"description": "氣球大叔 Sony 提供現場造型氣球捏製與親子互動派送，適合幼兒園、百貨、戶外市集與親子派對等活動現場。角色造型生動，氣球款式多元，現場互動性高，深受大小朋友喜愛。",
-"offers": {
-  "@type": "Offer",
-  "priceCurrency": "TWD",
-  "availability": "https://schema.org/InStock",
-  "priceSpecification": {
-    "@type": "PriceSpecification",
-    "price": 0,
-    "priceCurrency": "TWD",
-    "name": "造型氣球表演報價",
-    "description": "依場地規模、互動形式與氣球數量客製報價，歡迎洽詢氣球大叔 Sony 提供合適演出方案。"
-        }
-      }
-    }
-  ]
-}
-</script>
-</head>
-
-
-
   <style>
     .posts {
   display: flex;
@@ -289,99 +230,127 @@
     }
   </script>
 
-  <!-- FAQ JSON-LD 結構化資料 -->
-  <!-- Service 結構化資料 JSON-LD：造型氣球 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Q1：你們的造型氣球有提供哪些種類？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A1： 我們提供各式氣球造型，如劍、花朵、動物、公主、超人等熱門主題，並可依活動主題客製專屬造型，適合生日派對、市集活動、校園園遊會與商場互動派送。"
+      "@type": "WebPage",
+      "name": "造型氣球表演｜卡通角色 × 氣球派送 × 親子互動 - 氣球大叔 Sony",
+      "url": "https://balloonsony.com/balloon.html",
+      "description": "氣球大叔 Sony 提供造型氣球與互動表演，專長卡通人物、角色花束與劍氣球，適合百貨、學校與市集親子活動。"
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://balloonsony.com/#LocalBusiness",
+      "name": "氣球大叔 Sony",
+      "url": "https://balloonsony.com/",
+      "image": "https://balloonsony.com/images/og-balloon-sony.jpg",
+      "telephone": "+886-930733100",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "TW",
+        "addressRegion": "台灣",
+        "addressLocality": "桃園市"
+      },
+      "openingHours": "Mo-Su 08:00-21:00"
+    },
+    {
+      "@type": "Service",
+      "name": "造型氣球互動與卡通角色表演",
+      "serviceType": "造型氣球捏製、卡通氣球派送、現場互動表演、花束與劍氣球創作",
+      "provider": {
+        "@id": "https://balloonsony.com/#LocalBusiness"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "基隆市" },
+        { "@type": "Place", "name": "台北市" },
+        { "@type": "Place", "name": "新北市" },
+        { "@type": "Place", "name": "桃園市" },
+        { "@type": "Place", "name": "新竹市" },
+        { "@type": "Place", "name": "苗栗縣" },
+        { "@type": "Place", "name": "台中市" },
+        { "@type": "Place", "name": "彰化縣" },
+        { "@type": "Place", "name": "宜蘭縣" }
+      ],
+      "description": "氣球大叔 Sony 提供現場造型氣球捏製與親子互動派送，適合幼兒園、百貨、戶外市集與親子派對等活動現場。",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "TWD",
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": 0,
+          "priceCurrency": "TWD",
+          "name": "造型氣球表演報價",
+          "description": "依場地規模、互動形式與氣球數量客製報價，歡迎洽詢氣球大叔 Sony 提供合適演出方案。"
+        }
       }
     },
     {
-      "@type": "Question",
-      "name": "Q2：造型氣球會不會容易破？適合戶外嗎？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A2： 我們使用高品質氣球材料，適合室內外使用。氣球耐久度完全不用擔心唷。"
-      }
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://balloonsony.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "造型氣球",
+          "item": "https://balloonsony.com/balloon.html"
+        }
+      ]
     },
     {
-      "@type": "Question",
-      "name": "Q3：你們會在活動中現場發氣球嗎？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A3： 會的！我們可安排定點氣球互動派送，邊演邊發，氣氛熱鬧又吸睛，適合百貨快閃、市集、開幕或社區活動。"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Q4：可以預約「氣球佈置＋現場造型」一起嗎？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A4： 可以！我們提供一站式服務，包括現場造型氣球派送、舞台拱門布置與打卡牆設計，風格可依主題調整，讓活動一次搞定！"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Q5：氣球互動會有主持或配音樂嗎？",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A5： 如有需要，我們可提供基本主持或配樂設計，讓派送過程更熱鬧、有節奏感。"
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Q1：你們的造型氣球有提供哪些種類？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "我們提供各式氣球造型，如劍、花朵、動物、公主、超人等熱門主題，並可依活動主題客製專屬造型，適合生日派對、市集活動、校園園遊會與商場互動派送。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Q2：造型氣球會不會容易破？適合戶外嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "我們使用高品質氣球材料，適合室內外使用，氣球耐久度完全不用擔心。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Q3：你們會在活動中現場發氣球嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "會的！我們可安排定點氣球互動派送，邊演邊發，氣氛熱鬧又吸睛，適合百貨快閃、市集、開幕或社區活動。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Q4：可以預約「氣球佈置＋現場造型」一起嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以！我們提供一站式服務，包括現場造型氣球派送、舞台拱門布置與打卡牆設計，風格可依主題調整，讓活動一次搞定！"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Q5：氣球互動會有主持或配音樂嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "如有需要，我們可提供基本主持或配樂設計，讓派送過程更熱鬧、有節奏感。"
+          }
+        }
+      ]
     }
   ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "首頁",
-      "item": "https://balloonsony.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "造型氣球",
-      "item": "https://balloonsony.com/balloon.html"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "造型氣球派送與互動表演",
-  "serviceType": "氣球造型、現場互動、卡通角色氣球",
-  "provider": {
-    "@type": "Organization",
-    "name": "氣球大叔 Sony",
-    "url": "https://balloonsony.com"
-  },
-  "areaServed": [
-    { "@type": "Place", "name": "台北" },
-    { "@type": "Place", "name": "新北" },
-    { "@type": "Place", "name": "桃園" },
-    { "@type": "Place", "name": "新竹" },
-    { "@type": "Place", "name": "基隆" },
-    { "@type": "Place", "name": "苗栗" },
-    { "@type": "Place", "name": "台中" }
-  ],
-  "description": "氣球大叔 Sony 提供氣球造型表演、派送互動服務，適合市集、校園與親子活動。",
-  "url": "https://balloonsony.com/balloon.html"
 }
 </script>
 
