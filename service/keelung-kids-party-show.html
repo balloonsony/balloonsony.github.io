@@ -24,107 +24,6 @@
   <meta property="og:url" content="https://balloonsony.com/service/keelung-kids-party-show.html" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://balloonsony.com/#LocalBusiness",
-        "name": "氣球大叔 Sony",
-        "image": "https://balloonsony.com/images/og-balloon-sony.jpg",
-        "url": "https://balloonsony.com/",
-        "telephone": "+886-930733100",
-        "priceRange": "$$",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "桃園市", /* 保持主公司地址為桃園市 */
-          "addressRegion": "台灣",
-          "addressCountry": "TW"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 25.1283,
-          "longitude": 121.7419
-        },
-        "openingHours": "Mo-Su 08:00-21:00",
-        "areaServed": [
-          { "@type": "Place", "name": "基隆市" },
-          { "@type": "Place", "name": "仁愛區" },
-          { "@type": "Place", "name": "中正區" },
-          { "@type": "Place", "name": "信義區" },
-          { "@type": "Place", "name": "安樂區" },
-          { "@type": "Place", "name": "暖暖區" },
-          { "@type": "Place", "name": "七堵區" },
-          { "@type": "Place", "name": "瑞芳區" },
-          { "@type": "Place", "name": "金山區" },
-          { "@type": "Place", "name": "萬里區" },
-          { "@type": "Place", "name": "雙溪區" },
-          { "@type": "Place", "name": "貢寮區" },
-          { "@type": "Place", "name": "石碇區" },
-          { "@type": "Place", "name": "汐止區" } /* 汐止區也包含進來 */
-        ],
-        "hasMap": "https://maps.google.com/?q=氣球大叔+Sony"
-      },
-      {
-        "@type": "Service",
-        "@id": "https://balloonsony.com/#KeelungKidsPartyShow",
-        "url": "https://balloonsony.com/service/keelung-kids-party-show.html",
-        "name": "基隆氣球魔術 × 抓週派對 × 泡泡秀演出",
-        "description": "氣球大叔 Sony 專業提供基隆與北海岸地區的精彩氣球魔術、夢幻泡泡秀、創意造型氣球、幽默小丑表演、主題生日派對場佈與溫馨抓週佈置服務，適合各類兒童活動、親子節與開幕場合，為您的活動帶來無盡歡笑與難忘回憶！",
-        "serviceType": "氣球魔術表演、泡泡秀、造型氣球、小丑表演、生日派對場佈、抓週佈置、開幕爆破、親子活動策劃", /* 新增親子活動策劃 */
-        "provider": {
-          "@id": "https://balloonsony.com/#LocalBusiness"
-        },
-        "areaServed": [
-          { "@type": "Place", "name": "基隆市" },
-          { "@type": "Place", "name": "仁愛區" },
-          { "@type": "Place", "name": "中正區" },
-          { "@type": "Place", "name": "信義區" },
-          { "@type": "Place", "name": "安樂區" },
-          { "@type": "Place", "name": "暖暖區" },
-          { "@type": "Place", "name": "七堵區" },
-          { "@type": "Place", "name": "瑞芳區" },
-          { "@type": "Place", "name": "金山區" },
-          { "@type": "Place", "name": "萬里區" },
-          { "@type": "Place", "name": "雙溪區" },
-          { "@type": "Place", "name": "貢寮區" },
-          { "@type": "Place", "name": "石碇區" },
-          { "@type": "Place", "name": "汐止區" } /* 汐止區也包含進來 */
-        ],
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "TWD",
-          "availability": "https://schema.org/InStock",
-          "priceSpecification": {
-            "@type": "PriceSpecification",
-            "price": 0,
-            "priceCurrency": "TWD",
-            "name": "基隆親子活動客製化報價",
-            "description": "表演與佈置服務依活動地點、演出內容與時長提供專屬報價，歡迎聯繫氣球大叔 Sony 取得完整建議方案。"
-          }
-        }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "首頁",
-            "item": "https://balloonsony.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "基隆氣球魔術 × 泡泡秀 × 造型氣球表演｜親子活動與佈置專家",
-            "item": "https://balloonsony.com/service/keelung-kids-party-show.html"
-          }
-        ]
-      }
-    ]
-  }
-  </script>
   <style>
     img {
       max-width: 100%;
@@ -165,7 +64,125 @@
       border-radius: 6px;
       flex-shrink: 0;
     }
+
+    /* 頁面淡入動畫 */
+    body {
+      opacity: 0;
+      animation: fadein 0.4s ease forwards;
+    }
+    @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "基隆氣球魔術 × 泡泡秀 × 造型氣球表演｜親子活動與佈置專家｜氣球大叔 Sony",
+        "url": "https://balloonsony.com/service/keelung-kids-party-show.html",
+        "description": "氣球大叔 Sony 專業提供基隆市及北海岸地區的精彩氣球魔術、夢幻泡泡秀、創意造型氣球、幽默小丑互動與溫馨抓週佈置服務。我們的表演適合各類親子活動、百貨開幕與學校節慶，立即預約，為您的活動帶來無盡歡笑與難忘回憶！"
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://balloonsony.com/#LocalBusiness",
+        "name": "氣球大叔 Sony",
+        "image": "https://balloonsony.com/images/og-balloon-sony.jpg",
+        "url": "https://balloonsony.com/",
+        "telephone": "+886-930733100",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "桃園市", /* 保持主公司地址為桃園市 */
+          "addressRegion": "台灣",
+          "addressCountry": "TW"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 25.1283,
+          "longitude": 121.7419
+        },
+        "openingHours": "Mo-Su 08:00-21:00",
+        "areaServed": [
+          { "@type": "Place", "name": "基隆市" },
+          { "@type": "Place", "name": "仁愛區" },
+          { "@type": "Place", "name": "中正區" },
+          { "@type": "Place", "name": "信義區" },
+          { "@type": "Place", "name": "安樂區" },
+          { "@type": "Place", "name": "暖暖區" },
+          { "@type": "Place", "name": "七堵區" },
+          { "@type": "Place", "name": "瑞芳區" },
+          { "@type": "Place", "name": "金山區" },
+          { "@type": "Place", "name": "萬里區" },
+          { "@type": "Place", "name": "雙溪區" },
+          { "@type": "Place", "name": "貢寮區" },
+          { "@type": "Place", "name": "石碇區" },
+          { "@type": "Place", "name": "汐止區" }
+        ],
+        "hasMap": "https://maps.google.com/?q=氣球大叔+Sony"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://balloonsony.com/#KeelungKidsPartyShow",
+        "url": "https://balloonsony.com/service/keelung-kids-party-show.html",
+        "name": "基隆氣球魔術 × 抓週派對 × 泡泡秀演出",
+        "description": "氣球大叔 Sony 專業提供基隆與北海岸地區的精彩氣球魔術、夢幻泡泡秀、創意造型氣球、幽默小丑表演、主題生日派對場佈與溫馨抓週佈置服務，適合各類兒童活動、親子節與開幕場合，為您的活動帶來無盡歡笑與難忘回憶！",
+        "serviceType": "氣球魔術表演、泡泡秀、造型氣球、小丑表演、生日派對場佈、抓週佈置、開幕爆破、親子活動策劃",
+        "provider": {
+          "@id": "https://balloonsony.com/#LocalBusiness"
+        },
+        "areaServed": [
+          { "@type": "Place", "name": "基隆市" },
+          { "@type": "Place", "name": "仁愛區" },
+          { "@type": "Place", "name": "中正區" },
+          { "@type": "Place", "name": "信義區" },
+          { "@type": "Place", "name": "安樂區" },
+          { "@type": "Place", "name": "暖暖區" },
+          { "@type": "Place", "name": "七堵區" },
+          { "@type": "Place", "name": "瑞芳區" },
+          { "@type": "Place", "name": "金山區" },
+          { "@type": "Place", "name": "萬里區" },
+          { "@type": "Place", "name": "雙溪區" },
+          { "@type": "Place", "name": "貢寮區" },
+          { "@type": "Place", "name": "石碇區" },
+          { "@type": "Place", "name": "汐止區" }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "TWD",
+          "availability": "https://schema.org/InStock",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": 0,
+            "priceCurrency": "TWD",
+            "name": "基隆親子活動客製化報價",
+            "description": "表演與佈置服務依活動地點、演出內容與時長提供專屬報價，歡迎聯繫氣球大叔 Sony 取得完整建議方案。"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首頁",
+            "item": "https://balloonsony.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "基隆氣球魔術 × 泡泡秀 × 造型氣球表演｜親子活動與佈置專家",
+            "item": "https://balloonsony.com/service/keelung-kids-party-show.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="is-preload">
   <div id="wrapper">
@@ -174,7 +191,7 @@
 
         <header>
           <h1>基隆氣球魔術 × 泡泡秀 × 抓週佈置｜親子派對表演專家｜氣球大叔 Sony</h1>
-          <p>氣球大叔 Sony 專業提供基隆地區及**北海岸**的氣球魔術、夢幻泡泡秀與創意造型氣球表演，搭配溫馨抓週主題佈置與**震撼氣球爆破服務**，服務遍及仁愛、中正、七堵、瑞芳、金山、萬里與汐止等各區，致力為您打造最熱鬧、最難忘的親子派對與兒童活動體驗！</p>
+          <p>氣球大叔 Sony 專業提供基隆地區及<strong>北海岸</strong>的氣球魔術、夢幻泡泡秀與創意造型氣球表演，搭配溫馨抓週主題佈置與<strong>震撼氣球爆破服務</strong>，服務遍及仁愛、中正、七堵、瑞芳、金山、萬里與汐止等各區，致力為您打造最熱鬧、最難忘的親子派對與兒童活動體驗！</p>
         </header>
 
         <section>
@@ -182,28 +199,28 @@
           <p>氣球大叔 Sony 致力於為基隆地區的各式活動，提供多元且高品質的表演與佈置服務，確保每一場活動都充滿歡聲笑語與美好回憶。</p>
           <h3>氣球魔術 × 泡泡秀 × 現場互動：您的活動亮點專家</h3>
           <ul>
-            <li>**氣球魔術表演：** 帶來 30 分鐘的精緻互動演出，巧妙結合魔術的驚奇與小丑的幽默笑料，讓親子觀眾全程參與，爆笑連連，打造難忘的歡樂時光。</li>
-            <li>**泡泡秀演出：** 呈現巨型泡泡、煙霧泡泡等夢幻效果，並提供小朋友親自體驗的機會，特別適合幼兒園活動、戶外慶典與大型親子日，創造超吸睛的拍照打卡點。</li>
-            <li>**造型氣球派送：** 氣球大叔 Sony 現場即時製作各式可愛造型氣球，無論是狗狗、寶劍、獨角獸，還是精美卡通人物，讓每位孩子都能帶著專屬氣球滿載而歸，大大滿足。</li>
-            <li>**主題佈置與抓週設計：** 專業設計與佈置服務，從主題拱門、背景牆到拍照合影區，為寶寶的週歲抓週、生日派對或各式節慶活動，打造充滿故事性與溫馨氛圍的專屬空間。</li>
-            <li>**婚禮與開幕爆破：** 提供客製化氣球牆、空飄氣球瀑布等設計，透過瞬間震撼的爆破效果，立即炒熱全場氣氛，為您的婚禮、企業開幕或品牌發布會，帶來吸睛滿點的視覺焦點與聲量。</li>
+            <li><strong>氣球魔術表演：</strong> 帶來 30 分鐘的精緻互動演出，巧妙結合魔術的驚奇與小丑的幽默笑料，讓親子觀眾全程參與，爆笑連連，打造難忘的歡樂時光。</li>
+            <li><strong>泡泡秀演出：</strong> 呈現巨型泡泡、煙霧泡泡等夢幻效果，並提供小朋友親自體驗的機會，特別適合幼兒園活動、戶外慶典與大型親子日，創造超吸睛的拍照打卡點。</li>
+            <li><strong>造型氣球派送：</strong> 氣球大叔 Sony 現場即時製作各式可愛造型氣球，無論是狗狗、寶劍、獨角獸，還是精美卡通人物，讓每位孩子都能帶著專屬氣球滿載而歸，大大滿足。</li>
+            <li><strong>主題佈置與抓週設計：</strong> 專業設計與佈置服務，從主題拱門、背景牆到拍照合影區，為寶寶的週歲抓週、生日派對或各式節慶活動，打造充滿故事性與溫馨氛圍的專屬空間。</li>
+            <li><strong>婚禮與開幕爆破：</strong> 提供客製化氣球牆、空飄氣球瀑布等設計，透過瞬間震撼的爆破效果，立即炒熱全場氣氛，為您的婚禮、企業開幕或品牌發布會，帶來吸睛滿點的視覺焦點與聲量。</li>
           </ul>
 
           <h2>📍 基隆與周邊服務地區：深入基隆與北海岸各區</h2>
           <p>氣球大叔 Sony 的專業演出與佈置服務，全面覆蓋基隆地區及鄰近的北海岸區域，確保您無論身在何處，都能享受到高品質的服務：</p>
           <ul>
-            <li>**基隆市區：** 仁愛區、中正區、安樂區、信義區、七堵區、暖暖區</li>
-            <li>**近郊延伸服務：** 新北瑞芳區、金山區、萬里區、汐止區、雙溪區、貢寮區、石碇區等，皆可安排表演與佈置。</li>
+            <li><strong>基隆市區：</strong> 仁愛區、中正區、安樂區、信義區、七堵區、暖暖區</li>
+            <li><strong>近郊延伸服務：</strong> 新北瑞芳區、金山區、萬里區、汐止區、雙溪區、貢寮區、石碇區等，皆可安排表演與佈置。</li>
           </ul>
 
           <h2>🧒 適合活動場景：為您的專屬時刻增添色彩</h2>
           <p>氣球大叔 Sony 的服務廣泛適用於各類活動，無論規模大小，我們都能提供最適合的表演與佈置方案：</p>
           <ul>
-            <li>**家庭慶典：** 基隆兒童生日派對、親子家庭日、抓週儀式與彌月派對，打造溫馨難忘的回憶。</li>
-            <li>**校園活動：** 幼兒園與安親班的才藝表演、結業典禮、學校園遊會，為孩子們帶來滿滿歡樂。</li>
-            <li>**商業與行銷：** 百貨週年慶、商圈行銷活動、企業家庭日、開幕剪綵、品牌宣傳活動，吸引人潮與目光。</li>
-            <li>**社區與節慶：** 社區活動、藝文市集、街頭演出、地方文化節慶，提升活動氛圍。</li>
-            <li>**特殊場合：** 婚禮互動演出，為您的重要日子增添趣味與驚喜。</li>
+            <li><strong>家庭慶典：</strong> 基隆兒童生日派對、親子家庭日、抓週儀式與彌月派對，打造溫馨難忘的回憶。</li>
+            <li><strong>校園活動：</strong> 幼兒園與安親班的才藝表演、結業典禮、學校園遊會，為孩子們帶來滿滿歡樂。</li>
+            <li><strong>商業與行銷：</strong> 百貨週年慶、商圈行銷活動、企業家庭日、開幕剪綵、品牌宣傳活動，吸引人潮與目光。</li>
+            <li><strong>社區與節慶：</strong> 社區活動、藝文市集、街頭演出、地方文化節慶，提升活動氛圍。</li>
+            <li><strong>特殊場合：</strong> 婚禮互動演出，為您的重要日子增添趣味與驚喜。</li>
           </ul>
 
           <h2>🌟 客戶見證：來自基隆在地家長與主辦單位的肯定</h2>
@@ -213,16 +230,16 @@
           <h2>📞 預約與洽詢方式：輕鬆打造您的專屬活動</h2>
           <p>預約氣球大叔 Sony 的服務非常簡單，只需幾個步驟，我們將協助您輕鬆打造一場完美的活動：</p>
           <ol>
-            <li>**聯絡我們：** 加 LINE（ID：sony0613）、傳訊 Facebook 粉絲專頁，或點選<a href="/index.html#contact">聯絡我</a>頁面，告知您的初步需求。</li>
-            <li>**說明需求：** 請盡可能詳細說明活動地點、日期時間、預計預算與活動類型（例如：基隆市區某幼兒園戶外親子日，希望有氣球魔術與泡泡秀演出）。</li>
-            <li>**方案建議與報價：** 我們會根據您的具體需求，量身打造最適合的表演與佈置方案，並提供詳細的客製化報價。</li>
-            <li>**確認預約：** 雙方確認方案細節與報價後，即可完成預約流程。</li>
-            <li>**活動執行：** 活動當天，氣球大叔 Sony 將準時到場，用專業的演出與熱情，為您帶來一場歡樂滿溢、令人難忘的精彩活動！</li>
+            <li><strong>聯絡我們：</strong> 加 LINE（ID：sony0613）、傳訊 Facebook 粉絲專頁，或點選<a href="/index.html#contact">聯絡我</a>頁面，告知您的初步需求。</li>
+            <li><strong>說明需求：</strong> 請盡可能詳細說明活動地點、日期時間、預計預算與活動類型（例如：基隆市區某幼兒園戶外親子日，希望有氣球魔術與泡泡秀演出）。</li>
+            <li><strong>方案建議與報價：</strong> 我們會根據您的具體需求，量身打造最適合的表演與佈置方案，並提供詳細的客製化報價。</li>
+            <li><strong>確認預約：</strong> 雙方確認方案細節與報價後，即可完成預約流程。</li>
+            <li><strong>活動執行：</strong> 活動當天，氣球大叔 Sony 將準時到場，用專業的演出與熱情，為您帶來一場歡樂滿溢、令人難忘的精彩活動！</li>
           </ol>
 
 
           <h2>📌 為什麼選擇氣球大叔 Sony？基隆在地專業與口碑保證</h2>
-          <p>氣球大叔 Sony 不僅擁有**基隆在地街頭藝人證照**，更累積了**多年豐富的表演與佈置經驗**，深知基隆各類親子活動與表演場地的特性。無論您是在仁愛區為寶寶籌備抓週派對，還是中正區的商圈舉辦開幕慶典，氣球大叔都能提供**高度互動、極具創意且深受好評的專業服務**。選擇氣球大叔 Sony，就是選擇一份安心與品質的保證，讓您的活動成為眾人稱讚的焦點！</p>
+          <p>氣球大叔 Sony 不僅擁有<strong>基隆在地街頭藝人證照</strong>，更累積了<strong>多年豐富的表演與佈置經驗</strong>，深知基隆各類親子活動與表演場地的特性。無論您是在仁愛區為寶寶籌備抓週派對，還是中正區的商圈舉辦開幕慶典，氣球大叔都能提供<strong>高度互動、極具創意且深受好評的專業服務</strong>。選擇氣球大叔 Sony，就是選擇一份安心與品質的保證，讓您的活動成為眾人稱讚的焦點！</p>
 
           <section>
             <h2>📸 基隆活動現場紀錄：精彩瞬間回顧</h2>
@@ -251,11 +268,10 @@
               </li>
             </ul>
 
-            <p>🎈 想預約 **基隆氣球魔術或泡泡秀** 嗎？氣球大叔 Sony 為您的活動現場注入滿滿快樂能量！</p>
+            <p>🎈 想預約 <strong>基隆氣球魔術或泡泡秀</strong> 嗎？氣球大叔 Sony 為您的活動現場注入滿滿快樂能量！</p>
             <p>📷 想看更多氣球大叔 Sony 的演出花絮？請前往 <a href="/blog/blog.html">活動 Blog 專區</a></p>
             <p>❓ 有預約或演出相關問題？歡迎參閱 <a href="/blog/faq.html">常見問題 FAQ 說明頁</a></p>
           </section>
-
 
       </div>
     </div>
