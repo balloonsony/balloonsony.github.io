@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="zh-Hant">
 <head>
-  <!-- Favicon 設定 -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -18,14 +17,96 @@
   <meta name="description" content="氣球大叔 Sony 專業提供全台泡泡秀演出服務，結合大型泡泡特效、夢幻煙霧泡泡與趣味親子互動體驗，適合百貨商場、校園園遊會、幼兒園活動、親子日及各式戶外舞台演出，為您的活動打造一場難忘的泡泡奇幻之旅！" />
   <meta name="keywords" content="泡泡秀表演, 大型泡泡互動, 親子泡泡秀, 百貨泡泡活動, 校園泡泡演出, 幼兒園泡泡體驗, 桃園泡泡秀, 台北泡泡表演, 戶外泡泡體驗, 氣球大叔泡泡秀, 煙霧泡泡, 泡泡套人, 泡泡達人" />
 
-  <!-- Open Graph 社群分享設定 -->
   <meta property="og:title" content="泡泡秀 × 親子互動 × 戶外表演｜氣球大叔 Sony" />
   <meta property="og:description" content="氣球大叔 Sony 帶來超吸睛的大型泡泡秀，結合現場熱情互動與夢幻泡泡體驗，深受幼兒園小朋友與百貨商場來賓喜愛，為您的活動注入無限歡樂！" />
   <meta property="og:image" content="https://balloonsony.com/images/bubble-show-kids-outdoor-playtime.webp" />
   <meta property="og:url" content="https://balloonsony.com/bubble.html" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- 結構化資料：WebPage + LocalBusiness + Service -->
+  <style>
+    .posts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5em;
+      justify-content: center; /* 讓圖片群組整體置中 */
+    }
+
+    .posts figure {
+      text-align: center; /* 讓單張圖片與圖說置中 */
+      margin: 0;
+      max-width: 300px; /* 可選，避免圖片太大跑版 */
+    }
+
+    .posts img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto; /* 確保圖片水平置中 */
+      aspect-ratio: 4/3; /* 確保圖片比例一致 */
+      object-fit: cover; /* 確保圖片填充方式 */
+      border-radius: 8px; /* 圓角效果 */
+    }
+
+    .posts figcaption {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 0.5em;
+    }
+
+    @media (min-width: 981px) {
+      #sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        overflow-y: auto;
+        z-index: 1000;
+      }
+      #wrapper {
+        margin-left: 22em;
+      }
+    }
+
+    body {
+      opacity: 0;
+      animation: fadein 0.4s ease forwards;
+    }
+    @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    .seo-toggle {
+      display: block;
+      margin-top: 2em;
+      font-size: 0.8em;
+      cursor: pointer;
+      color: #999;
+      text-decoration: underline;
+    }
+    #seo-keywords {
+      display: none;
+      font-size: 0.8em;
+      color: #aaa;
+      line-height: 1.6em;
+      margin-top: 1em;
+    }
+    /* FAQ 相關樣式，保持適度間距 */
+    .faq-item {
+      margin-bottom: 1.5em; /* 調整 FAQ 項目之間的間距 */
+    }
+    .faq-item h3 {
+      font-size: 1.1em;
+      margin-bottom: 0.3em; /* 調整問題標題下方間距 */
+    }
+    .faq-item p {
+      margin-top: 0.3em; /* 調整回答內容上方間距 */
+    }
+    .more-link {
+      margin-top: 1em;
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -138,91 +219,9 @@
           }
         ]
       }
-    </script>
-</head>
-
-
-  <style>
-    .posts {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5em;
-      justify-content: center; /* ✅ 這行讓圖片群組整體置中 */
-    }
-
-    .posts figure {
-      text-align: center; /* ✅ 這行讓單張圖片與圖說置中 */
-      margin: 0;
-      max-width: 300px; /* 可選，避免圖片太大跑版 */
-    }
-
-    .posts img {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto; /* 確保圖片水平置中 */
-    }
-
-    .posts figcaption {
-      font-size: 0.9em;
-      color: #666;
-      margin-top: 0.5em;
-    }
-
-    @media (min-width: 981px) {
-      #sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        overflow-y: auto;
-        z-index: 1000;
-      }
-
-      #wrapper {
-        margin-left: 22em;
-      }
-    }
-
-    .posts {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5em;
-    }
-    .posts img {
-      width: 100%;
-      max-width: 400px;
-      aspect-ratio: 4/3;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .seo-toggle {
-      display: block;
-      margin-top: 2em;
-      font-size: 0.8em;
-      cursor: pointer;
-      color: #999;
-      text-decoration: underline;
-    }
-    #seo-keywords {
-      display: none;
-      font-size: 0.8em;
-      color: #aaa;
-      line-height: 1.6em;
-      margin-top: 1em;
-    }
-    .faq-item {
-      margin-bottom: 1.5em;
-    }
-    .faq-item h3 {
-      font-size: 1.1em;
-      margin-bottom: 0.3em;
-    }
-    .more-link {
-      margin-top: 1em;
-    }
-  </style>
-  
+    ]
+  }
+  </script>
 </head>
 <body class="is-preload">
   <div id="wrapper">
@@ -236,17 +235,17 @@
 
         <section>
           <p>
-            正在尋找一場能讓大人小孩都驚呼連連的夢幻表演嗎？氣球大叔 Sony 專業提供**繽紛魔幻的泡泡秀表演**，結合**大型泡泡互動**與**趣味親子體驗**，讓您的活動現場充滿歡聲笑語！我們的服務範圍遍及 **桃園、台北、新北、新竹、基隆、台中** 等全台主要城市，非常適合 **幼兒園慶典、家庭日、戶外親子活動、百貨商場造勢** 等多元場合，為您打造一場難忘的泡泡奇幻之旅。
+            正在尋找一場能讓大人小孩都驚呼連連的夢幻表演嗎？氣球大叔 Sony 專業提供<strong>繽紛魔幻的泡泡秀表演</strong>，結合<strong>大型泡泡互動</strong>與<strong>趣味親子體驗</strong>，讓您的活動現場充滿歡聲笑語！我們的服務範圍遍及 <strong>桃園、台北、新北、新竹、基隆、台中</strong> 等全台主要城市，非常適合 <strong>幼兒園慶典、家庭日、戶外親子活動、百貨商場造勢</strong> 等多元場合，為您打造一場難忘的泡泡奇幻之旅。
           </p>
 
           <h2>大型泡泡秀 & 泡泡互動體驗</h2>
-          <p>氣球大叔 Sony 專精於打造令人驚嘆的泡泡表演與互動體驗區，無論是**親子市集、校園活動、百貨開幕、商場造勢**，還是**私人派對**，我們都能為您量身打造夢幻又極具拍照吸引力的舞台氣氛。</p>
+          <p>氣球大叔 Sony 專精於打造令人驚嘆的泡泡表演與互動體驗區，無論是<strong>親子市集、校園活動、百貨開幕、商場造勢</strong>，還是<strong>私人派對</strong>，我們都能為您量身打造夢幻又極具拍照吸引力的舞台氣氛。</p>
 
           <ul>
-            <li>**舞台演出精華：** 約 25 分鐘的專業泡泡秀，包含多種獨家泡泡技巧與視覺特效。</li>
-            <li>**多元互動體驗：** 可依活動需求安排「大泡泡拍照區」、「泡泡套人」、「一人一組泡泡道具」等環節，讓每位來賓都能親身參與，感受泡泡的魔力。</li>
-            <li>**安全無憂：** 我們使用的泡泡液均為**安全無毒、當場製作**，對兒童皮膚溫和不刺激，讓孩子們在盡情玩樂的同時，家長也能完全放心。</li>
-            <li>**適合廣泛年齡層：** 從 2 歲的幼兒到 99 歲的長輩，都能在我們的泡泡秀中找到樂趣，享受這份純粹的歡樂。</li>
+            <li><strong>舞台演出精華：</strong> 約 25 分鐘的專業泡泡秀，包含多種獨家泡泡技巧與視覺特效。</li>
+            <li><strong>多元互動體驗：</strong> 可依活動需求安排「大泡泡拍照區」、「泡泡套人」、「一人一組泡泡道具」等環節，讓每位來賓都能親身參與，感受泡泡的魔力。</li>
+            <li><strong>安全無憂：</strong> 我們使用的泡泡液均為<strong>安全無毒、當場製作</strong>，對兒童皮膚溫和不刺激，讓孩子們在盡情玩樂的同時，家長也能完全放心。</li>
+            <li><strong>適合廣泛年齡層：</strong> 從 2 歲的幼兒到 99 歲的長輩，都能在我們的泡泡秀中找到樂趣，享受這份純粹的歡樂。</li>
           </ul>
 
           <h2>活動實拍：氣球大叔 Sony 的歡樂瞬間</h2>
@@ -293,7 +292,7 @@
           <div id="seo-keywords">
             <p>
               🫧 <strong>專業泡泡秀表演｜北中全台到府服務</strong><br><br>
-              您正在尋找一場能讓活動現場充滿歡聲笑語的**專業泡泡秀互動表演**嗎？氣球大叔 Sony 專精於**大型泡泡互動**、**夢幻泡泡體驗**與**創新泡泡魔術演出**，服務範圍涵蓋**基隆、台北、新北、桃園、新竹、苗栗、台中、彰化、宜蘭**等全北中部地區，將泡泡的魔法帶到您指定的任何地點。<br><br>
+              您正在尋找一場能讓活動現場充滿歡聲笑語的<strong>專業泡泡秀互動表演</strong>嗎？氣球大叔 Sony 專精於<strong>大型泡泡互動</strong>、<strong>夢幻泡泡體驗</strong>與<strong>創新泡泡魔術演出</strong>，服務範圍涵蓋<strong>基隆、台北、新北、桃園、新竹、苗栗、台中、彰化、宜蘭</strong>等全北中部地區，將泡泡的魔法帶到您指定的任何地點。<br><br>
 
               ✅ <strong>服務地區：</strong><br>
               基隆市、台北市、新北市、桃園市、新竹市、苗栗縣、台中市、彰化縣、宜蘭縣——全北中部地區皆可到府演出，提供最便捷的專業服務。<br><br>
@@ -314,19 +313,19 @@
           <h2>常見問題 FAQ</h2>
           <div class="faq-item">
             <h3>Q1：你們的泡泡秀表演有哪些內容？適合什麼場合？</h3>
-            <p>A1：我們的泡泡秀表演內容豐富多元，包含令人驚嘆的**煙霧泡泡**、震撼視覺的**巨大泡泡**、獨特的**泡泡套人**體驗，以及各種創意泡泡造型。表演全程搭配精心挑選的音樂節奏，營造出夢幻氛圍。非常適合**親子日、兒童生日派對、校園活動、百貨商場快閃、市集活動**等，為您的活動增添無限魅力與歡樂！</p>
+            <p>A1：我們的泡泡秀表演內容豐富多元，包含令人驚嘆的<strong>煙霧泡泡</strong>、震撼視覺的<strong>巨大泡泡</strong>、獨特的<strong>泡泡套人</strong>體驗，以及各種創意泡泡造型。表演全程搭配精心挑選的音樂節奏，營造出夢幻氛圍。非常適合<strong>親子日、兒童生日派對、校園活動、百貨商場快閃、市集活動</strong>等，為您的活動增添無限魅力與歡樂！</p>
           </div>
           <div class="faq-item">
             <h3>Q2：泡泡秀會不會弄濕地板或造成滑倒？</h3>
-            <p>A2：氣球大叔 Sony 始終將安全放在首位。在室內表演時，我們會**主動準備防滑墊**，並在表演結束後進行清潔，確保地面無殘留、不濕滑。若為戶外場地，我們會評估場地條件，選擇最適合且安全的施作方式，確保來賓能安心享受泡泡樂趣，**完全無須擔心地板濕滑或殘留問題**。</p>
+            <p>A2：氣球大叔 Sony 始終將安全放在首位。在室內表演時，我們會<strong>主動準備防滑墊</strong>，並在表演結束後進行清潔，確保地面無殘留、不濕滑。若為戶外場地，我們會評估場地條件，選擇最適合且安全的施作方式，確保來賓能安心享受泡泡樂趣，<strong>完全無須擔心地板濕滑或殘留問題</strong>。</p>
           </div>
           <div class="faq-item">
             <h3>Q3：泡泡秀可以讓觀眾參與嗎？</h3>
-            <p>A3：絕對可以！氣球大叔 Sony 的泡泡秀非常重視觀眾參與。我們會安排多種互動體驗，例如邀請小朋友**進入巨型泡泡中拍照留念**（泡泡套人）、親手體驗**製作泡泡**的樂趣，或是參與其他趣味泡泡遊戲。這些互動環節能讓現場氣氛更加熱鬧，孩子們玩得更投入，留下難忘的回憶。</p>
+            <p>A3：絕對可以！氣球大叔 Sony 的泡泡秀非常重視觀眾參與。我們會安排多種互動體驗，例如邀請小朋友<strong>進入巨型泡泡中拍照留念</strong>（泡泡套人）、親手體驗<strong>製作泡泡</strong>的樂趣，或是參與其他趣味泡泡遊戲。這些互動環節能讓現場氣氛更加熱鬧，孩子們玩得更投入，留下難忘的回憶。</p>
           </div>
           <div class="faq-item">
             <h3>Q4：可以和其他表演一起安排嗎？</h3>
-            <p>A4：當然可以！氣球大叔 Sony 提供多元的表演組合方案。泡泡秀可以完美地與**氣球魔術表演、造型氣球派送、小丑互動**等服務搭配。這種組合方式非常適合大型活動流程設計，例如在舞台表演後進行定點氣球派送，或在不同區域同時進行多種互動，讓節目內容更豐富完整，滿足您活動的各種需求。</p>
+            <p>A4：當然可以！氣球大叔 Sony 提供多元的表演組合方案。泡泡秀可以完美地與<strong>氣球魔術表演、造型氣球派送、小丑互動</strong>等服務搭配。這種組合方式非常適合大型活動流程設計，例如在舞台表演後進行定點氣球派送，或在不同區域同時進行多種互動，讓節目內容更豐富完整，滿足您活動的各種需求。</p>
           </div>
           <p class="more-link">
             👉 <a href="/blog/faq.html">查看完整 FAQ</a> ｜ 📸 <a href="/blog/blog.html">瀏覽活動 Blog</a>
@@ -337,130 +336,6 @@
     </div>
 
 
-    <script>
-      function toggleSEO() {
-        const seoBlock = document.getElementById('seo-keywords');
-        seoBlock.style.display = (seoBlock.style.display === 'none' || seoBlock.style.display === '') ? 'block' : 'none';
-      }
-    </script>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebPage",
-            "name": "泡泡秀表演｜大型泡泡 × 親子互動 × 戶外體驗 - 氣球大叔 Sony",
-            "url": "https://balloonsony.com/bubble.html",
-            "description": "氣球大叔 Sony 提供專業泡泡秀演出，結合大型泡泡特效與親子互動，適合校園、百貨與戶外活動。"
-          },
-          {
-            "@type": "LocalBusiness",
-            "@id": "https://balloonsony.com/#LocalBusiness",
-            "name": "氣球大叔 Sony",
-            "url": "https://balloonsony.com/",
-            "image": "https://balloonsony.com/images/og-balloon-sony.jpg",
-            "telephone": "+886-930733100",
-            "priceRange": "$$",
-            "address": {
-              "@type": "PostalAddress",
-              "addressCountry": "TW",
-              "addressRegion": "台灣",
-              "addressLocality": "桃園市"
-            },
-            "openingHours": "Mo-Su 08:00-21:00"
-          },
-          {
-            "@type": "Service",
-            "name": "泡泡秀與親子互動演出",
-            "serviceType": "泡泡秀演出、大型泡泡製作、親子互動體驗、校園與百貨泡泡活動、煙霧泡泡、泡泡套人",
-            "provider": {
-              "@id": "https://balloonsony.com/#LocalBusiness"
-            },
-            "areaServed": [
-              { "@type": "Place", "name": "基隆市" },
-              { "@type": "Place", "name": "台北市" },
-              { "@type": "Place", "name": "新北市" },
-              { "@type": "Place", "name": "桃園市" },
-              { "@type": "Place", "name": "新竹市" },
-              { "@type": "Place", "name": "苗栗縣" },
-              { "@type": "Place", "name": "台中市" },
-              { "@type": "Place", "name": "彰化縣" },
-              { "@type": "Place", "name": "宜蘭縣" }
-            ],
-            "description": "氣球大叔 Sony 提供專業泡泡表演服務，融合大型泡泡魔法、夢幻煙霧泡泡、獨特泡泡裡進人等驚艷效果，並精心設計趣味親子互動橋段，非常適合幼兒園畢業典禮、校園園遊會、百貨商場快閃、企業家庭日與親子派對等多元活動，為您的活動帶來一場獨一無二的泡泡奇幻體驗。",
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "TWD",
-              "availability": "https://schema.org/InStock",
-              "priceSpecification": {
-                "@type": "PriceSpecification",
-                "price": 0,
-                "priceCurrency": "TWD",
-                "name": "客製化泡泡秀報價",
-                "description": "泡泡秀報價依演出長度、場地限制與互動內容而定，歡迎聯繫氣球大叔 Sony 取得適合您的演出方案。"
-              }
-            }
-          },
-          {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "首頁",
-                "item": "https://balloonsony.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "泡泡秀",
-                "item": "https://balloonsony.com/bubble.html"
-              }
-            ]
-          },
-          {
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Q1：你們的泡泡秀表演有哪些內容？適合什麼場合？",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A1：我們的泡泡秀表演內容豐富多元，包含令人驚嘆的煙霧泡泡、震撼視覺的巨大泡泡、獨特的泡泡套人體驗，以及各種創意泡泡造型。表演全程搭配精心挑選的音樂節奏，營造出夢幻氛圍。非常適合親子日、兒童生日派對、校園活動、百貨商場快閃、市集活動等，為您的活動增添無限魅力與歡樂！"
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Q2：泡泡秀會不會弄濕地板或造成滑倒？",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A2：氣球大叔 Sony 始終將安全放在首位。在室內表演時，我們會主動準備防滑墊，並在表演結束後進行清潔，確保地面無殘留、不濕滑。若為戶外場地，我們會評估場地條件，選擇最適合且安全的施作方式，確保來賓能安心享受泡泡樂趣，完全無須擔心地板濕滑或殘留問題。"
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Q3：泡泡秀可以讓觀眾參與嗎？",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A3：絕對可以！氣球大叔 Sony 的泡泡秀非常重視觀眾參與。我們會安排多種互動體驗，例如邀請小朋友進入巨型泡泡中拍照留念（泡泡套人）、親手體驗製作泡泡的樂趣，或是參與其他趣味泡泡遊戲。這些互動環節能讓現場氣氛更加熱鬧，孩子們玩得更投入，留下難忘的回憶。"
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Q4：可以和其他表演一起安排嗎？",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A4：當然可以！氣球大叔 Sony 提供多元的表演組合方案。泡泡秀可以完美地與氣球魔術表演、造型氣球派送、小丑互動等服務搭配。這種組合方式非常適合大型活動流程設計，例如在舞台表演後進行定點氣球派送，或在不同區域同時進行多種互動，讓節目內容更豐富完整，滿足您活動的各種需求。"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    </script>
-
-    <!-- 側邊選單 -->
     <div id="sidebar"><div class="inner">
       <nav id="menu"><header class="major"><h2>選單</h2></header>
         <ul>
@@ -494,11 +369,10 @@
     </div></div>
   </div>
 
-<!-- JS -->
-<script src="../assets/js/jquery.min.js" defer></script>
-<script src="../assets/js/browser.min.js" defer></script>
-<script src="../assets/js/breakpoints.min.js" defer></script>
-<script src="../assets/js/util.js" defer></script>
-<script src="../assets/js/main.js" defer></script>
+<script src="assets/js/jquery.min.js" defer></script>
+<script src="assets/js/browser.min.js" defer></script>
+<script src="assets/js/breakpoints.min.js" defer></script>
+<script src="assets/js/util.js" defer></script>
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
