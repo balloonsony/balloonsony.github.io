@@ -30,9 +30,7 @@
 <link rel="stylesheet" href="assets/css/main.css" />
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-
-  <!-- JSON-LD 結構化資料 -->
- <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -43,14 +41,14 @@
       "url": "https://balloonsony.com/",
       "telephone": "0930733100",
       "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "桃園市",
-        "addressLocality": "桃園區",
-        "addressCountry": "TW",
-        "postalCode": "330",
-        "streetAddress": "愛國街48號"
-      },
+"address": {
+  "@type": "PostalAddress",
+  "streetAddress": "愛國街48號",
+  "addressLocality": "桃園區",
+  "addressRegion": "桃園市",
+  "postalCode": "330",
+  "addressCountry": "TW"
+      },
       "areaServed": [
         { "@type": "Place", "name": "台北市" },
         { "@type": "Place", "name": "新北市" },
@@ -72,7 +70,15 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
           "opens": "08:00",
           "closes": "21:00"
         }
