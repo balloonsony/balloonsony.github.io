@@ -57,5 +57,8 @@
   <url><loc>https://balloonsony.com/service/hsinchu-kids-party-show.html</loc><priority>0.75</priority></url>
   <url><loc>https://balloonsony.com/service/miaoli-kids-party-show.html</loc><priority>0.75</priority></url>
   <url><loc>https://balloonsony.com/service/taichung-kids-party-show.html</loc><priority>0.75</priority></url>
-
+  <url><loc>https://balloonsony.com/service/mid-autumn-community-show.html</loc><priority>0.75</priority></url> 
+  <url><loc>https://balloonsony.com/service/christmas-community-show.html</loc><priority>0.75</priority></url>
+  <url><loc>https://balloonsony.com/service/birthday-balloon-show.html</loc><priority>0.75</priority></url>
 </urlset>
+
