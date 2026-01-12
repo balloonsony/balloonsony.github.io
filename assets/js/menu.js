@@ -1,4 +1,7 @@
 (function() {
+    // ==========================================
+    // 1. 側邊選單注入邏輯
+    // ==========================================
     var sidebarContent = `
     <div class="inner" style="display:flex;flex-direction:column;height:100vh;justify-content:space-between;">
         <a href="#menu" class="toggle"><span>選單</span></a>
@@ -41,4 +44,61 @@
 
     var sidebar = document.getElementById('sidebar');
     if (sidebar) sidebar.innerHTML = sidebarContent;
+
+    // ==========================================
+    // 2. 手機版懸浮 CTA 按鈕注入邏輯
+    // ==========================================
+    
+    // 定義按鈕的 CSS 樣式
+    var ctaStyles = `
+        <style>
+            /* 預設隱藏 (電腦版看不到) */
+            #sticky-cta { display: none; }
+
+            /* 只在手機版 (寬度小於 768px) 顯示 */
+            @media (max-width: 768px) {
+                #sticky-cta { 
+                    display: block !important;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    z-index: 500; /* 層級比側邊欄低一點，避免擋住選單 */
+                    background: white;
+                    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+                    padding: 10px 15px;
+                    box-sizing: border-box;
+                }
+                #sticky-cta a {
+                    display: block;
+                    width: 100%;
+                    background-color: #06C755; /* LINE 綠色 */
+                    color: white !important;
+                    text-align: center;
+                    padding: 12px 0;
+                    border-radius: 50px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    font-size: 1.1em;
+                    box-shadow: 0 4px 6px rgba(6, 199, 85, 0.3);
+                }
+                /* 為了不讓按鈕擋住頁尾版權，把 body 底部墊高 */
+                body { padding-bottom: 70px; }
+            }
+        </style>
+    `;
+
+    // 定義按鈕的 HTML
+    var ctaHTML = `
+        <div id="sticky-cta">
+            <a href="https://line.me/ti/p/ObX9ZjEBXu" target="_blank">
+                💬 立即加 LINE 詢問檔期
+            </a>
+        </div>
+    `;
+
+    // 將樣式與按鈕注入到網頁中
+    document.head.insertAdjacentHTML("beforeend", ctaStyles);
+    document.body.insertAdjacentHTML("beforeend", ctaHTML);
+
 })();
