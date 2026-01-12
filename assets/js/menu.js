@@ -8,13 +8,13 @@
         <nav id="menu">
             <header class="major"><h2>選單</h2></header>
             <ul>
-                <li><a href="index.html">首頁</a></li>
+                <li><a href="/index.html">首頁</a></li>
                 <li><span class="opener">表演項目</span>
                     <ul>
-                        <li><a href="magic.html">魔術表演</a></li>
-                        <li><a href="bubble.html">泡泡秀</a></li>
-                        <li><a href="balloon.html">造型氣球</a></li>
-                        <li><a href="decor.html">會場佈置</a></li>
+                        <li><a href="/magic.html">魔術表演</a></li>
+                        <li><a href="/bubble.html">泡泡秀</a></li>
+                        <li><a href="/balloon.html">造型氣球</a></li>
+                        <li><a href="/decor.html">會場佈置</a></li>
                     </ul>
                 </li>
                 <li><span class="opener">服務地區</span>
@@ -31,10 +31,10 @@
                         <li><a href="/service/birthday-balloon-show.html">生日派對服務</a></li>
                     </ul>
                 </li>
-                <li><a href="index.html#portfolio">作品集</a></li>
-                <li><a href="blog/faq.html">FAQ 常見問題</a></li>
-                <li><a href="blog/blog.html">活動足跡</a></li>
-                <li><a href="index.html#contact">聯絡方式</a></li>
+                <li><a href="/index.html#portfolio">作品集</a></li>
+                <li><a href="/blog/faq.html">FAQ 常見問題</a></li>
+                <li><a href="/blog/blog.html">活動足跡</a></li>
+                <li><a href="/index.html#contact">聯絡方式</a></li>
             </ul>
         </nav>
         <footer id="footer" style="padding-bottom:40px;">
@@ -49,13 +49,9 @@
     // 2. 手機版懸浮 CTA 按鈕注入邏輯
     // ==========================================
     
-    // 定義按鈕的 CSS 樣式
     var ctaStyles = `
         <style>
-            /* 預設隱藏 (電腦版看不到) */
             #sticky-cta { display: none; }
-
-            /* 只在手機版 (寬度小於 768px) 顯示 */
             @media (max-width: 768px) {
                 #sticky-cta { 
                     display: block !important;
@@ -63,7 +59,7 @@
                     bottom: 0;
                     left: 0;
                     width: 100%;
-                    z-index: 500; /* 層級比側邊欄低一點，避免擋住選單 */
+                    z-index: 500;
                     background: white;
                     box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
                     padding: 10px 15px;
@@ -72,7 +68,7 @@
                 #sticky-cta a {
                     display: block;
                     width: 100%;
-                    background-color: #06C755; /* LINE 綠色 */
+                    background-color: #06C755;
                     color: white !important;
                     text-align: center;
                     padding: 12px 0;
@@ -82,13 +78,11 @@
                     font-size: 1.1em;
                     box-shadow: 0 4px 6px rgba(6, 199, 85, 0.3);
                 }
-                /* 為了不讓按鈕擋住頁尾版權，把 body 底部墊高 */
                 body { padding-bottom: 70px; }
             }
         </style>
     `;
 
-    // 定義按鈕的 HTML
     var ctaHTML = `
         <div id="sticky-cta">
             <a href="https://line.me/ti/p/ObX9ZjEBXu" target="_blank">
@@ -97,7 +91,6 @@
         </div>
     `;
 
-    // 將樣式與按鈕注入到網頁中
     document.head.insertAdjacentHTML("beforeend", ctaStyles);
     document.body.insertAdjacentHTML("beforeend", ctaHTML);
 
