@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+(function() {
     const sidebarContent = `
     <div class="inner" style="display:flex;flex-direction:column;height:100vh;justify-content:space-between;">
       <a href="#menu" class="toggle"><span>選單</span></a>
@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <header class="major"><h2>選單</h2></header>
         <ul>
           <li><a href="/index.html">首頁</a></li>
-          <li><span class="opener">表演項目</span>
+          <li><span class="opener" style="cursor:pointer; user-select:none;">表演項目</span>
             <ul>
               <li><a href="/magic.html">魔術表演</a></li>
               <li><a href="/bubble.html">泡泡秀</a></li>
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             </ul>
           </li>
           
-          <li><span class="opener">服務地區</span>
+          <li><span class="opener" style="cursor:pointer; user-select:none;">服務地區</span>
             <ul>
               <li><a href="/service/keelung-kids-party-show.html">基隆表演服務</a></li>
               <li><a href="/service/taipei-kids-party-show.html">台北表演服務</a></li>
@@ -28,10 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
           </li>
           
           <li><a href="/index.html#portfolio">作品集</a></li>
-
           <li><a href="/blog/faq.html">FAQ 常見問題</a></li>
           <li><a href="/blog/index.html">活動足跡</a></li>
-          
           <li><a href="/index.html#contact">聯絡方式</a></li>
         </ul>
       </nav>
@@ -41,28 +39,53 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
     `;
 
-    // 1. 將選單 HTML 塞入 ID 為 sidebar 的區塊
+    // 1. 立即將選單塞入
     const sidebarElement = document.getElementById("sidebar");
     if (sidebarElement) {
         sidebarElement.innerHTML = sidebarContent;
     }
 
-    // 2. 自動判斷當前網址 (包含資料夾路徑)，將對應的選單項目設為 active (亮起來)
-    const currentPath = window.location.pathname; 
-    const menuLinks = document.querySelectorAll('#menu a');
+    // 2. 🚨 修復下拉選單點擊 (關鍵修改)
+    // 我們自己寫一段邏輯來控制開關，不依賴外部檔案
+    const openers = document.querySelectorAll('#menu .opener');
+    openers.forEach(opener => {
+        opener.addEventListener('click', function(e) {
+            e.preventDefault(); // 防止亂跳
+            e.stopPropagation(); // 防止事件冒泡
 
-    menuLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        // 比對網址是否包含該連結 (例如 /blog/faq.html)
-        // 加上 decodeURIComponent 是為了防止中文字網址編碼問題
-        if (href && href !== "/" && href !== "#" && currentPath.endsWith(href)) {
-            link.style.color = "#f56a6a"; 
-            link.style.fontWeight = "bold";
-        }
+            // 切換 active 樣式 (讓箭頭轉向)
+            this.classList.toggle('active');
+
+            // 找到下一個兄弟元素 (也就是那個 ul)
+            const submenu = this.nextElementSibling;
+            if (submenu) {
+                // 如果目前是隱藏的，就顯示；反之則隱藏
+                // 這裡模擬 jQuery slideToggle 的效果
+                if (submenu.style.display === 'block') {
+                    submenu.style.display = 'none';
+                } else {
+                    submenu.style.display = 'block';
+                }
+            }
+        });
     });
-    
-    // 3. 重新觸發 Template 的選單事件 (確保手機版按鈕能按)
-    if (typeof $ !== 'undefined' && $('#menu').length) {
-         // 這裡不需要特別寫代碼，因為 main.js 通常會監聽 body 的 click 事件
+
+    // 3. 處理當前頁面亮燈
+    try {
+        const currentPath = window.location.pathname; 
+        const menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (
+                (currentPath === "/" && href === "/index.html") || 
+                (href && href !== "/" && href !== "#" && currentPath.endsWith(href))
+            ) {
+                link.style.color = "#f56a6a"; 
+                link.style.fontWeight = "bold";
+            }
+        });
+    } catch (e) {
+        console.log("Error in active link highlighting", e);
     }
-});
+})();
