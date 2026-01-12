@@ -1,90 +1,97 @@
 <!DOCTYPE HTML>
 <html lang="zh-Hant">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SSN5GTCBBL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-SSN5GTCBBL');
-  </script>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <title>找不到頁面｜氣球大叔 Sony</title>
-  <meta name="robots" content="noindex, follow" />
-  
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SSN5GTCBBL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-SSN5GTCBBL');
+    </script>
 
-    body {
-      font-family: 'Noto Sans TC', sans-serif;
-      background-color: #f0f8ff;
-      color: #333;
-      text-align: center;
-      padding: 4em 1em;
-      background-image: linear-gradient(to top, #ffffff 60%, #d0f0ff);
-    }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>找不到頁面｜氣球大叔 Sony</title>
+    <meta name="robots" content="noindex, follow" />
+    
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
 
-    h1 {
-      font-size: 2.6em;
-      margin-bottom: 0.3em;
-    }
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 2em 1em;
+            background-image: linear-gradient(to top, #ffffff 60%, #d0f0ff);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
 
-    p {
-      font-size: 1.2em;
-      color: #666;
-      margin-top: 0.5em;
-      margin-bottom: 2em;
-    }
+        .error-container { max-width: 600px; margin: 0 auto; }
 
-    a.button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.8em 1.8em;
-      border: 2px solid #ff6b6b;
-      background-color: transparent;
-      color: #ff6b6b;
-      text-decoration: none;
-      font-size: 1.1em;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      font-weight: bold;
-    }
+        h1 { font-size: 2.2em; margin-bottom: 0.3em; color: #c0392b; }
+        p { font-size: 1.1em; color: #666; margin-bottom: 2.5em; }
 
-    a.button:hover {
-      background-color: #ff6b6b;
-      color: white;
-    }
+        /* 按鈕群組 */
+        .button-group { display: flex; flex-direction: column; gap: 15px; align-items: center; }
+        
+        a.button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 300px;
+            padding: 1em;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            border: none;
+        }
 
-    img {
-      max-width: 100%;
-      max-height: 400px;
-      width: auto;
-      margin-top: 2.5em;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      animation: float 4s ease-in-out infinite;
-    }
+        a.button.primary { background-color: #c0392b; color: white !important; }
+        a.button.line { background-color: #06C755; color: white !important; }
+        a.button.outline { border: 2px solid #555; color: #555 !important; background: transparent; }
 
-    @keyframes float {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-      100% { transform: translateY(0); }
-    }
-  </style>
+        a.button:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); opacity: 0.9; }
+
+        img {
+            max-width: 100%;
+            max-height: 350px;
+            margin-top: 3em;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
 </head>
 <body>
-<h1>🎈 糟糕！氣球飛錯地方了</h1>
-<p>您要找的頁面好像不存在，可能已經移動或飛走了～</p>
 
-<a href="/" class="button">🎈 回到首頁</a>
+    <div class="error-container">
+        <h1>🎈 糟糕！氣球飛錯地方了</h1>
+        <p>您要找的頁面不存在，或是已經飄向別的城市囉～</p>
 
-<div style="margin-top: 2em;">
-  <img src="/images/cover.webp" alt="氣球大叔 Sony 404 封面圖片" width="600" height="400" />
-</div>
+        <div class="button-group">
+            <a href="/" class="button primary">🏠 回首頁看精彩表演</a>
+            <a href="https://line.me/ti/p/ObX9ZjEBXu" target="_blank" class="button line">💬 直接加 LINE 詢問大叔</a>
+            <a href="javascript:history.back()" class="button outline">🔙 回到上一頁</a>
+        </div>
+
+        <img src="/images/cover.webp" alt="氣球大叔 Sony 表演封面" width="600" height="400" />
+    </div>
 
 </body>
 </html>
