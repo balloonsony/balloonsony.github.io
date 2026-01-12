@@ -39,11 +39,6 @@
         </footer>
     </div>`;
 
-    var sidebarElement = document.getElementById('sidebar');
-    if (sidebarElement) {
-        sidebarElement.innerHTML = sidebarContent;
-        console.log("選單已成功注入");
-    } else {
-        console.error("找不到 ID 為 sidebar 的元素");
-    }
+    var sidebar = document.getElementById('sidebar');
+    if (sidebar) sidebar.innerHTML = sidebarContent;
 })();
