@@ -29,7 +29,7 @@
           
           <li><a href="/index.html#portfolio">作品集</a></li>
           <li><a href="/blog/faq.html">FAQ 常見問題</a></li>
-          <li><a href="/blog/index.html">活動足跡</a></li>
+          <li><a href="/blog/blog.html">活動足跡</a></li>
           <li><a href="/index.html#contact">聯絡方式</a></li>
         </ul>
       </nav>
