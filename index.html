@@ -25,13 +25,7 @@
           "addressRegion": "台灣",
           "addressCountry": "TW"
         },
-        "areaServed": [
-          "台北市", "新北市", "板橋區", "林口區", 
-          "基隆市", 
-          "桃園市", "中壢區", "青埔",
-          "新竹市", "新竹縣", "竹北市", 
-          "苗栗縣", "台中市"
-        ],
+        "areaServed": ["台北市","新北市","板橋區","林口區","基隆市","桃園市","中壢區","青埔","新竹市","新竹縣","竹北市","苗栗縣","台中市"],
         "hasMap": "https://g.co/kgs/Z4ootto",
         "sameAs": [
           "https://www.facebook.com/BalloonSony/",
@@ -40,7 +34,7 @@
           "https://www.pixnet.net/pcard/balloonsony",
           "https://www.pro360.com.tw/service/39936"
         ],
-        "description": "氣球大叔 Sony 專精親子活動氣球魔術、大型泡泡秀、抓週派對主持與會場佈置。擁有六縣市街頭藝人證照，提供台北、桃園、新竹(竹北)、台中等到府演出服務，打造零冷場的歡樂回憶。",
+        "description": "氣球大叔 Sony 專精親子活動氣球魔術、大型泡泡秀、抓週派對主持與會場佈置。擁有六縣市街頭藝人證照，提供台北、桃園、新竹(竹北)、台中等到府演出服務。",
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
@@ -71,16 +65,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   
   <title>氣球大叔 Sony｜氣球魔術・泡泡秀・親子派對表演（零冷場推薦）</title>
-  
   <meta name="description" content="【家長好評推薦】氣球大叔 Sony 提供專業氣球魔術、夢幻泡泡秀、抓週派對主持及造型氣球佈置。持有政府核可街頭藝人證照，服務範圍涵蓋台北、新北(林口/板橋)、桃園、新竹(竹北)、台中。適合幼兒園畢業、生日派對、公司家庭日，立即預約打造歡樂回憶！" />
-  
   <meta name="keywords" content="氣球魔術, 泡泡秀, 親子派對, 抓週主持人, 生日派對表演, 台北氣球表演, 桃園魔術, 新竹泡泡秀, 竹北親子活動, 幼兒園畢業表演, 氣球大叔" />
-  
   <meta name="author" content="氣球大叔 Sony" />
   <meta name="google-site-verification" content="yHi6DBNuWZxK5Ya_ZEzZuNu-KBhCnnxnRwK1ul_sDr0" />
 
   <meta property="og:title" content="氣球大叔 Sony｜氣球魔術・泡泡秀・親子派對表演（零冷場推薦）" />
-  <meta property="og:description" content="孩子生日、抓週派對怕冷場？氣球大叔 Sony 結合魔術、泡泡與造型氣球，全台跑透透到府演出！點擊看更多家長好評與活動照片。" />
+  <meta property="og:description" content="孩子生日、抓週派對怕冷場？氣球大叔 Sony 結合魔術、泡泡與造型氣球，全台跑透透到府演出！" />
   <meta property="og:image" content="https://balloonsony.com/images/cover.webp" />
   <meta property="og:url" content="https://balloonsony.com/" />
   <meta property="og:type" content="website" />
@@ -90,37 +81,41 @@
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   
   <style>
-    /* 原始所有自訂 CSS 都保留 */
+    /* 優化後的自訂樣式 (已整理) */
     .gallery {display:flex;flex-wrap:wrap;gap:2em;justify-content:center;padding:1em 0;}
-    #banner + #story-cert {border-top:none!important;margin-top:-2rem!important;}
     .gallery figure {flex:1 1 45%;max-width:480px;margin:0;text-align:center;}
     .gallery img {width:100%;height:auto;border-radius:8px;transition:transform .3s ease;}
     .gallery img:hover {transform:scale(1.05);}
     .gallery figcaption {font-size:.9em;color:#666;margin-top:.5em;}
-    @media (max-width:768px){.gallery figure{flex:1 1 100%;}}
-
+    
+    #banner + #story-cert {border-top:none!important;margin-top:-2rem!important;}
+    
     .features.flex {display:flex;flex-wrap:wrap;gap:2em;}
     .feature-card {flex:1 1 calc(50% - 2em);background:none;padding:1.5em;border-radius:.5em;color:inherit;text-decoration:none;transition:transform .3s ease;display:flex;align-items:center;gap:1.5em;}
     .feature-card:hover {transform:scale(1.05);}
     .feature-card .icon {font-size:2.5em;flex-shrink:0;}
     .feature-card .content h3 {margin:0 0 .4em;font-size:1.3em;}
     .feature-card .content p {margin:0;font-size:.95em;line-height:1.5;}
-    @media (max-width:768px){.feature-card {flex:1 1 100%;flex-direction:column;text-align:center;}}
-
-    /* 🖥 桌機釘側邊，不要漢堡 */
-    @media (min-width: 981px) {
-      #sidebar {position:fixed;top:0;left:0;height:100vh;overflow-y:auto;z-index:1000;}
-      #wrapper {margin-left:22em;}
-      #sidebar .toggle {display: none;}
-    }
 
     #banner .content {display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;max-width:100%;padding:2rem 1rem .5rem 1rem;}
     #banner .text-block {flex:1;}
     #banner .image-block {flex:1;text-align:right;}
     #banner .image-block img {max-width:800px;width:100%;height:auto;display:block;margin:0 auto;}
-    @media (max-width:768px){#banner .content{flex-direction:column;text-align:center;}#banner .image-block{order:1;text-align:center;}#banner .text-block{order:2;text-align:left;}}
 
-    /* 📷 桌機 story-cert 照片左、文字右 */
+    @media (max-width:768px){
+      .gallery figure{flex:1 1 100%;}
+      .feature-card {flex:1 1 100%;flex-direction:column;text-align:center;}
+      #banner .content{flex-direction:column;text-align:center;}
+      #banner .image-block{order:1;text-align:center;}
+      #banner .text-block{order:2;text-align:left;}
+    }
+
+    /* 桌機版面優化 */
+    @media (min-width: 981px) {
+      #sidebar {position:fixed;top:0;left:0;height:100vh;overflow-y:auto;z-index:1000;}
+      #wrapper {margin-left:22em;}
+      #sidebar .toggle {display: none;}
+    }
     @media (min-width:769px) {
       #story-cert {display:flex !important;align-items:center;gap:1em;}
       #story-cert .story-img {flex:1 1 45%;max-width:500px;}
@@ -197,7 +192,7 @@
 
       <section id="story-cert" style="margin:-4rem 1rem 0 1rem;">
         <div class="story-img">
-          <img src="images/sonydaughter.webp" alt="氣球大叔 Sony 與女兒的溫馨時刻，手持造型氣球行李箱" style="width:100%;height:auto;border-radius:8px;" />
+          <img src="images/sonydaughter.webp" loading="lazy" alt="氣球大叔 Sony 與女兒的溫馨時刻，手持造型氣球行李箱" style="width:100%;height:auto;border-radius:8px;" />
         </div>
         <div class="story-text">
           <p>一切的起點，是為了讓女兒開心，我親手折出第一顆氣球。當她開心大笑、眼睛彎成一條線的那瞬間，我知道——<strong>這份純粹的快樂，我想帶給更多孩子與家庭。</strong></p>
@@ -220,10 +215,10 @@
         <header class="major"><h2>作品集</h2></header>
         <p>點擊照片查看更多</p>
         <div class="gallery">
-          <figure><a href="https://photos.app.goo.gl/P4qoZASn8RbBZQJR9" target="_blank" rel="noopener noreferrer"><img src="images/index1.webp" alt="氣球大叔 Sony 在舞台上進行氣球魔術秀，與小朋友互動熱烈" /></a><figcaption>舞台氣球魔術秀，孩子們笑聲不斷。</figcaption></figure>
-          <figure><a href="https://photos.app.goo.gl/UbhgkK45wfSU5xYT9" target="_blank" rel="noopener noreferrer"><img src="images/index2.webp" alt="活動現場 Sony 親手發送造型氣球，小朋友開心合照" /></a><figcaption>現場發送造型氣球，小朋友超開心。</figcaption></figure>
-          <figure><a href="https://photos.app.goo.gl/J9r64s9SD4RbMqkeA" target="_blank" rel="noopener noreferrer"><img src="images/index3.webp" alt="Sony 施展泡泡魔法，小朋友置身透明巨型泡泡中，現場驚呼連連" /></a><figcaption>泡泡魔法包覆孩子，現場驚呼連連！</figcaption></figure>
-          <figure><a href="https://photos.app.goo.gl/hpEsUR6r3SDYQR27" target="_blank" rel="noopener noreferrer"><img src="images/index4.webp" alt="生日現場由 Sony 設計的氣球拱門與拍照區，色彩繽紛、充滿喜氣" /></a><figcaption>氣球佈置拱門＋拍照區，熱鬧又繽紛。</figcaption></figure>
+          <figure><a href="https://photos.app.goo.gl/P4qoZASn8RbBZQJR9" target="_blank" rel="noopener noreferrer"><img src="images/index1.webp" loading="lazy" alt="氣球大叔 Sony 在舞台上進行氣球魔術秀，與小朋友互動熱烈" /></a><figcaption>舞台氣球魔術秀，孩子們笑聲不斷。</figcaption></figure>
+          <figure><a href="https://photos.app.goo.gl/UbhgkK45wfSU5xYT9" target="_blank" rel="noopener noreferrer"><img src="images/index2.webp" loading="lazy" alt="活動現場 Sony 親手發送造型氣球，小朋友開心合照" /></a><figcaption>現場發送造型氣球，小朋友超開心。</figcaption></figure>
+          <figure><a href="https://photos.app.goo.gl/J9r64s9SD4RbMqkeA" target="_blank" rel="noopener noreferrer"><img src="images/index3.webp" loading="lazy" alt="Sony 施展泡泡魔法，小朋友置身透明巨型泡泡中，現場驚呼連連" /></a><figcaption>泡泡魔法包覆孩子，現場驚呼連連！</figcaption></figure>
+          <figure><a href="https://photos.app.goo.gl/hpEsUR6r3SDYQR27" target="_blank" rel="noopener noreferrer"><img src="images/index4.webp" loading="lazy" alt="生日現場由 Sony 設計的氣球拱門與拍照區，色彩繽紛、充滿喜氣" /></a><figcaption>氣球佈置拱門＋拍照區，熱鬧又繽紛。</figcaption></figure>
         </div>
       </section>
 
