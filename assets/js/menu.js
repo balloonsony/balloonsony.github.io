@@ -1,20 +1,3 @@
-收到！我看到您上傳的圖片了，這張圖片提供了非常關鍵的資訊。
-
-根據您的截圖和說明：
-
-faq.html (常見問題) 不在根目錄，而是在 blog 資料夾裡。
-
-blog (活動足跡) 的主頁面當然也在 blog 資料夾裡。
-
-其他的 magic.html, bubble.html, balloon.html, decor.html 都在最外層（根目錄）。
-
-這意味著我們必須修正 menu.js 裡面的連結路徑，加上 /blog/ 前綴。
-
-✅ 修正後的 assets/js/menu.js (最終正確版)
-請將您的 menu.js 內容完全清空，貼上這段代碼。我已經把「FAQ」和「活動足跡」的路徑都修好了。
-
-JavaScript
-
 document.addEventListener("DOMContentLoaded", function() {
     const sidebarContent = `
     <div class="inner" style="display:flex;flex-direction:column;height:100vh;justify-content:space-between;">
@@ -56,3 +39,30 @@ document.addEventListener("DOMContentLoaded", function() {
         <p>© 氣球大叔 Sony. All rights reserved.</p>
       </footer>
     </div>
+    `;
+
+    // 1. 將選單 HTML 塞入 ID 為 sidebar 的區塊
+    const sidebarElement = document.getElementById("sidebar");
+    if (sidebarElement) {
+        sidebarElement.innerHTML = sidebarContent;
+    }
+
+    // 2. 自動判斷當前網址 (包含資料夾路徑)，將對應的選單項目設為 active (亮起來)
+    const currentPath = window.location.pathname; 
+    const menuLinks = document.querySelectorAll('#menu a');
+
+    menuLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        // 比對網址是否包含該連結 (例如 /blog/faq.html)
+        // 加上 decodeURIComponent 是為了防止中文字網址編碼問題
+        if (href && href !== "/" && href !== "#" && currentPath.endsWith(href)) {
+            link.style.color = "#f56a6a"; 
+            link.style.fontWeight = "bold";
+        }
+    });
+    
+    // 3. 重新觸發 Template 的選單事件 (確保手機版按鈕能按)
+    if (typeof $ !== 'undefined' && $('#menu').length) {
+         // 這裡不需要特別寫代碼，因為 main.js 通常會監聽 body 的 click 事件
+    }
+});
