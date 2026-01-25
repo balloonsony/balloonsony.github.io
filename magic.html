@@ -23,6 +23,7 @@
 
     <meta property="og:locale" content="zh_TW" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="氣球大叔 Sony" />
     <meta property="og:title" content="魔術表演推薦 × 氣球互動秀｜北中部親子活動零冷場首選" />
     <meta property="og:description" content="互動魔術＋造型氣球＋爆笑小丑，打造真正零冷場的演出！服務以北中部地區為主，其餘縣市歡迎洽詢。" />
     <meta property="og:image" content="https://balloonsony.com/images/taipei-maji-magic-show.webp" />
@@ -64,7 +65,7 @@
             "addressRegion": "桃園市",
             "addressLocality": "桃園市"
           },
-          "areaServed": ["台北市","新北市","桃園市","新竹市","苗栗縣","台中市","基隆市"],
+          "areaServed": ["台北市","新北市","桃園市","新竹市","苗栗縣","台中市","基隆市","宜蘭縣","彰化縣"],
           "sameAs": ["https://www.facebook.com/balloonsony"]
         },
         {
@@ -73,7 +74,7 @@
           "name": "專業氣球魔術表演 × 親子互動秀",
           "serviceType": ["親子互動魔術","小丑喜劇表演","造型氣球秀"],
           "provider": { "@id": "https://balloonsony.com/#business" },
-          "areaServed": ["台北市","新北市","桃園市","新竹市","苗栗縣","台中市","基隆市"],
+          "areaServed": ["台北市","新北市","桃園市","新竹市","苗栗縣","台中市","基隆市","宜蘭縣","彰化縣"],
           "description": "大叔親自控場，節奏明快。適合生日派對、幼兒園典禮、百貨商演。",
           "offers": {
             "@type": "Offer",
@@ -91,7 +92,7 @@
             {
               "@type": "Question",
               "name": "Q1：可以安排「魔術＋其他表演」一起進行嗎？",
-              "acceptedAnswer": { "@type": "Answer", "text": "絕對可以！我們常將魔術表演與造型氣球互動/派送、趣味泡泡秀、幽默小丑互動組合成完整方案。" }
+              "acceptedAnswer": { "@type": "Answer", "text": "絕對可以！我們常將魔術表演與造型氣球互動/派送、趣味泡泡秀、幽默小丑互動組合成完整方案，讓活動更精彩。" }
             },
             {
               "@type": "Question",
@@ -194,12 +195,22 @@
                         👉 <a href="https://photos.app.goo.gl/P4qoZASn8RbBZQJR9" target="_blank" rel="noopener" class="button primary">📸 點我看更多「魔術現場」精彩相簿</a>
                     </p>
 
-                    <span class="seo-toggle" onclick="toggleSEO()">＋ 展開更多服務範圍與活動情境</span>
-                    <div id="seo-keywords" aria-hidden="true">
+                    <span
+                        class="seo-toggle"
+                        id="magic-seo-toggle"
+                        role="button"
+                        tabindex="0"
+                        aria-controls="magic-seo-keywords"
+                        aria-expanded="false"
+                        onclick="toggleSEO('magic-seo-toggle', 'magic-seo-keywords')"
+                        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSEO('magic-seo-toggle', 'magic-seo-keywords');}"
+                    >＋ 展開更多服務範圍與活動情境</span>
+                    <div id="magic-seo-keywords" aria-hidden="true" style="display: none;">
                         <p>
-    🎩 <strong>專業魔術表演｜互動控場 × 親子活動首選</strong><br><br>
-    提供互動式舞台魔術（適合大型活動）、近距離魔術（適合小型聚會）、趣味兒童魔術（3～10 歲節奏設計），可依活動流程客製調整。<br><br>
-    ✅ <strong>主要服務區域：</strong> 台北、新北、基隆、桃園、新竹、苗栗、台中（其他縣市可洽詢檔期與交通安排）。
+                            🎩 <strong>專業魔術表演｜互動控場 × 親子活動首選</strong><br><br>
+                            提供互動式舞台魔術（適合大型活動）、近距離魔術（適合小型聚會）、趣味兒童魔術（3～10 歲節奏設計），可依活動流程客製調整。<br><br>
+                            ✅ <strong>主要服務區域：</strong> 台北、新北、基隆、桃園、新竹、苗栗、台中、彰化、宜蘭。<br><br>
+                            🔎 <strong>你可能也在找：</strong> 台北魔術秀、桃園兒童魔術、新竹氣球魔術、台中氣球表演、氣球大叔。
                         </p>
                     </div>
                 </section>
@@ -208,7 +219,7 @@
                     <header class="major"><h2>魔術演出 常見問題 FAQ</h2></header>
                     <div class="faq-item">
                         <h3>Q1：可以安排「魔術＋其他表演」一起進行嗎？</h3>
-                        <p>A1：絕對可以！我們可將魔術表演與造型氣球互動/派送、趣味泡泡秀、幽默小丑互動組合，讓活動更精彩。</p>
+                        <p>A1：絕對可以！我們常將魔術表演與造型氣球互動/派送、趣味泡泡秀、幽默小丑互動組合成完整方案，讓活動更精彩。</p>
                     </div>
                     <div class="faq-item">
                         <h3>Q2：兒童魔術表演會不會太簡單或太誇張？</h3>
@@ -242,10 +253,17 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/main.js" defer></script>
+    
     <script>
-        function toggleSEO() {
-            const seoBlock = document.getElementById('seo-keywords');
-            seoBlock.style.display = (seoBlock.style.display === 'none' || seoBlock.style.display === '') ? 'block' : 'none';
+        function toggleSEO(toggleId, panelId) {
+            const seoBlock = document.getElementById(panelId);
+            const toggle = document.getElementById(toggleId);
+            if (!seoBlock || !toggle) return;
+
+            const isHidden = (seoBlock.style.display === 'none' || seoBlock.style.display === '');
+            seoBlock.style.display = isHidden ? 'block' : 'none';
+            seoBlock.setAttribute('aria-hidden', isHidden ? 'false' : 'true');
+            toggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
         }
     </script>
 </body>
