@@ -194,11 +194,24 @@
                         👉 <a href="https://photos.app.goo.gl/P4qoZASn8RbBZQJR9" target="_blank" rel="noopener" class="button primary">📸 點我看更多「魔術現場」精彩相簿</a>
                     </p>
 
-                    <span class="seo-toggle" onclick="toggleSEO()">＋ 展開更多魔術服務說明 (SEO)</span>
-                    <div id="seo-keywords">
-                        <p>🎩 <strong>專業魔術表演｜北中部到府服務</strong><br>提供互動式舞台魔術、近距離魔術與趣味兒童魔術等多元內容。服務地點橫跨台北、基隆、桃園、新竹、台中、彰化、宜蘭等地區。</p>
-                    </div>
-                </section>
+  <span class="seo-toggle" onclick="toggleSEO()">＋ 展開更多服務範圍與表演類型</span>
+<div id="seo-keywords" aria-hidden="true">
+  <p>
+    🎩 <strong>專業魔術表演｜互動控場 × 親子活動首選</strong><br><br>
+    提供互動式舞台魔術（適合大型活動）、近距離魔術（適合小型聚會）、趣味兒童魔術（3～10 歲節奏設計），可依活動流程客製調整。<br><br>
+    ✅ <strong>主要服務區域：</strong> 台北、新北、基隆、桃園、新竹、苗栗、台中（其他縣市可洽詢檔期與交通安排）。
+  </p>
+</div>
+
+<script>
+  function toggleSEO() {
+    const seoBlock = document.getElementById('seo-keywords');
+    const isHidden = (seoBlock.style.display === 'none' || seoBlock.style.display === '');
+    seoBlock.style.display = isHidden ? 'block' : 'none';
+    seoBlock.setAttribute('aria-hidden', isHidden ? 'false' : 'true');
+  }
+</script>
+
 
                 <section id="faq">
                     <header class="major"><h2>魔術演出 常見問題 FAQ</h2></header>
