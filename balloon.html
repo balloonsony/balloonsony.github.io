@@ -23,6 +23,7 @@
 
     <meta property="og:locale" content="zh_TW" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="氣球大叔 Sony" />
     <meta property="og:title" content="造型氣球表演 × 卡通角色捏製 × 現場互動｜氣球大叔 Sony" />
     <meta property="og:description" content="造型氣球互動表演，現場快速捏製卡通人物、可愛動物與造型花束，親子活動與商演派送超吸睛！" />
     <meta property="og:image" content="https://balloonsony.com/images/cartoon-balloon-characters-collection.webp" />
@@ -199,12 +200,21 @@
                         👉 <a href="https://photos.app.goo.gl/UbhgkK45wfSU5xYT9" target="_blank" rel="noopener" class="button">📸 點我看更多「氣球造型」精彩作品</a>
                     </p>
 
-                    <span class="seo-toggle" onclick="toggleSEO()">＋ 展開更多服務範圍與活動情境</span>
-                    <div id="seo-keywords" aria-hidden="true">
+                    <span
+                        class="seo-toggle"
+                        id="balloon-seo-toggle"
+                        role="button"
+                        tabindex="0"
+                        aria-controls="balloon-seo-keywords"
+                        aria-expanded="false"
+                        onclick="toggleSEO('balloon-seo-toggle','balloon-seo-keywords')"
+                        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSEO('balloon-seo-toggle','balloon-seo-keywords');}"
+                    >＋ 展開更多服務範圍與活動情境</span>
+                    <div id="balloon-seo-keywords" aria-hidden="true" style="display: none;">
                         <p>
                             🎈 <strong>造型氣球現場互動｜親子活動人氣亮點</strong><br><br>
                             氣球大叔 Sony 提供卡通角色、動物、花束、寶劍等多款造型，適合市集、園遊會、百貨活動、幼兒園慶典、開幕典禮、生日派對、企業家庭日。<br><br>
-                            ✅ <strong>主要服務區域：</strong> 基隆、台北、新北、桃園、新竹、苗栗、台中（其他縣市可洽詢檔期與交通安排）。<br><br>
+                            ✅ <strong>主要服務區域：</strong> 基隆、台北、新北、桃園、新竹、苗栗、台中、彰化、宜蘭。<br><br>
                             🔎 <strong>你可能也在找：</strong> 台北氣球造型、桃園卡通氣球、新竹氣球互動、台中園遊會氣球。
                         </p>
                     </div>
@@ -214,7 +224,7 @@
                     <header class="major"><h2>常見問題 FAQ</h2></header>
                     <div class="faq-item">
                         <h3>Q1：你們的造型氣球有提供哪些種類？</h3>
-                        <p>A1：我們提供上百種氣球造型，涵蓋卡通人物、可愛動物、精緻花朵、帥氣寶劍等熱門主題，並可依主題客製專屬造型。</p>
+                        <p>A1：我們提供上百種氣球造型，涵蓋卡通人物、可愛動物、精緻花朵、帥氣寶劍、公主系列等熱門主題，並可依主題客製專屬造型。</p>
                     </div>
                     <div class="faq-item">
                         <h3>Q2：造型氣球會不會容易破？適合戶外嗎？</h3>
@@ -252,12 +262,17 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/main.js" defer></script>
+    
     <script>
-        function toggleSEO() {
-            const seoBlock = document.getElementById('seo-keywords');
+        function toggleSEO(toggleId, panelId) {
+            const seoBlock = document.getElementById(panelId);
+            const toggle = document.getElementById(toggleId);
+            if (!seoBlock || !toggle) return;
+
             const isHidden = (seoBlock.style.display === 'none' || seoBlock.style.display === '');
             seoBlock.style.display = isHidden ? 'block' : 'none';
             seoBlock.setAttribute('aria-hidden', isHidden ? 'false' : 'true');
+            toggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
         }
     </script>
 </body>
