@@ -65,9 +65,7 @@
             "addressLocality": "桃園市"
           },
           "areaServed": ["台北市","新北市","桃園市","新竹市","苗栗縣","台中市","基隆市"],
-          "sameAs": [
-            "https://www.facebook.com/balloonsony"
-          ]
+          "sameAs": ["https://www.facebook.com/balloonsony"]
         },
         {
           "@type": "Service",
@@ -83,7 +81,7 @@
             "availability": "https://schema.org/InStock",
             "name": "客製化魔術表演報價",
             "url": "https://balloonsony.com/magic.html#line-cta",
-            "description": "依活動規模與流程客製內容；可搭配氣球互動/泡泡秀/小丑互動，歡迎加 LINE 詢問檔期與報價。"
+            "description": "依活動規模與流程客製內容；可搭配氣球互動/泡泡秀/小丑互動，歡迎加 LINE 詢問。"
           }
         },
         {
@@ -103,7 +101,7 @@
             {
               "@type": "Question",
               "name": "Q3：你們的魔術表演有哪些類型？適合什麼場合？",
-              "acceptedAnswer": { "@type": "Answer", "text": "提供互動式舞台魔術、近距離魔術、趣味兒童魔術。適合生日派對、校園活動、百貨商演、企業家庭日。" }
+              "acceptedAnswer": { "@type": "Answer", "text": "提供互動式舞台魔術、近距離魔術、趣味兒童魔術等多種類型。兒童生日派對、校園活動、百貨商演皆可洽詢。" }
             },
             {
               "@type": "Question",
@@ -124,8 +122,7 @@
         .breadcrumbs a:hover { color: #c0392b; border-bottom-color: #c0392b; }
         .posts { display: flex; flex-wrap: wrap; gap: 1.5em; justify-content: center; }
         .posts figure { text-align: center; margin: 0; max-width: 300px; }
-        /* ✅ 修正 5：搭配 img width/height 讓配置更穩定 */
-        .posts img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); object-fit: cover; }
+        .posts img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); aspect-ratio: 4/3; object-fit: cover; }
         .posts figcaption { font-size: 0.9em; color: #666; margin-top: 0.5em; }
         @media (min-width: 981px) {
             #sidebar { position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; z-index: 1000; }
@@ -160,7 +157,7 @@
                     <div style="background:#f9f9f9; padding:1.5em; border-radius:8px; border-left: 5px solid #ff4757; margin-bottom:2em;">
                         <ul style="margin-bottom:0; list-style: none; padding-left: 0;">
                             <li><strong>⏱️ 演出時間：</strong> 約 30～40 分鐘精華演出，可依需求彈性調整。</li>
-                            <li><strong>📍 服務地區：</strong> 北中部（台北/新北/桃園/新竹/苗栗/台中/基隆）為主，其餘洽詢。</li>
+                            <li><strong>📍 服務地區：</strong> 北中部（雙北/桃園/新竹/苗栗/台中/基隆）為主，其餘洽詢。</li>
                             <li><strong>🏢 適合場合：</strong> 百貨公司、學校慶典、生日派對、企業家庭日。</li>
                             <li><strong>🌟 獨家特色：</strong> 結合爆笑小丑互動、專業控場與精湛造型氣球派送。</li>
                         </ul>
@@ -168,26 +165,39 @@
 
                     <div class="posts">
                         <figure>
-                            <img src="images/kids-laugh-balloon-magic.webp" alt="小朋友開懷大笑參與氣球魔術" loading="lazy" width="1200" height="900" />
+                            <img src="images/kids-laugh-balloon-magic.webp" alt="小朋友們在現場開懷大笑，熱情參與氣球魔術互動" loading="lazy" width="1200" height="900" />
                             <figcaption>氣球魔術互動環節，全場歡笑</figcaption>
                         </figure>
                         <figure>
-                            <img src="images/taipei-maji-magic-show.webp" alt="台北 MAJI 集食行樂舞台演出" loading="lazy" width="1200" height="900" />
+                            <img src="images/taipei-maji-magic-show.webp" alt="氣球、魔術表演者在台北 MAJI 集食行樂舞台上帶來精彩演出" loading="lazy" width="1200" height="900" />
                             <figcaption>台北 MAJI 集食行樂舞台演出</figcaption>
                         </figure>
                         <figure>
-                            <img src="images/clown-kids-fun-interaction.webp" alt="魔術小丑趣味互動" loading="lazy" width="1200" height="900" />
+                            <img src="images/clown-kids-fun-interaction.webp" alt="魔術小丑在親子活動中與小朋友熱鬧互動" loading="lazy" width="1200" height="900" />
                             <figcaption>魔術小丑趣味互動</figcaption>
                         </figure>
                         <figure>
-                            <img src="images/balloon-magic-show-outdoor.webp" alt="戶外活動逗趣演出" loading="lazy" width="1200" height="900" />
+                            <img src="images/balloon-magic-show-outdoor.webp" alt="氣球大叔 Sony 在戶外活動中進行逗趣氣球魔術演出" loading="lazy" width="1200" height="900" />
                             <figcaption>戶外活動逗趣演出</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/ifa-dadaocheng.webp" alt="大稻埕國際藝術節街頭表演" loading="lazy" width="1200" height="900" />
+                            <figcaption>大稻埕國際藝術節</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/ikea-taichung-show.webp" alt="氣球、魔術表演者在台中 IKEA 周年慶現場" loading="lazy" width="1200" height="900" />
+                            <figcaption>台中 IKEA 周年慶互動</figcaption>
                         </figure>
                     </div>
 
                     <p style="text-align:center; margin-top:2em;">
                         👉 <a href="https://photos.app.goo.gl/P4qoZASn8RbBZQJR9" target="_blank" rel="noopener" class="button primary">📸 點我看更多「魔術現場」精彩相簿</a>
                     </p>
+
+                    <span class="seo-toggle" onclick="toggleSEO()">＋ 展開更多魔術服務說明 (SEO)</span>
+                    <div id="seo-keywords">
+                        <p>🎩 <strong>專業魔術表演｜北中部到府服務</strong><br>提供互動式舞台魔術、近距離魔術與趣味兒童魔術等多元內容。服務地點橫跨台北、基隆、桃園、新竹、台中、彰化、宜蘭等地區。</p>
+                    </div>
                 </section>
 
                 <section id="faq">
@@ -228,5 +238,11 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/main.js" defer></script>
+    <script>
+        function toggleSEO() {
+            const seoBlock = document.getElementById('seo-keywords');
+            seoBlock.style.display = (seoBlock.style.display === 'none' || seoBlock.style.display === '') ? 'block' : 'none';
+        }
+    </script>
 </body>
 </html>
