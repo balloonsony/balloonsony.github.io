@@ -199,14 +199,15 @@
 
                     <span
                         class="seo-toggle"
+                        id="bubble-seo-toggle"
                         role="button"
                         tabindex="0"
-                        aria-controls="seo-keywords"
+                        aria-controls="bubble-seo-keywords"
                         aria-expanded="false"
-                        onclick="toggleSEO()"
-                        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSEO();}"
+                        onclick="toggleSEO('bubble-seo-toggle', 'bubble-seo-keywords')"
+                        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSEO('bubble-seo-toggle', 'bubble-seo-keywords');}"
                     >＋ 展開更多服務範圍與活動情境</span>
-                    <div id="seo-keywords" aria-hidden="true">
+                    <div id="bubble-seo-keywords" aria-hidden="true" style="display: none;">
                         <p>
                             🫧 <strong>專業泡泡秀表演｜親子活動人氣亮點</strong><br><br>
                             氣球大叔 Sony 提供大型泡泡、煙霧泡泡與泡泡套人體驗，適合市集、百貨活動、幼兒園慶典、生日派對、企業家庭日。<br><br>
@@ -256,14 +257,15 @@
     <script src="assets/js/main.js" defer></script>
     
     <script>
-        function toggleSEO() {
-            const seoBlock = document.getElementById('seo-keywords');
-            const toggle = document.querySelector('.seo-toggle');
-            const isHidden = (seoBlock.style.display === 'none' || seoBlock.style.display === '');
+        function toggleSEO(toggleId, panelId) {
+            const seoBlock = document.getElementById(panelId);
+            const toggle = document.getElementById(toggleId);
+            if (!seoBlock || !toggle) return;
 
+            const isHidden = (seoBlock.style.display === 'none' || seoBlock.style.display === '');
             seoBlock.style.display = isHidden ? 'block' : 'none';
             seoBlock.setAttribute('aria-hidden', isHidden ? 'false' : 'true');
-            if (toggle) toggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+            toggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
         }
     </script>
 </body>
