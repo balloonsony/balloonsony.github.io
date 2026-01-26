@@ -10,24 +10,25 @@
     </script>
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, user-scalable=yes" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="氣球大叔 Sony" />
 
-    <title>聖誕節社區表演 × 七縣市晚會｜氣球魔術＋聖誕主題手折｜氣球大叔 Sony</title>
-    <meta name="description" content="聖誕晚會專屬流程：氣球魔術暖場＋聖誕主題手折（清單點選制）。控場穩定、名額與動線可預先設計，七縣市皆可到場。" />
-    <meta name="keywords" content="聖誕節表演, 社區聖誕晚會, 氣球魔術, 聖誕手折氣球, 聖誕老公公氣球, 台北聖誕活動, 桃園聖誕晚會, 新竹聖誕派對" />
+    <title>聖誕節表演｜社區晚會 × 氣球魔術＋聖誕主題手折｜氣球大叔 Sony</title>
+    <meta name="description" content="聖誕節表演專用流程：氣球魔術暖場＋聖誕主題手折（清單點選制）。氣球大叔 Sony 長期受邀於百貨、社區與園區晚會演出，控場穩定、動線明確，北中七縣市皆可到府。" />
     <link rel="canonical" href="https://balloonsony.com/service/christmas-community-show.html" />
 
-    <meta property="og:title" content="聖誕節社區表演 × 七縣市晚會｜氣球魔術＋聖誕主題手折" />
-    <meta property="og:description" content="氣球大叔 Sony 提供氣球魔術＋聖誕主題手折（清單點選制），七縣市到場服務，控場穩定、產能明確、易佈置好清場。" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="氣球大叔 Sony" />
+    <meta property="og:title" content="聖誕節表演｜社區晚會 × 氣球魔術＋聖誕主題手折" />
+    <meta property="og:description" content="氣球大叔 Sony 提供聖誕節限定版魔術表演與造型氣球，北中七縣市到場服務，控場穩定、產能明確、好收尾。" />
     <meta property="og:image" content="https://balloonsony.com/images/og-christmas-show.jpg" />
     <meta property="og:url" content="https://balloonsony.com/service/christmas-community-show.html" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    
     <link rel="stylesheet" href="../assets/css/main.css" />
     <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 
@@ -37,6 +38,7 @@
         "@graph": [
             {
                 "@type": "BreadcrumbList",
+                "@id": "https://balloonsony.com/service/christmas-community-show.html#breadcrumb",
                 "itemListElement": [
                     { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://balloonsony.com/" },
                     { "@type": "ListItem", "position": 2, "name": "服務地區", "item": "https://balloonsony.com/#services" },
@@ -44,27 +46,45 @@
                 ]
             },
             {
-                "@type": "Service",
-                "name": "聖誕節社區表演｜氣球魔術＋聖誕主題手折（清單點選制）",
-                "provider": {
-                    "@type": "LocalBusiness",
-                    "name": "氣球大叔 Sony",
-                    "image": "https://balloonsony.com/images/cover.webp",
-                    "telephone": "+886-930733100",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressLocality": "桃園市",
-                        "addressRegion": "台灣",
-                        "addressCountry": "TW"
-                    }
+                "@type": ["LocalBusiness", "EntertainmentBusiness"],
+                "@id": "https://balloonsony.com/#business",
+                "name": "氣球大叔 Sony",
+                "image": "https://balloonsony.com/images/cover.webp",
+                "telephone": "+886-930733100",
+                "url": "https://balloonsony.com/",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "桃園區",
+                    "addressRegion": "桃園市",
+                    "addressCountry": "TW"
                 },
                 "areaServed": ["基隆市", "台北市", "新北市", "桃園市", "新竹市", "苗栗縣", "台中市"],
-                "description": "聖誕節社區與商場晚會專用流程：氣球魔術暖場＋聖誕主題手折（清單點選制），名額控管、動線設計、好收尾。",
+                "openingHoursSpecification": [{
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+                    "opens": "08:00",
+                    "closes": "21:00"
+                }],
+                "sameAs": [
+                    "https://www.facebook.com/BalloonSony/",
+                    "https://www.instagram.com/balloonsony/",
+                    "https://www.youtube.com/@balloonsony"
+                ]
+            },
+            {
+                "@type": "Service",
+                "@id": "https://balloonsony.com/service/christmas-community-show.html#service",
+                "name": "聖誕節社區表演｜氣球魔術＋聖誕主題手折（清單點選制）",
+                "url": "https://balloonsony.com/service/christmas-community-show.html",
+                "provider": { "@id": "https://balloonsony.com/#business" },
+                "serviceType": ["聖誕節表演", "社區晚會魔術", "聖誕手折氣球", "百貨活動表演"],
+                "description": "提供聖誕晚會專屬流程：氣球魔術暖場＋聖誕主題手折（清單點選制），名額控管、動線設計、好收尾。",
                 "offers": {
                     "@type": "Offer",
                     "priceCurrency": "TWD",
-                    "availability": "https://schema.org/InStock",
-                    "name": "聖誕節社區表演費用"
+                    "availability": "https://schema.org/LimitedAvailability",
+                    "name": "聖誕節晚會表演方案報價",
+                    "url": "https://balloonsony.com/service/christmas-community-show.html#line-cta"
                 }
             },
             {
@@ -84,6 +104,11 @@
                         "@type": "Question",
                         "name": "是否提供聖誕老公公合照？",
                         "acceptedAnswer": { "@type": "Answer", "text": "可協助銜接第三方 Santa 進場與合照動線，或安排合照替代段落（如大型禮物氣球抽獎）。" }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "可以只表演不折氣球嗎？",
+                        "acceptedAnswer": { "@type": "Answer", "text": "可以，可依預算選擇純表演、純手折或整合方案，皆可彈性客製。" }
                     }
                 ]
             }
@@ -92,30 +117,16 @@
     </script>
 
     <style>
-        /* 麵包屑導覽樣式 */
         .breadcrumbs { list-style: none; padding: 0; margin: 0 0 1em 0; font-size: 0.9em; color: #666; }
         .breadcrumbs li { display: inline; }
         .breadcrumbs li+li:before { padding: 8px; color: #ccc; content: "/\00a0"; }
         .breadcrumbs a { color: #2c3e50; text-decoration: none; border-bottom: 1px dotted #ccc; }
         .breadcrumbs a:hover { color: #c0392b; border-bottom-color: #c0392b; }
-
-        /* 縮圖樣式 */
-        .thumbnail { width: 120px; height: 80px; object-fit: cover; margin-right: 1em; border-radius: 6px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        
-        /* 側邊欄按鈕控制 (配合 menu.js) */
-        @media (min-width: 981px) {
-            #sidebar { position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; z-index: 1000; }
-            #wrapper { margin-left: 22em; }
-            #sidebar .toggle { display: none !important; }
-        }
-        @media (max-width: 980px) {
-            #sidebar .toggle { display: block !important; }
-        }
-
-        /* 其他樣式 */
+        .thumbnail { width: 120px; height: 90px; object-fit: cover; aspect-ratio: 4/3; margin-right: 1em; border-radius: 6px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .faq-item { margin-bottom: 1.5em; border-bottom: 1px solid #eee; padding-bottom: 1em; }
         .faq-item h3 { font-size: 1.1em; margin-bottom: 0.3em; color: #2c3e50; }
-        .faq-item p { margin-top: 0.3em; color: #555; }
+        @media (min-width: 981px) { #sidebar { position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; z-index: 1000; } #wrapper { margin-left: 22em; } #sidebar .toggle { display: none !important; } }
+        @media (max-width: 980px) { #sidebar .toggle { display: block !important; } }
     </style>
 </head>
 <body class="is-preload">
@@ -127,155 +138,119 @@
             <div class="inner">
 
                 <ul class="breadcrumbs">
-                    <li><a href="../index.html">首頁</a></li>
-                    <li><a href="../index.html#services">服務地區</a></li>
+                    <li><a href="/index.html">首頁</a></li>
+                    <li><a href="/index.html#services">服務地區</a></li>
                     <li>聖誕活動服務</li>
                 </ul>
 
                 <header id="header">
-                    <h1>🎄 聖誕節社區表演｜氣球魔術 ＋ 聖誕主題手折</h1>
+                    <h1>🎄 聖誕節表演｜社區晚會 × 氣球魔術 ＋ 聖誕主題手折</h1>
                     <p>清單點選制．控場穩定．好收尾好清場</p>
                 </header>
 
                 <section>
-                    <p>年末節慶想要溫馨又俐落？<strong>氣球大叔 Sony</strong> 以<strong>氣球魔術暖場</strong>帶出聖誕氛圍，再接續<strong>聖誕主題手折</strong>的「清單點選制」，孩子勾款式、家長好排隊，交付明確不混亂。服務涵蓋 <strong>基隆、台北、新北、桃園、新竹、苗栗、台中</strong>，適合社區聖誕晚會、園區點燈、市集舞台與公司家庭日。</p>
-                    <p><strong>12 月檔期易滿</strong>，建議先卡位再補細節；亦可客製「報佳音串場、聖誕老公公合照」等段落。</p>
+                    <p>年末節慶想要溫馨又俐落？<strong>氣球大叔 Sony</strong> 以<strong>氣球魔術暖場</strong>帶出聖誕氛圍，<strong>長期受邀於商場、百貨、園區與大型社區活動演出</strong>。我們提供聖誕主題手折的「清單點選制」，孩子勾款式、家長好排隊，交付明確不混亂。服務涵蓋 <strong>北中七縣市</strong>，是社區聖誕晚會、園區點燈、市集舞台與公司家庭日的首選方案。</p>
+                    <p><strong>12 月聖誕熱門週末極易客滿</strong>，建議提前預約洽詢。</p>
 
-                    <div style="background:#f9f9f9; padding:1.5em; border-radius:8px; margin:2em 0; border-left: 5px solid #c0392b;">
-                        <h3 style="margin-top:0; color:#c0392b;">🎯 聖誕節三大重點服務</h3>
+                    <div style="background:#fcfcfc; padding:1.5em; border-radius:10px; margin:2em 0; border-left: 5px solid #c0392b;">
+                        <h3 style="margin-top:0; color:#c0392b;">🎯 聖誕節三大重點服務內容</h3>
                         <ul style="margin-bottom:0;">
-                            <li><strong>氣球魔術暖場（約 25–30 分鐘）：</strong>以節慶橋段開場（驚喜禮物箱、紅綠彩帶魔術等），笑點與參與感兼具。</li>
-                            <li><strong>聖誕主題手折（清單點選制）：</strong>麋鹿角、拐杖糖、聖誕樹、小雪人、紅綠劍、皇冠、耶誕帽等；<strong>可依人潮設計名額與換手率</strong>。</li>
-                            <li><strong>可加購段落：</strong>報佳音串場、<em>Santa Photo Time</em> 合照動線、壓軸禮物抽獎用大型氣球。</li>
+                            <li><strong>氣球魔術暖場（約 30 分鐘）：</strong>以驚喜禮物箱、紅綠節慶彩帶魔術開場，帶動全場沸騰氣氛。</li>
+                            <li><strong>聖誕主題手折（清單制）：</strong>麋鹿角、聖誕樹、小雪人、耶誕帽等；<strong>專人控管名額與換手率</strong>。</li>
+                            <li><strong>客製化段落：</strong>Santa 聖誕老公公合照動線規劃、壓軸大型氣球禮物抽獎、報佳音串場。</li>
                         </ul>
                     </div>
                 </section>
 
                 <section>
-                    <h2>📍 七縣市服務建議</h2>
+                    <h2>📍 北中七縣市服務紀錄與建議</h2>
                     <ul style="list-style: none; padding: 0; margin: 0;">
 
                         <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 基隆市：防潮遮蔽＋合照動線</h3>
-                            <p>建議活動中心／騎樓；魔術後安排 Santa 合照區與手折區分流，避免交錯。</p>
+                            <h3>🎈 台北市與新北市：商場、百貨與大型社區</h3>
+                            <p>針對雙北高人氣晚會，我們提供<strong>名額公告與地貼排隊線</strong>服務。了解更多 <a href="/service/taipei-kids-party-show.html">台北服務</a> 與 <a href="/service/newtaipei-kids-party-show.html">新北服務</a>。</p>
                             <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/keelung-sdgs-2024b.webp" alt="基隆氣球魔術演出" class="thumbnail" loading="lazy">
-                                <a href="/service/keelung-kids-party-show.html?ref=christmas" style="font-size: 1.1em; text-decoration: none; color: #555;">
-                                    👉 基隆表演服務頁
+                                <img src="../images/taipei-maji-magic-show.webp" alt="台北聖誕節表演｜花博 MAJI 氣球魔術互動" class="thumbnail" loading="lazy">
+                                <a href="/blog/2025-taipei-maji-market-show.html" style="font-size: 1.1em; text-decoration: none; color: #c0392b; font-weight:bold;">
+                                    👉 台北花博 MAJI 聖誕演出紀錄
                                 </a>
                             </div>
                         </li>
 
                         <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 台北市：商場／社區點燈，小空間高效率</h3>
-                            <p>建議 25–30 分鐘魔術＋60–120 分鐘手折；搭配款式海報與號碼卡，換手率清楚。</p>
+                            <h3>🎈 桃園市：在地大本營，產能穩定</h3>
+                            <p>桃園、中壢各區社區首選！熟悉在地場地與家長需求。了解更多 <a href="/service/taoyuan-kids-party-show.html">桃園服務</a>。</p>
                             <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/taipei-maji-magic-show.webp" alt="台北花博 MAJI 演出" class="thumbnail" loading="lazy">
-                                <a href="/service/taipei-kids-party-show.html?ref=christmas" style="font-size: 1.1em; text-decoration: none; color: #c0392b;">
-                                    👉 台北表演服務頁
+                                <img src="../images/taoyuan-taimall-2020-12-25a.webp" alt="桃園聖誕節表演｜台茂購物中心氣球秀回顧" class="thumbnail" loading="lazy">
+                                <a href="/blog/2025-taoyuan-smile-cafe-birthday-party.html" style="font-size: 1.1em; text-decoration: none; color: #c0392b; font-weight:bold;">
+                                    👉 桃園台茂購物中心聖誕活動花絮
                                 </a>
                             </div>
                         </li>
 
                         <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 新北市：量體大，名額公告與地貼排隊線</h3>
-                            <p>公告款式清單與名額上限；地貼標線＋領件窗口，單人作業也能順暢。</p>
+                            <h3>🎈 新竹市：竹科社區與百貨快閃</h3>
+                            <p>竹北與新竹巨城商圈最愛的高質感演出。了解更多 <a href="/service/hsinchu-kids-party-show.html">新竹服務</a>。</p>
                             <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/xindian-beerfest-stage-2025a.webp" alt="新北新店裕隆城活動" class="thumbnail" loading="lazy">
-                                <a href="/service/newtaipei-kids-party-show.html?ref=christmas" style="font-size: 1.1em; text-decoration: none; color: #c0392b;">
-                                    👉 新北表演服務頁
+                                <img src="../images/hsinchu-bigcity-swatch-xmas-2021-12-20a.webp" alt="新竹聖誕節表演｜巨城 Swatch 聖誕派送造型氣球" class="thumbnail" loading="lazy">
+                                <a href="/blog/2021-hsinchu-bigcity-swatch-xmas.html" style="font-size: 1.1em; text-decoration: none; color: #c0392b; font-weight:bold;">
+                                    👉 新竹巨城聖誕快閃造型氣球紀錄
                                 </a>
                             </div>
                         </li>
 
                         <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 桃園市：親子動線清楚，產能穩</h3>
-                            <p>一小時流程：魔術 25–30 分鐘＋手折 60–120 分鐘；人多時可改單／雙色限定款式提速。</p>
-                            <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/taoyuan-taimall-2020-12-25a.webp" alt="桃園台茂聖誕活動" class="thumbnail" loading="lazy">
-                                <a href="/service/taoyuan-kids-party-show.html?ref=christmas" style="font-size: 1.1em; text-decoration: none; color: #555;">
-                                    👉 桃園表演服務頁
-                                </a>
-                            </div>
-                        </li>
-
-                        <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 新竹市：風格講究，款式勾選單先行</h3>
-                            <p>提供聖誕款式清單（拐杖糖、麋鹿角、聖誕樹等），減少溝通時間，提升換手率。</p>
-                            <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/hsinchu-bigcity-swatch-xmas-2021-12-20a.webp" alt="新竹巨城氣球演出" class="thumbnail" loading="lazy">
-                                <a href="/service/hsinchu-kids-party-show.html?ref=christmas" style="font-size: 1.1em; text-decoration: none; color: #555;">
-                                    👉 新竹表演服務頁
-                                </a>
-                            </div>
-                        </li>
-
-                        <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 苗栗縣：夜間廣場多，燈光與領件時間</h3>
-                            <p>晚場建議增設照明與取件時段公告，看得到、領得到、走得開。</p>
-                            <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/nanzhuang-japan-balloon-making-2019.webp" alt="苗栗南庄演出" class="thumbnail" loading="lazy">
-                                <a href="/service/miaoli-kids-party-show.html?ref=christmas" style="font-size: 1.1em; text-decoration: none; color: #c0392b;">
-                                    👉 苗栗表演服務頁
-                                </a>
-                            </div>
-                        </li>
-
-                        <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 台中市：大型活動，分段或加時</h3>
-                            <p>採「兩段式流程（魔術→手折→休息→手折）」或預先協調加時；單人作業亦能維持品質與秩序。</p>
-                            <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/taichung-ikea10th-group-2023.webp" alt="台中 IKEA 氣球秀" class="thumbnail" loading="lazy">
-                                <a href="/service/taichung-kids-party-show.html?ref=christmas" style="font-size: 1.1em; text-decoration: none; color: #c0392b;">
-                                    👉 台中表演服務頁
-                                </a>
-                            </div>
+                            <h3>🎈 台中市、苗栗縣、基隆市：節慶派對熱力全開</h3>
+                            <p>台中 IKEA、南庄景點、基隆城市博覽會。了解更多 <a href="/service/taichung-kids-party-show.html">台中服務</a>、<a href="/service/miaoli-kids-party-show.html">苗栗服務</a>、<a href="/service/keelung-kids-party-show.html">基隆服務</a>。</p>
                         </li>
 
                     </ul>
                 </section>
 
-                <section>
-                    <hr style="margin-top: 4em; border: none;" />
-                    <h2>🧭 動線與名額設計（聖誕版本）</h2>
+                <section id="process">
+                    <h2>🧭 聖誕晚會控場設計 (專業承辦人最關心)</h2>
                     <ol>
-                        <li>入口處張貼 <strong>款式海報＋QR 勾選單</strong>，家長先選款式再入列。</li>
-                        <li>以 <strong>號碼卡／分時領件</strong> 控制等待時間；合照區與手折區分流。</li>
-                        <li>作品 <strong>展示區＋領件窗口</strong> 分開設置，避免回頭擁擠。</li>
+                        <li><strong>款式預選：</strong>張貼聖誕款式海報與 QR code，家長先選定再排隊。</li>
+                        <li><strong>名額控管：</strong>以號碼卡或分時段領件，確保活動不超時、不混亂。</li>
+                        <li><strong>雨天備案：</strong>熟悉室內場地動線規劃，確保演出風雨無阻。</li>
                     </ol>
                 </section>
 
                 <section id="faq">
                     <header class="major"><h2>常見問題 FAQ（聖誕版）</h2></header>
                     <div class="faq-item">
-                        <h3>Q：聖誕節流程如何規劃？</h3>
-                        <p>A：建議「魔術 25–30 分鐘 → 聖誕主題手折 60–120 分鐘」，視人數調整名額與分時領件。</p>
+                        <h3>Q：聖誕節晚會流程如何規劃？</h3>
+                        <p>A：建議「魔術 30 分鐘 → 聖誕主題手折 60–120 分鐘」，視人數調整名額與領件動線。</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q：如何避免排隊混亂？</h3>
-                        <p>A：事前公告款式清單、名額與分時制度；現場使用號碼卡＋地貼排隊線，並設領件窗口。</p>
+                        <h3>Q：如何避免現場排隊擁擠？</h3>
+                        <p>A：我們會事前公告款式清單、使用號碼卡制度，並設置專屬領件窗口，讓流程順暢不塞車。</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q：是否提供聖誕老公公合照？</h3>
-                        <p>A：可協助銜接第三方 Santa 進場與合照動線，或安排合照替代段落（如大型禮物氣球抽獎）。</p>
+                        <h3>Q：是否提供聖誕老公公合照段落？</h3>
+                        <p>A：可協助銜接 Santa 進場與合照動線，或由大叔安排大型禮物氣球抽獎段落替代。</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q：場地與音響需求？</h3>
-                        <p>A：平坦安全區域即可；可自備擴音與麥克風，110V 插座即可。</p>
+                        <h3>Q：可以只預約表演不折氣球嗎？</h3>
+                        <p>A：可以！可根據晚會需求客製「純表演」、「純手折」或整合方案，皆可彈性討論。</p>
                     </div>
                 </section>
 
                 <section id="line-cta" style="margin-top: 3em;">
                     <div style="text-align: center; background-color: #fffafa; padding: 2.5em; border-radius: 15px; border: 2px dashed #c0392b; box-shadow: 0 4px 15px rgba(192,57,43,0.1);">
-                        <h2 style="margin-bottom: 0.5em;">🎄 打造最吸睛的聖誕夢幻派對！</h2>
-                        <p>正在尋找最有聖誕氛圍的表演嗎？<br>氣球大叔提供「聖誕限定版」魔術與造型氣球，讓您的聖誕晚會充滿驚喜與歡笑！</p>
+                        <h2 style="margin-bottom: 0.5em;">🎄 打造最吸睛的聖誕夢幻晚會！</h2>
+                        <p style="color:#c0392b; font-weight:bold;">🔥 12 月聖誕熱門週末檔期易滿，建議提前洽詢討論。</p>
                         
-                        <a href="https://line.me/ti/p/ObX9ZjEBXu" target="_blank" style="background-color: #06C755; color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.3em; display: inline-block; box-shadow: 0 4px 15px rgba(6,199,85,0.3); transition: transform 0.2s;">
-                            💬 點我加 LINE 預約聖誕表演檔期
+                        <p style="background: #fff; padding: 10px; border-radius: 5px; display: inline-block; font-size: 0.9em; color: #c0392b; border: 1px solid #c0392b; margin-bottom: 1.5em;">
+                            📝 詢問請提供：<strong>日期 / 城市 / 預估人數 / 場地類型</strong>
+                        </p><br>
+
+                        <a href="https://line.me/ti/p/ObX9ZjEBXu" target="_blank" rel="noopener noreferrer" style="background-color: #06C755; color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.3em; display: inline-block; box-shadow: 0 4px 15px rgba(6,199,85,0.3); transition: transform 0.2s;">
+                            💬 點我加 LINE 討論聖誕驚喜
                         </a>
                         
                         <p style="margin-top: 15px; font-size: 0.9em; color: #666;">
-                            🎅 <strong>溫馨提示：</strong>12 月聖誕熱門週末極易客滿，歡迎提前討論喔！
+                            🎅 <strong>溫馨提示：</strong>大叔會幫您帶動現場氛圍，讓主辦單位輕鬆完成聖誕任務！
                         </p>
                     </div>
                 </section>
