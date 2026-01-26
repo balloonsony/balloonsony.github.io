@@ -10,24 +10,25 @@
     </script>
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, user-scalable=yes" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="氣球大叔 Sony" />
 
-    <title>生日派對氣球魔術 × 造型氣球 × 主題佈置｜北中七縣市首選 - 氣球大叔 Sony</title>
-    <meta name="description" content="氣球大叔 Sony 專為兒童打造高質感生日派對，提供氣球魔術表演、造型氣球派送與主題佈置。服務範圍涵蓋基隆、台北、新北、桃園、新竹、苗栗、台中，是家長最信賴的歡樂慶生方案。" />
-    <meta name="keywords" content="生日派對表演, 兒童生日魔術, 造型氣球派送, 生日佈置, 抓週氣球, 台北生日派對, 桃園慶生表演, 新竹兒童派對, 台中生日魔術, 氣球大叔 Sony" />
+    <title>生日派對表演｜兒童氣球魔術 × 造型氣球 × 慶生佈置｜氣球大叔 Sony</title>
+    <meta name="description" content="氣球大叔 Sony 專職親子派對表演者，累積上千場演出經驗，長期受邀於飯店、百貨、親子館演出。提供一站式高質感生日派對方案，包含兒童魔術秀、卡通氣球派送與慶生佈置！" />
     <link rel="canonical" href="https://balloonsony.com/service/birthday-balloon-show.html" />
 
-    <meta property="og:title" content="生日派對氣球魔術 × 造型氣球 × 主題佈置｜北中七縣市首選" />
-    <meta property="og:description" content="收錄氣球大叔 Sony 在基隆、台北、新北、桃園、新竹、苗栗、台中的生日派對實績，展示氣球魔術與佈置魅力，是親子慶生規劃的靈感來源。" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="氣球大叔 Sony" />
+    <meta property="og:title" content="生日派對表演｜兒童氣球魔術 × 造型氣球 × 慶生佈置｜氣球大叔 Sony" />
+    <meta property="og:description" content="為孩子打造難忘的慶生驚喜！氣球大叔 Sony 提供專業生日派對表演、精緻慶生佈置與造型氣球派送服務。" />
     <meta property="og:image" content="https://balloonsony.com/images/og-birthday-trio.jpg" />
     <meta property="og:url" content="https://balloonsony.com/service/birthday-balloon-show.html" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    
     <link rel="stylesheet" href="../assets/css/main.css" />
     <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 
@@ -37,6 +38,7 @@
         "@graph": [
             {
                 "@type": "BreadcrumbList",
+                "@id": "https://balloonsony.com/service/birthday-balloon-show.html#breadcrumb",
                 "itemListElement": [
                     { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://balloonsony.com/" },
                     { "@type": "ListItem", "position": 2, "name": "服務地區", "item": "https://balloonsony.com/#services" },
@@ -44,27 +46,46 @@
                 ]
             },
             {
-                "@type": "Service",
-                "name": "全台生日派對氣球魔術 × 造型氣球派送 × 主題佈置演出",
-                "provider": {
-                    "@type": "LocalBusiness",
-                    "name": "氣球大叔 Sony",
-                    "image": "https://balloonsony.com/images/cover.webp",
-                    "telephone": "+886-930733100",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressLocality": "桃園市",
-                        "addressRegion": "台灣",
-                        "addressCountry": "TW"
-                    }
+                "@type": ["LocalBusiness", "EntertainmentBusiness"],
+                "@id": "https://balloonsony.com/#business",
+                "name": "氣球大叔 Sony",
+                "image": "https://balloonsony.com/images/cover.webp",
+                "telephone": "+886-930733100",
+                "url": "https://balloonsony.com/",
+                "priceRange": "$$",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "桃園區",
+                    "addressRegion": "桃園市",
+                    "addressCountry": "TW"
                 },
                 "areaServed": ["基隆市", "台北市", "新北市", "桃園市", "新竹市", "苗栗縣", "台中市"],
+                "openingHoursSpecification": [{
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+                    "opens": "08:00",
+                    "closes": "21:00"
+                }],
+                "sameAs": [
+                    "https://www.facebook.com/BalloonSony/",
+                    "https://www.instagram.com/balloonsony/",
+                    "https://www.youtube.com/@balloonsony"
+                ]
+            },
+            {
+                "@type": "Service",
+                "@id": "https://balloonsony.com/service/birthday-balloon-show.html#service",
+                "name": "全台生日派對氣球魔術 × 造型氣球派送 × 慶生佈置演出",
+                "url": "https://balloonsony.com/service/birthday-balloon-show.html",
+                "provider": { "@id": "https://balloonsony.com/#business" },
+                "serviceType": ["生日派對表演", "兒童魔術表演", "慶生佈置", "造型氣球派送"],
                 "description": "提供一站式生日派對服務，包含開場魔術秀、卡通氣球派送與主題場地佈置。",
                 "offers": {
                     "@type": "Offer",
                     "priceCurrency": "TWD",
-                    "availability": "https://schema.org/InStock",
-                    "name": "生日派對造型佈置方案報價"
+                    "availability": "https://schema.org/LimitedAvailability",
+                    "name": "生日派對造型佈置方案報價",
+                    "url": "https://balloonsony.com/service/birthday-balloon-show.html#line-cta"
                 }
             },
             {
@@ -73,12 +94,22 @@
                     {
                         "@type": "Question",
                         "name": "派對流程會很複雜嗎？",
-                        "acceptedAnswer": { "@type": "Answer", "text": "完全不會！我們有標準流程：氣球魔術表演開場約30分鐘，接著是造型氣球派送與拍照，整體輕鬆又歡樂。" }
+                        "acceptedAnswer": { "@type": "Answer", "text": "完全不會！我們有標準流程：開場互動暖場、氣球魔術主秀、造型氣球派送、合影與自由拍照，整體輕鬆又歡樂。" }
                     },
                     {
                         "@type": "Question",
                         "name": "需要我準備什麼嗎？",
-                        "acceptedAnswer": { "@type": "Answer", "text": "不用太多準備，我們自備氣球、設備與道具，只需要一個乾淨平坦的表演空間，以及家長簡單協助場控。" }
+                        "acceptedAnswer": { "@type": "Answer", "text": "大叔團隊自備氣球、音響設備與道具，家長僅需提供一個平坦空間即可。" }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "下雨或臨時取消怎麼辦？",
+                        "acceptedAnswer": { "@type": "Answer", "text": "可提前更改時間或改成室內場地，請儘早聯絡我們協調，我們很彈性配合。" }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "可以只表演不佈置嗎？",
+                        "acceptedAnswer": { "@type": "Answer", "text": "可以，可依需求選擇純表演、純佈置或整合方案，皆可彈性客製。" }
                     }
                 ]
             }
@@ -87,30 +118,16 @@
     </script>
 
     <style>
-        /* 麵包屑導覽樣式 */
         .breadcrumbs { list-style: none; padding: 0; margin: 0 0 1em 0; font-size: 0.9em; color: #666; }
         .breadcrumbs li { display: inline; }
         .breadcrumbs li+li:before { padding: 8px; color: #ccc; content: "/\00a0"; }
         .breadcrumbs a { color: #2c3e50; text-decoration: none; border-bottom: 1px dotted #ccc; }
         .breadcrumbs a:hover { color: #c0392b; border-bottom-color: #c0392b; }
-
-        /* 縮圖樣式 */
-        .thumbnail { width: 120px; height: 80px; object-fit: cover; margin-right: 1em; border-radius: 6px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        
-        /* 側邊欄按鈕控制 (配合 menu.js) */
-        @media (min-width: 981px) {
-            #sidebar { position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; z-index: 1000; }
-            #wrapper { margin-left: 22em; }
-            #sidebar .toggle { display: none !important; }
-        }
-        @media (max-width: 980px) {
-            #sidebar .toggle { display: block !important; }
-        }
-
-        /* 其他樣式 */
+        .thumbnail { width: 120px; height: 90px; object-fit: cover; aspect-ratio: 4/3; margin-right: 1em; border-radius: 6px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .faq-item { margin-bottom: 1.5em; border-bottom: 1px solid #eee; padding-bottom: 1em; }
         .faq-item h3 { font-size: 1.1em; margin-bottom: 0.3em; color: #2c3e50; }
-        .faq-item p { margin-top: 0.3em; color: #555; }
+        @media (min-width: 981px) { #sidebar { position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; z-index: 1000; } #wrapper { margin-left: 22em; } #sidebar .toggle { display: none !important; } }
+        @media (max-width: 980px) { #sidebar .toggle { display: block !important; } }
     </style>
 </head>
 <body class="is-preload">
@@ -122,112 +139,109 @@
             <div class="inner">
 
                 <ul class="breadcrumbs">
-                    <li><a href="../index.html">首頁</a></li>
-                    <li><a href="../index.html#services">服務地區</a></li>
+                    <li><a href="/index.html">首頁</a></li>
+                    <li><a href="/index.html#services">服務地區</a></li>
                     <li>生日派對服務</li>
                 </ul>
 
                 <header id="header">
-                    <h1>生日派對氣球魔術 × 造型氣球派送 × 主題場地佈置</h1>
-                    <p>全台首選｜為孩子打造最難忘的生日驚喜</p>
+                    <h1>生日派對表演｜兒童氣球魔術 × 造型氣球 × 慶生佈置</h1>
+                    <p>北中七縣市首選｜氣球大叔 Sony 為孩子打造最難忘的生日驚喜</p>
                 </header>
 
                 <section>
-                    <p>氣球大叔 Sony 主打 <strong>氣球魔術表演</strong>、<strong>造型氣球派送</strong>、<strong>生日主題佈置</strong> 三大特色，服務範圍涵蓋台北、新北、桃園、新竹、苗栗、台中與基隆，專為兒童生日派對量身打造，是家長最信賴的親子派對解決方案。</p>
-                    <p>本頁精選整理氣球大叔 Sony 在北中七縣市的實際演出紀錄，從造型氣球到場地佈置一應俱全。立即往下探索，看看哪一場最適合您家寶貝的生日派對，歡迎加入 LINE 洽詢客製報價！</p>
+                    <p>氣球大叔 Sony <strong>長期於北部與中部各縣市演出</strong>，累積上千場演出經驗，<strong>為專職親子派對表演者與活動執行團隊，並長期受邀於飯店、百貨、親子館與大型社區活動演出。</strong>我們專注於兒童生日派對表演、親子活動與抓週慶生規劃，是家長最信賴的解決方案。</p>
+                    
+                    <div style="margin: 1.5em 0; padding: 1em; background: #f8f9fa; border-left: 4px solid #c0392b;">
+                        <p style="margin-bottom: 10px;"><strong>⏱️ 專業派對流程參考：</strong></p>
+                        <ul style="margin-bottom: 0; font-size: 0.95em;">
+                            <li>1. 開場互動暖場 (專業控場吸引孩子注意力)</li>
+                            <li>2. 氣球魔術主秀 (30分鐘充滿驚奇與爆笑的互動劇場)</li>
+                            <li>3. 造型氣球派送 (現場摺出孩子心目中的卡通角色)</li>
+                            <li>4. 合影拍照 (與驚喜氣球作品留下完美慶生合影)</li>
+                        </ul>
+                    </div>
 
                     <div style="background:#fff5f8; padding:1.5em; border-radius:8px; margin:2em 0; border: 1px solid #ff6b81;">
-                        <h3 style="margin-top:0; color:#e056fd;">🎉 三大特色服務說明</h3>
+                        <h3 style="margin-top:0; color:#e056fd;">🎉 三大特色服務內容</h3>
                         <ul style="margin-bottom:0;">
-                            <li><strong>氣球魔術表演：</strong>逗趣小丑與魔術結合，互動性強、適合開場。</li>
-                            <li><strong>造型氣球派送：</strong>現場製作卡通造型、動物造型，孩子專屬禮物。</li>
-                            <li><strong>生日主題場地佈置：</strong>氣球拱門、氣球牆與主題背景，一秒變美拍場地！</li>
+                            <li><strong>兒童氣球魔術：</strong>結合逗趣小丑元素的互動秀，適合慶生開場炒熱氣氛。</li>
+                            <li><strong>造型氣球派送：</strong>現場製作精美卡通禮物，滿足孩子對派對的期待。</li>
+                            <li><strong>生日主題佈置：</strong>氣球拱門、拍照牆與主題背景設計，打造專屬慶生空間。</li>
                         </ul>
                     </div>
                 </section>
 
-               <section>
+                <section>
                     <h2>📍 北中七縣市．精選生日派對實例</h2>
-                    <p>點擊下方連結，看看氣球大叔如何為不同城市的家庭，克服場地限制，創造獨一無二的回憶！</p>
+                    <p>點擊下方連結，探索氣球大叔如何依各地場地特性，量身打造夢幻派對：</p>
                     <ul style="list-style: none; padding: 0; margin: 0;">
 
                         <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 台北市：頂級飯店與質感派對首選</h3>
-                            <p>台北市家長最重視質感與精緻度。我們擁有豐富的五星級飯店（如 W Hotel）與親子餐廳演出經驗，能配合場地風格設計高雅的氣球佈置，並提供精緻的桌邊魔術互動。</p>
+                            <h3>🎈 台北市：頂級飯店與質感派對</h3>
+                            <p>台北家長最重質感，我們擅長五星級飯店慶生佈置。了解更多 <a href="/service/taipei-kids-party-show.html">台北表演服務</a>。</p>
                             <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/index4.webp" alt="台北 W Hotel 生日派對佈置" class="thumbnail" loading="lazy">
+                                <img src="../images/index4.webp" alt="台北生日派對表演｜慶生佈置實錄" class="thumbnail" loading="lazy">
                                 <a href="/blog/2025-taipei-w-hotel-birthday-balloon-decor.html" style="font-size: 1.1em; text-decoration: none; color: #c0392b; font-weight:bold;">
                                     👉 台北 W Hotel 黑金主題生日派對 × 頂級佈置實錄
                                 </a>
                             </div>
+                            <p style="font-size: 0.85em; color: #888; margin-top: 10px;">服務項目包含：生日派對表演、兒童魔術秀、造型氣球派送、慶生佈置。</p>
                         </li>
 
                         <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 桃園市：親子咖啡廳與自宅派對專家</h3>
-                            <p>身為桃園在地團隊，我們最熟悉這裡的社區與餐廳！無論是「微笑咖啡廳」這類熱門場地，或是自宅客廳，我們都能快速變身為充滿卡通氣球的夢幻樂園。</p>
+                            <h3>🎈 桃園市：社區與親子餐廳專家</h3>
+                            <p>大叔大本營！提供最即時的到府與餐廳預約。看更多 <a href="/service/taoyuan-kids-party-show.html">桃園表演服務</a>。</p>
                             <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/index2.webp" alt="桃園微笑咖啡廳生日派對" class="thumbnail" loading="lazy">
+                                <img src="../images/index2.webp" alt="桃園慶生表演｜微笑咖啡廳生日派對一站式服務" class="thumbnail" loading="lazy">
                                 <a href="/blog/2025-taoyuan-smile-cafe-birthday-party.html" style="font-size: 1.1em; text-decoration: none; color: #c0392b; font-weight:bold;">
                                     👉 桃園微笑咖啡廳生日派對｜氣球魔術一站式服務
                                 </a>
                             </div>
+                            <p style="font-size: 0.85em; color: #888; margin-top: 10px;">服務項目包含：生日派對表演、兒童魔術秀、造型氣球派送、慶生佈置。</p>
                         </li>
 
                         <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 新竹市：科技新貴家庭的最愛</h3>
-                            <p>新竹竹北地區的家長講求效率與創意。我們常受邀至 Big City 巨城百貨或科技園區周邊社區，提供「表演+佈置」一次到位的服務，讓忙碌的家長也能輕鬆辦派對。</p>
+                            <h3>🎈 新竹市：竹科新貴家庭推薦</h3>
+                            <p>竹北高鐵與竹科社區首選，效率與質感兼具。了解更多 <a href="/service/hsinchu-kids-party-show.html">新竹表演服務</a>。</p>
                             <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/index3.webp" alt="新竹 Big City 氣球表演" class="thumbnail" loading="lazy">
+                                <img src="../images/index3.webp" alt="新竹兒童派對表演｜Big City 巨城造型氣球互動" class="thumbnail" loading="lazy">
                                 <a href="/blog/2025-bigcity-balloon-magic.html" style="font-size: 1.1em; text-decoration: none; color: #c0392b; font-weight:bold;">
                                     👉 新竹 Big City 巨城創業展｜造型氣球排隊人潮紀錄
                                 </a>
                             </div>
+                            <p style="font-size: 0.85em; color: #888; margin-top: 10px;">服務項目包含：生日派對表演、兒童魔術秀、造型氣球派送、慶生佈置。</p>
                         </li>
 
                         <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 苗栗縣：溫馨家族聚會的歡樂推手</h3>
-                            <p>苗栗地區擁有寬敞的透天厝或戶外庭院，非常適合家族大聚會！氣球大叔擅長帶動跨年齡層的氣氛，讓阿公阿嬤到小孫子都笑得合不攏嘴。</p>
+                            <h3>🎈 苗栗縣：溫馨家族慶生首選</h3>
+                            <p>適合透天厝與露營區派對，歡樂全家大小。了解更多 <a href="/service/miaoli-kids-party-show.html">苗栗表演服務</a>。</p>
                             <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/index1.webp" alt="苗栗苑裡家族派對" class="thumbnail" loading="lazy">
+                                <img src="../images/index1.webp" alt="苗栗生日魔術表演｜家族聚餐氣球互動" class="thumbnail" loading="lazy">
                                 <a href="/blog/2025-miaoli-family-christmas-balloon-magic.html" style="font-size: 1.1em; text-decoration: none; color: #c0392b; font-weight:bold;">
-                                    👉 苗栗苑裡家族聖誕派對｜溫馨聚餐魔術互動
+                                    👉 苗栗苑裡家族派對｜溫馨聚餐魔術互動
                                 </a>
                             </div>
+                            <p style="font-size: 0.85em; color: #888; margin-top: 10px;">服務項目包含：生日派對表演、兒童魔術秀、造型氣球派送、慶生佈置。</p>
                         </li>
 
                         <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 台中市：大型戶外活動與節慶首選</h3>
-                            <p>台中氣候宜人，戶外活動盛行。從后里樂器節到西屯區的私人派對，我們的大型泡泡秀與街頭氣球互動，總是能成為全場焦點。</p>
+                            <h3>🎈 台中市：戶外大型活動與節慶</h3>
+                            <p>后里、西屯、南屯全區到府表演。了解更多 <a href="/service/taichung-kids-party-show.html">台中表演服務</a>。</p>
                             <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/index6.webp" alt="台中后里樂器節氣球表演" class="thumbnail" loading="lazy">
+                                <img src="../images/index6.webp" alt="台中生日派對表演｜后里樂器節氣球秀" class="thumbnail" loading="lazy">
                                 <a href="/blog/2025-taichung-houli-music-festival-balloon-magic.html" style="font-size: 1.1em; text-decoration: none; color: #c0392b; font-weight:bold;">
                                     👉 台中后里樂器節｜街頭互動氣球秀精彩回顧
                                 </a>
                             </div>
+                            <p style="font-size: 0.85em; color: #888; margin-top: 10px;">服務項目包含：生日派對表演、兒童魔術秀、造型氣球派送、慶生佈置。</p>
                         </li>
 
                         <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 新北市：多元社區活動的最佳夥伴</h3>
-                            <p>新北板橋、林口等地的社區活動中心，是孩子們最熟悉的遊樂場。我們提供高CP值的「社區團購表演方案」，是許多社區主委與家長群組的指定合作對象。</p>
-                            <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/index2.webp" alt="新北社區氣球表演" class="thumbnail" loading="lazy">
-                                <a href="https://line.me/ti/p/ObX9ZjEBXu" target="_blank" style="font-size: 1.1em; text-decoration: none; color: #555;">
-                                    💬 想在新北社區辦活動？點我加 LINE 洽詢方案
-                                </a>
-                            </div>
+                            <h3>🎈 新北與基隆：社區與室內派對</h3>
+                            <p>板橋、新店、基隆仁愛等區。了解 <a href="/service/newtaipei-kids-party-show.html">新北服務</a> 與 <a href="/service/keelung-kids-party-show.html">基隆服務</a>。</p>
+                            <p style="font-size: 0.85em; color: #888; margin-top: 10px;">服務項目包含：生日派對表演、兒童魔術秀、造型氣球派送、慶生佈置。</p>
                         </li>
-
-                        <li style="border-bottom: 1px solid #eee; padding: 1.5em 0;">
-                            <h3>🎈 基隆市：雨都也不怕的室內歡樂魔法</h3>
-                            <p>基隆雖然多雨，但我們的表演不受天氣影響！只要有小小的室內空間，氣球大叔就能變出大大的驚喜，是基隆親子館與幼兒園的熱門選擇。</p>
-                            <div style="display: flex; align-items: center; margin-top: 1em;">
-                                <img src="../images/index3.webp" alt="基隆室內魔術表演" class="thumbnail" loading="lazy">
-                                <a href="https://line.me/ti/p/ObX9ZjEBXu" target="_blank" style="font-size: 1.1em; text-decoration: none; color: #555;">
-                                    💬 基隆幼兒園/生日派對？點我預約檔期
-                                </a>
-                            </div>
-                        </li>
-
                     </ul>
                 </section>
 
@@ -235,28 +249,32 @@
                     <header class="major"><h2>常見問題 FAQ</h2></header>
                     <div class="faq-item">
                         <h3>Q：派對流程會很複雜嗎？</h3>
-                        <p>A：完全不會！我們有標準流程：氣球魔術表演開場約30分鐘，接著是造型氣球派送與拍照，整體輕鬆又歡樂。</p>
+                        <p>A：完全不會！大叔有標準流程：開場互動暖場約30分鐘，接著是造型氣球派送與合影拍照，整體流程輕鬆且驚喜不斷。</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q：需要我準備什麼嗎？</h3>
-                        <p>A：不用太多準備，我們自備氣球、設備與道具，只需要一個乾淨平坦的表演空間，以及家長簡單協助場控。</p>
+                        <h3>Q：可以只預約表演，不需要佈置嗎？</h3>
+                        <p>A：可以！家長可以根據預算與場地需求，選擇「純表演」、「純佈置」或「整合方案」，所有內容皆可彈性客製。</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q：下雨或臨時取消怎麼辦？</h3>
-                        <p>A：可提前更改時間或改成室內場地，請儘早聯絡我們協調，我們很彈性配合。</p>
+                        <h3>Q：需要家長協助準備什麼嗎？</h3>
+                        <p>A：我們自備所有氣球、音響與表演道具，您只需要提供一個平坦的空間（如客廳或餐廳一角），讓我們盡情發揮即可！</p>
                     </div>
                     <div class="faq-item">
-                        <h3>Q：場地大小有限可以辦嗎？</h3>
-                        <p>A：沒問題，小型教室、社區空間、客廳都可安排，我們會根據空間彈性調整道具與流程。</p>
+                        <h3>Q：場地大小有限制嗎？</h3>
+                        <p>A：沒問題，小型教室、社區交誼廳甚至自宅客廳都可安排，我們會依據空間彈性調整道具大小與互動流程。</p>
                     </div>
                 </section>
 
                 <section id="line-cta" style="margin-top: 3em;">
                     <div style="text-align: center; background-color: #fff5f8; padding: 2.5em; border-radius: 15px; border: 2px dashed #ff6b81;">
                         <h2 style="margin-bottom: 0.5em;">🎂 給孩子一個最難忘的生日驚喜！</h2>
-                        <p>想辦一場與眾不同的生日派對嗎？<br>大叔專為親子派對設計：互動魔術、夢幻泡泡與造型氣球，讓小壽星成為全場焦點！</p>
+                        <p style="color:#c0392b; font-weight:bold;">🔥 熱門時段（週末 / 連假）建議提前 2–4 週預約洽詢。</p>
                         
-                        <a href="https://line.me/ti/p/ObX9ZjEBXu" target="_blank" style="background-color: #06C755; color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.3em; display: inline-block; box-shadow: 0 4px 15px rgba(6,199,85,0.3); transition: transform 0.2s;">
+                        <p style="background: #fff; padding: 10px; border-radius: 5px; display: inline-block; font-size: 0.9em; color: #c0392b; border: 1px solid #ff6b81; margin-bottom: 1.5em;">
+                            📝 詢問格式：<strong>日期 / 地點 / 孩子年齡 / 預算範圍</strong>
+                        </p><br>
+
+                        <a href="https://line.me/ti/p/ObX9ZjEBXu" target="_blank" rel="noopener noreferrer" style="background-color: #06C755; color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.3em; display: inline-block; box-shadow: 0 4px 15px rgba(6,199,85,0.3); transition: transform 0.2s;">
                             💬 點我加 LINE 討論生日驚喜
                         </a>
                         
