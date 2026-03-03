@@ -21,29 +21,65 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
     <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
     <style>
- .content-image-container {
-    width: 90%;
-    max-width: 700px;
-    margin: 30px auto;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
+        .content-image-container {
+            width: 90%;
+            max-width: 700px;
+            margin: 30px auto;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
 
-.content-image-container img {
-    width: 100% !important;
-    height: auto !important;
-    display: block;
-    object-fit: cover;
-}
+        .content-image-container img {
+            width: 100% !important;
+            height: auto !important;
+            display: block;
+            object-fit: cover;
+        }
 
-figcaption {
-    text-align: center;
-    font-size: 0.9em;
-    color: #888;
-    margin-top: 0.8em;
-    padding: 0 10px;
-}
+        figcaption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 0.8em;
+            padding: 0 10px;
+        }
+
+        /* 新增 FAQ 樣式 */
+        .faq-item {
+            padding: 12px 14px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            margin: 10px 0;
+            background: #fff;
+        }
+        .faq-item summary {
+            cursor: pointer;
+            font-weight: 700;
+            color: #333;
+            outline: none;
+            list-style: none;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-content {
+            margin-top: 10px;
+            color: #444;
+            line-height: 1.8;
+            border-top: 1px solid #f9f9f9;
+            padding-top: 10px;
+        }
+        
+        /* LINE 按鈕樣式 */
+        .button-line {
+            background-color: #06C755 !important;
+            box-shadow: inset 0 0 0 2px #06C755 !important;
+            color: #fff !important;
+            margin-right: 10px;
+        }
+        .button-line:hover {
+            background-color: #05b34c !important;
+            color: #fff !important;
+        }
     </style>
     <script type="application/ld+json">
     {
@@ -67,6 +103,51 @@ figcaption {
           "author": { "@type": "Person", "name": "氣球大叔 Sony", "url": "https://balloonsony.com/about.html" },
           "publisher": { "@type": "Organization", "name": "氣球大叔 Sony", "logo": { "@type": "ImageObject", "url": "https://balloonsony.com/images/logo.png" } },
           "description": "回顧 2026 年 1 月南投草屯尾牙表演。氣球大叔 Sony 與兼顧抽獎主持的唱跳姐姐聯手，提供互動魔術、親子唱跳、造型氣球 120 分鐘完整規劃方案。"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "你們方案包含尾牙主持與抽獎控場嗎？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "有的。唱跳姐姐可擔任現場活動主持，包含流程引導、抽獎控場、獎項宣布與現場互動，並與表演段落無縫銜接，讓尾牙節奏更順、更不冷場。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "2 小時統包方案的流程怎麼安排？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "常見安排為：抽獎控場穿插流程引導 + 30 分鐘互動魔術 + 30 分鐘親子唱跳 + 60 分鐘造型氣球手折。也可依餐點節奏、獎項數量與場地狀況客製調整。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "適合幾歲的孩子？大人也看得懂嗎？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "常見最適合 4–12 歲孩子；魔術與互動橋段也會兼顧家長視角，讓大人能一起笑、一起參與，整場更有共鳴。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "場地與設備需要準備什麼？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "一個小表演區即可（餐廳包廂／會議室皆可）。音響設備可由我們協助準備或與場地方配合；若有抽獎，建議備麥克風與基本音源輸入更順暢。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "費用怎麼算？需要提前多久預約？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "報價通常會依地區、活動時長、主持需求、場次與人數而定。熱門檔期建議提早預約；您也可直接用 LINE 提供資訊，我們會快速給您建議與報價。"
+              }
+            }
+          ]
         }
       ]
     }
@@ -143,7 +224,7 @@ figcaption {
                         <h3 style="margin-top: 0; color: #c0392b; display: flex; align-items: center;">
                             🎈 正在規劃南投草屯地區的尾牙活動嗎？
                         </h3>
-                        <p style="margin-bottom: 1em;">如果您也希望為您的活動創造像現場一樣「一秒升溫」的笑聲，<strong>氣球大叔 Sony</strong> 團隊是您的首選！我們提供 2 小時完整不斷電方案，場地需求也很簡單：一個小表演區即可。音響設備可由我們協助準備，餐廳包廂／會議室都能配合：</p>
+                        <p style="margin-bottom: 1em;">如果您也希望為您的活動創造像現場一樣「一秒升溫」的笑聲，<strong>氣球大叔 Sony</strong> 團隊是您的首選！我們提供 2 小時完整不斷電方案，場地需求也很簡單：一個小表演區即可：</p>
                         <ul style="margin-bottom: 1.5em; color: #444;">
                             <li><strong>專業主持與抽獎控場</strong>：掌握全場節奏，精準引導最受期待的摸彩時刻。</li>
                             <li><strong>30 分鐘互動魔術秀</strong>：專業破冰，穩定現場觀賞節奏，讓孩子不再分心。</li>
@@ -154,6 +235,45 @@ figcaption {
                             <small>我們用專業流程設計，讓福委會最在意的三件事一次到位：孩子開心、家長放心、抽獎節奏好掌控。</small>
                         </p>
                     </div>
+
+                    <section class="faq-section" style="margin: 3em 0;">
+                        <h3 style="margin-bottom: 0.6em;">常見問題 FAQ</h3>
+
+                        <details class="faq-item">
+                            <summary>你們方案包含尾牙主持與抽獎控場嗎？</summary>
+                            <div class="faq-content">
+                                有的。唱跳姐姐可擔任現場活動主持，包含流程引導、抽獎控場、獎項宣布與現場互動，並與表演段落無縫銜接，讓尾牙節奏更順、更不冷場。
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>2 小時統包方案的流程怎麼安排？</summary>
+                            <div class="faq-content">
+                                常見安排為：抽獎控場穿插流程引導 + 30 分鐘互動魔術 + 30 分鐘親子唱跳 + 60 分鐘造型氣球手折。也可依餐點節奏、獎項數量與場地狀況客製調整。
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>適合幾歲的孩子？大人也看得懂嗎？</summary>
+                            <div class="faq-content">
+                                常見最適合 4–12 歲孩子；魔術與互動橋段也會兼顧家長視角，讓大人能一起笑、一起參與，整場更有共鳴。
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>場地與設備需要準備什麼？</summary>
+                            <div class="faq-content">
+                                一個小表演區即可（餐廳包廂／會議室皆可）。音響設備可由我們協助準備或與場地方配合；若有抽獎，建議備麥克風與基本音源輸入更順暢。
+                            </div>
+                        </details>
+
+                        <details class="faq-item">
+                            <summary>費用怎麼算？需要提前多久預約？</summary>
+                            <div class="faq-content">
+                                報價通常會依地區、活動時長、主持需求、場次與人數而定。熱門檔期建議提早預約；您也可直接用 LINE 提供資訊，我們會快速給您建議與報價。
+                            </div>
+                        </details>
+                    </section>
 
                     <hr class="major" />
                     
@@ -166,8 +286,10 @@ figcaption {
                             <li><a href="2025-taichung-houli-music-festival-balloon-magic.html">📍 台中后里樂器節｜讓音樂與氣球魔法完美共演</a></li>
                         </ul>
                     </div>
+                    
                     <p style="text-align: center; margin-top: 3em;">
-                        <a href="../index.html#contact" class="button primary big">預約氣球大叔專業主持表演</a>
+                        <a href="https://line.me/ti/p/ObX9ZjEBXu" class="button big button-line">🟢 LINE 快速詢價</a>
+                        <a href="../index.html#contact" class="button primary big">預約專業主持表演</a>
                     </p>
                 </section>
             </div>
