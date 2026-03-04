@@ -32,18 +32,26 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
     <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 
-    <script type="application/ld+json">
+   <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": "BreadcrumbList",
-                "@id": "https://balloonsony.com/service/christmas-community-show.html#breadcrumb",
-                "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://balloonsony.com/" },
-                    { "@type": "ListItem", "position": 2, "name": "服務地區", "item": "https://balloonsony.com/#services" },
-                    { "@type": "ListItem", "position": 3, "name": "聖誕活動服務", "item": "https://balloonsony.com/service/christmas-community-show.html" }
-                ]
+                "@type": "WebSite",
+                "@id": "https://balloonsony.com/#website",
+                "url": "https://balloonsony.com/",
+                "name": "氣球大叔 Sony",
+                "inLanguage": "zh-TW",
+                "publisher": {"@id": "https://balloonsony.com/#business"}
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://balloonsony.com/service/christmas-community-show.html#webpage",
+                "url": "https://balloonsony.com/service/christmas-community-show.html",
+                "name": "聖誕節表演｜社區晚會 × 氣球魔術＋聖誕主題手折｜氣球大叔 Sony",
+                "isPartOf": {"@id": "https://balloonsony.com/#website"},
+                "about": {"@id": "https://balloonsony.com/#business"},
+                "description": "聖誕節表演專用流程：氣球魔術暖場＋聖誕主題手折。氣球大叔 Sony 長期受邀於百貨、社區與園區晚會演出，控場穩定、動線明確。"
             },
             {
                 "@type": ["LocalBusiness", "EntertainmentBusiness"],
@@ -54,17 +62,12 @@
                 "url": "https://balloonsony.com/",
                 "address": {
                     "@type": "PostalAddress",
+                    "streetAddress": "愛國街48號",
                     "addressLocality": "桃園區",
                     "addressRegion": "桃園市",
                     "addressCountry": "TW"
                 },
                 "areaServed": ["基隆市", "台北市", "新北市", "桃園市", "新竹市", "苗栗縣", "台中市"],
-                "openingHoursSpecification": [{
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-                    "opens": "08:00",
-                    "closes": "21:00"
-                }],
                 "sameAs": [
                     "https://www.facebook.com/BalloonSony/",
                     "https://www.instagram.com/balloonsony/",
@@ -72,12 +75,20 @@
                 ]
             },
             {
+                "@type": "BreadcrumbList",
+                "@id": "https://balloonsony.com/service/christmas-community-show.html#breadcrumb",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://balloonsony.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "服務地區", "item": "https://balloonsony.com/#services" },
+                    { "@type": "ListItem", "position": 3, "name": "聖誕活動服務", "item": "https://balloonsony.com/service/christmas-community-show.html" }
+                ]
+            },
+            {
                 "@type": "Service",
                 "@id": "https://balloonsony.com/service/christmas-community-show.html#service",
                 "name": "聖誕節社區表演｜氣球魔術＋聖誕主題手折（清單點選制）",
-                "url": "https://balloonsony.com/service/christmas-community-show.html",
-                "provider": { "@id": "https://balloonsony.com/#business" },
                 "serviceType": ["聖誕節表演", "社區晚會魔術", "聖誕手折氣球", "百貨活動表演"],
+                "provider": { "@id": "https://balloonsony.com/#business" },
                 "description": "提供聖誕晚會專屬流程：氣球魔術暖場＋聖誕主題手折（清單點選制），名額控管、動線設計、好收尾。",
                 "offers": {
                     "@type": "Offer",
@@ -89,6 +100,7 @@
             },
             {
                 "@type": "FAQPage",
+                "@id": "https://balloonsony.com/service/christmas-community-show.html#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
