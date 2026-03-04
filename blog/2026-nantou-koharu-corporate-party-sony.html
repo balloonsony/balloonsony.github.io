@@ -2,12 +2,7 @@
 <html lang="zh-Hant">
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SSN5GTCBBL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-SSN5GTCBBL');
-    </script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-SSN5GTCBBL');</script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="robots" content="index, follow" />
@@ -92,6 +87,23 @@
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "ProfessionalService",
+          "@id": "https://balloonsony.com/#organization",
+          "name": "氣球大叔 Sony",
+          "url": "https://balloonsony.com/",
+          "priceRange": "NT$",
+          "telephone": "+886-930733100",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Taiwan",
+            "addressLocality": "Taoyuan"
+          },
+          "sameAs": [
+            "https://line.me/ti/p/ObX9ZjEBXu",
+            "https://www.facebook.com/balloonsony"
+          ]
+        },
+        {
           "@type": "BreadcrumbList",
           "itemListElement": [
             { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://balloonsony.com/" },
@@ -101,6 +113,7 @@
         },
         {
           "@type": "BlogPosting",
+          "@id": "https://balloonsony.com/blog/2026-nantou-koharu-corporate-party-sony.html#article",
           "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://balloonsony.com/blog/2026-nantou-koharu-corporate-party-sony.html"
@@ -109,10 +122,6 @@
           "description": "回顧 2026 年 1 月南投草屯尾牙表演。氣球大叔 Sony 與兼顧抽獎主持的唱跳姐姐聯手，提供互動魔術、親子唱跳、造型氣球 120 分鐘完整規劃方案。",
           "articleSection": "企業尾牙活動",
           "keywords": "南投尾牙表演, 草屯尾牙主持, 企業尾牙魔術, 尾牙抽獎主持",
-          "speakable": {
-            "@type": "SpeakableSpecification",
-            "cssSelector": [".main p"]
-          },
           "image": [
             "https://balloonsony.com/images/2026-nantou-balloon-sony-lucky-draw-host.webp"
           ],
@@ -123,14 +132,7 @@
             "name": "氣球大叔 Sony",
             "url": "https://balloonsony.com/about.html"
           },
-          "publisher": {
-            "@type": "Organization",
-            "name": "氣球大叔 Sony",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://balloonsony.com/images/logo.png"
-            }
-          }
+          "publisher": { "@id": "https://balloonsony.com/#organization" }
         },
         {
           "@type": "FAQPage",
