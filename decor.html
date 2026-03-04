@@ -39,18 +39,26 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-    <script type="application/ld+json">
+  <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "BreadcrumbList",
-          "@id": "https://balloonsony.com/decor.html#breadcrumb",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://balloonsony.com/" },
-            { "@type": "ListItem", "position": 2, "name": "表演項目", "item": "https://balloonsony.com/#services" },
-            { "@type": "ListItem", "position": 3, "name": "會場佈置", "item": "https://balloonsony.com/decor.html" }
-          ]
+          "@type": "WebSite",
+          "@id": "https://balloonsony.com/#website",
+          "url": "https://balloonsony.com/",
+          "name": "氣球大叔 Sony",
+          "inLanguage": "zh-TW",
+          "publisher": {"@id": "https://balloonsony.com/#business"}
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://balloonsony.com/decor.html#webpage",
+          "url": "https://balloonsony.com/decor.html",
+          "name": "會場佈置推薦｜氣球拱門・爆破表演｜台北/桃園/新竹/台中 - 氣球大叔 Sony",
+          "isPartOf": {"@id": "https://balloonsony.com/#website"},
+          "about": {"@id": "https://balloonsony.com/#business"},
+          "description": "氣球大叔 Sony 提供專業會場佈置，包含氣球拱門、主題背板、婚禮爆破與商業活動裝飾。服務範圍涵蓋基隆、台北、桃園、新竹、台中。"
         },
         {
           "@type": "LocalBusiness",
@@ -61,12 +69,28 @@
           "telephone": "+886-930733100",
           "address": {
             "@type": "PostalAddress",
-            "addressCountry": "TW",
+            "streetAddress": "愛國街48號",
+            "addressLocality": "桃園區",
             "addressRegion": "桃園市",
-            "addressLocality": "桃園市"
+            "postalCode": "330",
+            "addressCountry": "TW"
           },
           "areaServed": ["基隆市","台北市","新北市","桃園市","新竹市","苗栗縣","台中市","彰化縣","宜蘭縣"],
-          "sameAs": ["https://www.facebook.com/balloonsony"]
+          "sameAs": [
+            "https://www.facebook.com/BalloonSony/",
+            "https://www.instagram.com/balloonsony/",
+            "https://www.youtube.com/@balloonsony",
+            "https://www.pro360.com.tw/service/39936"
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://balloonsony.com/decor.html#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://balloonsony.com/" },
+            { "@type": "ListItem", "position": 2, "name": "表演項目", "item": "https://balloonsony.com/#services" },
+            { "@type": "ListItem", "position": 3, "name": "會場佈置", "item": "https://balloonsony.com/decor.html" }
+          ]
         },
         {
           "@type": "Service",
@@ -82,7 +106,7 @@
             "availability": "https://schema.org/InStock",
             "name": "客製化會場佈置報價",
             "url": "https://balloonsony.com/decor.html#line-cta",
-            "description": "採客製化報價，費用依規模、氣球數量、道具需求及地點而定。歡迎傳送場地照片討論。"
+            "description": "費用依規模、數量、道具需求及地點而定。歡迎加 LINE 討論。"
           }
         },
         {
@@ -92,12 +116,12 @@
             {
               "@type": "Question",
               "name": "Q1：你們提供哪些氣球佈置服務？",
-              "acceptedAnswer": { "@type": "Answer", "text": "我們提供氣球拱門、拍照牆、舞台背景、入口裝飾、品牌牆、主視覺區等佈置服務，可依活動主題調整色系與造型。" }
+              "acceptedAnswer": { "@type": "Answer", "text": "提供氣球拱門、拍照牆、舞台背景、入口裝飾、品牌牆、主視覺區等佈置服務，可依活動主題調整色系與造型。" }
             },
             {
               "@type": "Question",
               "name": "Q2：你們有做婚禮爆破或開幕爆破嗎？",
-              "acceptedAnswer": { "@type": "Answer", "text": "有的！我們提供專業婚禮氣球爆破與開幕爆破，可配合倒數與音樂，效果驚艷，適合舞台開場或剪綵儀式。" }
+              "acceptedAnswer": { "@type": "Answer", "text": "有的！提供專業婚禮氣球爆破與開幕爆破，可配合倒數與音樂，效果驚艷，適合舞台開場或剪綵儀式。" }
             },
             {
               "@type": "Question",
