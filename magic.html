@@ -39,18 +39,26 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-    <script type="application/ld+json">
+   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "BreadcrumbList",
-          "@id": "https://balloonsony.com/magic.html#breadcrumb",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://balloonsony.com/" },
-            { "@type": "ListItem", "position": 2, "name": "表演項目", "item": "https://balloonsony.com/#services" },
-            { "@type": "ListItem", "position": 3, "name": "魔術表演", "item": "https://balloonsony.com/magic.html" }
-          ]
+          "@type": "WebSite",
+          "@id": "https://balloonsony.com/#website",
+          "url": "https://balloonsony.com/",
+          "name": "氣球大叔 Sony",
+          "inLanguage": "zh-TW",
+          "publisher": {"@id": "https://balloonsony.com/#business"}
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://balloonsony.com/magic.html#webpage",
+          "url": "https://balloonsony.com/magic.html",
+          "name": "魔術表演推薦 × 氣球互動秀｜台北/新北/桃園/新竹/台中親子活動首選 - 氣球大叔 Sony",
+          "isPartOf": {"@id": "https://balloonsony.com/#website"},
+          "about": {"@id": "https://balloonsony.com/#business"},
+          "description": "氣球大叔 Sony 提供專業魔術表演，結合造型氣球與爆笑小丑互動。服務以北中部為主。適合兒童生日派對、幼稚園畢業典禮、公司家庭日。"
         },
         {
           "@type": "LocalBusiness",
@@ -61,12 +69,28 @@
           "telephone": "+886-930733100",
           "address": {
             "@type": "PostalAddress",
-            "addressCountry": "TW",
+            "streetAddress": "愛國街48號",
+            "addressLocality": "桃園區",
             "addressRegion": "桃園市",
-            "addressLocality": "桃園市"
+            "postalCode": "330",
+            "addressCountry": "TW"
           },
           "areaServed": ["台北市","新北市","桃園市","新竹市","苗栗縣","台中市","基隆市","宜蘭縣","彰化縣"],
-          "sameAs": ["https://www.facebook.com/balloonsony"]
+          "sameAs": [
+            "https://www.facebook.com/BalloonSony/",
+            "https://www.instagram.com/balloonsony/",
+            "https://www.youtube.com/@balloonsony",
+            "https://www.pro360.com.tw/service/39936"
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://balloonsony.com/magic.html#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://balloonsony.com/" },
+            { "@type": "ListItem", "position": 2, "name": "表演項目", "item": "https://balloonsony.com/#services" },
+            { "@type": "ListItem", "position": 3, "name": "魔術表演", "item": "https://balloonsony.com/magic.html" }
+          ]
         },
         {
           "@type": "Service",
@@ -82,7 +106,7 @@
             "availability": "https://schema.org/InStock",
             "name": "客製化魔術表演報價",
             "url": "https://balloonsony.com/magic.html#line-cta",
-            "description": "依活動規模與流程客製內容；可搭配氣球互動/泡泡秀/小丑互動，歡迎加 LINE 詢問。"
+            "description": "依規模與流程客製內容；可搭配氣球互動/泡泡秀/小丑互動。"
           }
         },
         {
