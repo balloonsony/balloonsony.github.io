@@ -14,7 +14,7 @@
                     <ul>
                         <li><a href="${prefix}magic.html">親子互動魔術秀</a></li>
                         <li><a href="${prefix}bubble.html">泡泡秀</a></li>
-                        <li><a href="${prefix}balloon.html">造型氣球</a></li>
+                        <li><a href="${prefix}balloon.html">造型氣球互動</a></li>
                         <li><a href="${prefix}decor.html">會場佈置</a></li>
                     </ul>
                 </li>
