@@ -18,6 +18,13 @@
                         <li><a href="${prefix}decor.html">會場佈置</a></li>
                     </ul>
                 </li>
+                <li><span class="opener">活動場景</span>
+    <ul>
+        <li><a href="${prefix}service/birthday-balloon-show.html">生日派對方案</a></li>
+        <li><a href="${prefix}service/mid-autumn-community-show.html">中秋活動方案</a></li>
+        <li><a href="${prefix}service/christmas-community-show.html">聖誕活動方案</a></li>
+    </ul>
+</li>
                 <li><span class="opener">服務地區</span>
                     <ul>
                         <li><a href="${prefix}service/keelung-kids-party-show.html">基隆表演服務</a></li>
@@ -27,9 +34,6 @@
                         <li><a href="${prefix}service/hsinchu-kids-party-show.html">新竹表演服務</a></li>
                         <li><a href="${prefix}service/miaoli-kids-party-show.html">苗栗表演服務</a></li>
                         <li><a href="${prefix}service/taichung-kids-party-show.html">台中表演服務</a></li>
-                        <li><a href="${prefix}service/mid-autumn-community-show.html">中秋活動服務</a></li>
-                        <li><a href="${prefix}service/christmas-community-show.html">聖誕活動服務</a></li>
-                        <li><a href="${prefix}service/birthday-balloon-show.html">生日派對服務</a></li>
                     </ul>
                 </li>
                 <li><a href="${prefix}index.html#portfolio">作品集</a></li>
