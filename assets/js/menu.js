@@ -22,6 +22,8 @@
     <ul>
         <li><a href="${prefix}service/birthday-balloon-show.html">生日派對方案</a></li>
               <li><a href="${prefix}service/kindergarten-school-event.html">幼兒園 / 校園活動方案</a></li>
+                            <li><a href="${prefix}service/corporate-brand-event.html">企業家庭日 / 品牌活動整合方案</a></li>
+              
         <li><a href="${prefix}service/mid-autumn-community-show.html">中秋活動方案</a></li>
         <li><a href="${prefix}service/christmas-community-show.html">聖誕活動方案</a></li>
     </ul>
