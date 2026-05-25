@@ -19,7 +19,7 @@
     <meta name="keywords" content="氣球魔術演出紀錄, 親子表演回顧, 台北氣球活動, 桃園泡泡秀實拍, 百貨開幕紀錄, 幼兒園親子活動, 氣球佈置現場紀錄, 氣球大叔 blog" />
     <link rel="canonical" href="https://balloonsony.com/blog/blog.html" />
 
-    <meta property="og:title" content="活動足跡 Blog｜氣球大叔 Sony 表演實況全紀錄" />
+    <meta property="og:title" content="活動足跡 Blog｜氣球大叔 Sony 表探實況全紀錄" />
     <meta property="og:description" content="整理每一場魔術、氣球、泡泡秀與佈置現場，完整收錄最真實的感動與歡樂瞬間。" />
     <meta property="og:image" content="https://balloonsony.com/images/og-balloon-sony.jpg" />
     <meta property="og:url" content="https://balloonsony.com/blog/blog.html" />
@@ -58,7 +58,7 @@
             "postalCode": "330",
             "addressCountry": "TW"
           },
-          "areaServed": ["基隆市","台北市","新北市","桃園市","新竹市","苗栗縣","台中市"],
+          "areaServed": ["基隆市","台北市","新北市","桃園市","新竹市","苗栗縣","台中市","南投縣"],
           "sameAs": [
             "https://www.facebook.com/BalloonSony/",
             "https://www.instagram.com/balloonsony/",
@@ -95,8 +95,13 @@
         .breadcrumbs a { color: #2c3e50; text-decoration: none; border-bottom: 1px dotted #ccc; }
         .breadcrumbs a:hover { color: #c0392b; border-bottom-color: #c0392b; }
 
+        /* 快速導航按鈕 */
+        .fast-nav { margin: 1.5em 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 10px; }
+        .fast-nav a { display: inline-block; padding: 6px 15px; background: #f5f5f5; color: #333; text-decoration: none; border-radius: 20px; font-size: 0.9em; transition: all 0.2s; border: 1px solid #ddd; }
+        .fast-nav a:hover { background: #c0392b; color: #fff; border-color: #c0392b; }
+
         /* Blog 列表樣式 */
-        .blog-list { list-style: none; padding: 0; }
+        .blog-list { list-style: none; padding: 0; margin: 0; }
         .blog-list li { border-bottom: 1px solid #eee; padding: 1.2em 0; transition: all 0.3s; }
         .blog-list li:hover { background: #fafafa; padding-left: 10px; }
         .blog-list a { text-decoration: none; color: #c0392b; font-size: 1.1em; display: block; font-weight: bold; line-height: 1.4; }
@@ -110,8 +115,9 @@
         .tag-hsinchu { background: #f1f8e9; color: #33691e; }
         .tag-miaoli { background: #efebe9; color: #4e342e; }
         .tag-taichung { background: #ffebee; color: #c62828; }
+        .tag-nantou { background: #e8eaf6; color: #283593; }
 
-        /* 側邊欄控制 (配合 menu.js) */
+        /* 側邊欄控制 */
         @media (min-width: 981px) {
             #sidebar { position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; z-index: 1000; }
             #wrapper { margin-left: 22em; }
@@ -121,7 +127,7 @@
             #sidebar .toggle { display: block !important; }
         }
 
-        h2.region-header { margin-top: 2.5em; border-bottom: 2px solid #333; padding-bottom: 0.5em; color: #333; }
+        h2.region-header { margin-top: 2.5em; border-bottom: 2px solid #333; padding-bottom: 0.5em; color: #333; scroll-margin-top: 20px; }
     </style>
 </head>
 <body class="is-preload">
@@ -143,14 +149,24 @@
                 </header>
 
                 <section>
-                    <p style="font-size: 1.2em; line-height: 1.6;">
-                        氣球大叔 Sony 的活動紀錄遍及 <strong>基隆、台北、新北、桃園、新竹、苗栗、台中</strong> 各地。<br>
+                    <p style="font-size: 1.2em; line-height: 1.6; margin-bottom: 1em;">
+                        氣球大叔 Sony 的活動紀錄遍及 <strong>基隆、台北、新北、桃園、新竹、苗栗、台中、南投</strong> 各地。<br>
                         無論是<strong>互動魔術、手折氣球、泡泡秀、會場佈置、婚禮爆破</strong>，歡迎找找看有沒有您熟悉的活動現場！
                     </p>
 
-                    <ul class="blog-list">
+                    <ul class="fast-nav">
+                        <li><a href="#keelung">⚓ 基隆市</a></li>
+                        <li><a href="#taipei">🗼 台北市</a></li>
+                        <li><a href="#newtaipei">🏘️ 新北市</a></li>
+                        <li><a href="#taoyuan">🏠 桃園市 (主場)</a></li>
+                        <li><a href="#hsinchu">💡 新竹/竹北</a></li>
+                        <li><a href="#miaoli">🍓 苗栗縣</a></li>
+                        <li><a href="#taichung">☀️ 台中市</a></li>
+                        <li><a href="#nantou">⛰️ 南投縣</a></li>
+                    </ul>
 
-                        <h2 class="region-header">⚓ 基隆市表演實錄</h2>
+                    <h2 class="region-header" id="keelung">⚓ 基隆市表演實錄</h2>
+                    <ul class="blog-list">
                         <li>
                             <span class="region-tag tag-keelung">基隆｜幼兒園活動</span>
                             <a href="2024-keelung-sdgs-kindergarten.html">基隆幼兒園 SDGs 教育活動｜氣球大叔魔術演出 × 永續發展目標推廣</a>
@@ -163,8 +179,10 @@
                             <span class="region-tag tag-keelung">基隆｜大型博覽會</span>
                             <a href="2022-keelung-city-expo-balloon-show.html">基隆城市博覽會｜氣球大叔 Sony 城門廣場魔術＋造型氣球手折互動</a>
                         </li>
+                    </ul>
 
-                        <h2 class="region-header">🗼 台北市表演實錄</h2>
+                    <h2 class="region-header" id="taipei">🗼 台北市表演實錄</h2>
+                    <ul class="blog-list">
                         <li><span class="region-tag tag-taipei">台北｜抓周佈置</span> <a href="2026-taipei-zhongshan-lilas-zhuazhou-birthday-party.html">台北市中山區抓周生日派對佈置：Lilas 的森林童話</a></li>
                         <li>
                             <span class="region-tag tag-taipei">台北｜科技家庭日</span>
@@ -214,29 +232,34 @@
                             <span class="region-tag tag-taipei">台北｜記者會演出</span>
                             <a href="2025-yunjiannan-salt-happiness-taipei-station-balloon.html">北門王爺藝響節 × 氣球大叔 Sony 親子造型氣球演出 × 台北車站開幕記者會</a>
                         </li>
-
-                        <li> <span class="region-tag tag-taipei">台北｜尾牙表演</span> <a href="2026-taipei-etherwan-year-end-party-balloon.html">台北尾牙氣球表演｜益網科技尾牙宴，新東南海鮮餐廳超人氣互動</a> </li>
-
-                        <li><span class="region-tag tag-taipei">台北｜生日表演</span><a href="2026-taipei-daan-drdance-birthday-balloon-magic.html">台北大安區生日派對表演推薦｜KR Dance Studio 氣球魔術互動秀 精采實錄</a></li>
-
                         <li>
-    <span class="region-tag tag-taipei">台北｜企業家庭日表演</span>
-    <a href="2026-taipei-esun-family-day-childrens-park.html">台北企業家庭日活動案例｜玉山銀行家庭日氣球迎賓派送與樹蛙廣場魔術互動秀</a>
-</li>
-
-                        <h2 class="region-header">🏘️ 新北市表演實錄</h2>
+                            <span class="region-tag tag-taipei">台北｜尾牙表演</span>
+                            <a href="2026-taipei-etherwan-year-end-party-balloon.html">台北尾牙氣球表演｜益網科技尾牙宴，新東南海鮮餐廳超人氣互動</a>
+                        </li>
                         <li>
-    <span class="region-tag tag-newtaipei">新北｜造型氣球專區服務</span>
-    <a href="2026-linkou-goodday-yungching-real-estate-spring-party.html">林口春酒折氣球活動案例｜永慶不動產群慶團隊20周年造型氣球區佈置與定點派送服務</a>
-</li>
-<li>
-    <span class="region-tag tag-newtaipei">新北｜親子派對</span> 
-    <a href="2026-tucheng-antler-park-closing-ceremony-balloon.html">新北市土城鹿角公園｜二年級結業式：互動魔術秀與造型氣球派對</a>
-</li>
-<li>
-    <span class="region-tag tag-newtaipei">新北｜啤酒節慶</span>
-    <a href="2025-xindian-beerfest-show.html">新北市新店區裕隆城啤酒節｜氣球魔術秀 × 吹破可樂瓶爆笑橋段</a>
-</li>
+                            <span class="region-tag tag-taipei">台北｜生日表演</span>
+                            <a href="2026-taipei-daan-drdance-birthday-balloon-magic.html">台北大安區生日派對表演推薦｜KR Dance Studio 氣球魔術互動秀 精采實錄</a>
+                        </li>
+                        <li>
+                            <span class="region-tag tag-taipei">台北｜企業家庭日表演</span>
+                            <a href="2026-taipei-esun-family-day-childrens-park.html">台北企業家庭日活動案例｜玉山銀行家庭日氣球迎賓派送與樹蛙廣場魔術互動秀</a>
+                        </li>
+                    </ul>
+
+                    <h2 class="region-header" id="newtaipei">🏘️ 新北市表演實錄</h2>
+                    <ul class="blog-list">
+                        <li>
+                            <span class="region-tag tag-newtaipei">新北｜造型氣球專區服務</span>
+                            <a href="2026-linkou-goodday-yungching-real-estate-spring-party.html">林口春酒折氣球活動案例｜永慶不動產群慶團隊20周年造型氣球區佈置與定點派送服務</a>
+                        </li>
+                        <li>
+                            <span class="region-tag tag-newtaipei">新北｜親子派對</span> 
+                            <a href="2026-tucheng-antler-park-closing-ceremony-balloon.html">新北市土城鹿角公園｜二年級結業式：互動魔術秀與造型氣球派對</a>
+                        </li>
+                        <li>
+                            <span class="region-tag tag-newtaipei">新北｜啤酒節慶</span>
+                            <a href="2025-xindian-beerfest-show.html">新北市新店區裕隆城啤酒節｜氣球魔術秀 × 吹破可樂瓶爆笑橋段</a>
+                        </li>
                         <li>
                             <span class="region-tag tag-newtaipei">新北｜醫院公益佈置</span>
                             <a href="2025-sanxia-nurse-day-decor.html">新北市三峽區恩主公醫院｜2025 國際護師節氣球佈置實錄</a>
@@ -249,34 +272,34 @@
                             <span class="region-tag tag-newtaipei">新北｜在地文化節</span>
                             <a href="2025-sanxia-newtaipei-balloon-magic.html">2025 新北三峽藍染節活動紀錄｜氣球大叔 Sony 魔術氣球秀 × 新北親子演出</a>
                         </li>
-
                         <li> 
                             <span class="region-tag tag-newtaipei">新北｜客製化佈置</span> 
-                            <a href="2026-banqiao-poker-charity-event-balloon-decor.html">客製化賭場風活動佈置｜米亞第一屆賭王撲克慈善大賽視覺設計紀錄</a> </li>
-
+                            <a href="2026-banqiao-poker-charity-event-balloon-decor.html">客製化賭場風活動佈置｜米亞第一屆賭王撲克慈善大賽視覺設計紀錄</a>
+                        </li>
                         <li>
-    <span class="region-tag tag-new-taipei">新北市｜尾牙表演</span>
-    <a href="2026-xizhi-foyet-luoya-trade-year-end-party-balloon-magic.html">汐止福泰大飯店尾牙表演案例｜洛亞貿易尾牙宴主持、氣球魔術互動秀與定點手折紀錄</a>
-</li>
-<li>
-    <span class="region-tag tag-newtaipei">新北｜醫院節慶佈置</span>
-    <a href="2026-sanxia-en-chu-kong-hospital-nurses-day-balloon.html">醫院行政區節慶會場佈置案例｜三峽恩主公醫院國際護師節主題氣球設計</a>
-</li>
-<li>
-    <span class="region-tag tag-newtaipei">新北｜百貨商場表演</span>
-    <a href="2026-xizhi-ifg-square-may-carnival-show.html">汐止遠雄廣場活動表演案例｜商場百貨室內親子氣球魔術互動秀</a>
-</li>
-<li>
-                        <h2 class="region-header">🏠 桃園市表演實錄 (主場)</h2>
-<li>
-    <span class="region-tag tag-taoyuan">桃園｜大型戶外節慶</span>
-    <a href="2026-taoyuan-hakka-tung-blossom-festival-show.html">2026 桃園桐花祭活動演出案例｜客家文化館舞台氣球魔術互動秀</a>
-</li>
-<li>
-    <span class="region-tag tag-taoyuan">桃園｜活動演出</span>
-    <a href="2026-taoyuan-longtan-lupinus-festival-hakka-tea-show.html">桃園魯冰花季｜龍潭臺灣客家茶文化館親子互動秀案例</a>
-</li>
-                        
+                            <span class="region-tag tag-newtaipei">新北｜尾牙表演</span>
+                            <a href="2026-xizhi-foyet-luoya-trade-year-end-party-balloon-magic.html">汐止福泰大飯店尾牙表演案例｜洛亞貿易尾牙宴主持、氣球魔術互動秀與定點手折紀錄</a>
+                        </li>
+                        <li>
+                            <span class="region-tag tag-newtaipei">新北｜醫院節慶佈置</span>
+                            <a href="2026-sanxia-en-chu-kong-hospital-nurses-day-balloon.html">醫院行政區節慶會場佈置案例｜三峽恩主公醫院國際護師節主題氣球設計</a>
+                        </li>
+                        <li>
+                            <span class="region-tag tag-newtaipei">新北｜百貨商場表演</span>
+                            <a href="2026-xizhi-ifg-square-may-carnival-show.html">汐止遠雄廣場活動表演案例｜商場百貨室室親子氣球魔術互動秀</a>
+                        </li>
+                    </ul>
+
+                    <h2 class="region-header" id="taoyuan">🏠 桃園市表演實錄 (主場)</h2>
+                    <ul class="blog-list">
+                        <li>
+                            <span class="region-tag tag-taoyuan">桃園｜大型戶外節慶</span>
+                            <a href="2026-taoyuan-hakka-tung-blossom-festival-show.html">2026 桃園桐花祭活動演出案例｜客家文化館舞台氣球魔術互動秀</a>
+                        </li>
+                        <li>
+                            <span class="region-tag tag-taoyuan">桃園｜活動演出</span>
+                            <a href="2026-taoyuan-longtan-lupinus-festival-hakka-tea-show.html">桃園魯冰花季｜龍潭臺灣客家茶文化館親子互動秀案例</a>
+                        </li>
                         <li>
                             <span class="region-tag tag-taoyuan">桃園｜生活節活動</span>
                             <a href="2022-taoyuan-greenlife-bee.html">桃園綠色生活悠遊節｜氣球大叔變身蜜蜂氣球人 × 魔術互動現場直擊</a>
@@ -322,32 +345,37 @@
                             <a href="2025-taoyuan-grand-hotel-celebration-decor.html">桃園尊爵大飯店｜傳佳緻 100% 完銷慶功宴，氣球大叔打造豪華佈置</a>
                         </li>
                         <li>
-    <span class="region-tag tag-taoyuan">桃園｜品牌週年慶</span>
-    <a href="2025-taoyuan-ikea-anniversary-balloon-magic-show.html">桃園 IKEA 5 週年慶｜斯莫蘭魔法森林氣球魔術秀：專業互動點亮品牌盛事</a>
-</li>
+                            <span class="region-tag tag-taoyuan">桃園｜品牌週年慶</span>
+                            <a href="2025-taoyuan-ikea-anniversary-balloon-magic-show.html">桃園 IKEA 5 週年慶｜斯莫蘭魔法森林氣球魔術秀：專業互動點亮品牌盛事</a>
+                        </li>
                         <li>
                             <span class="region-tag tag-taoyuan">桃園｜生日一站式</span>
                             <a href="2025-taoyuan-birthday-balloon-magic-party.html">桃園大園 清惜的家生日派對 × 氣球魔術＋唱跳姐姐 聯合演出</a>
                         </li>
                         <li>
-    <span class="region-tag tag-taoyuan">桃園｜社區活動</span>
-    <a href="2025-taoyuan-farglory-qingjin-christmas-party-balloon-show.html">桃園小檜溪聖誕派對：遠雄青晉 × 永慶不動產鴻陞團隊｜氣球大叔 Sony 魔術秀</a>
-</li>
-<li>
-    <span class="region-tag tag-taoyuan">桃園｜車聚活動</span>
-    <a href="2023-taoyuan-qingpu-kia-ev6-car-meet-balloon-show.html">桃園青埔 KIA EV6 車聚活動｜氣球大叔魔術演出 × 親子互動造型氣球</a>
-</li>
-                        <li>    <span class="region-tag tag-taoyuan">桃園楊梅｜社區聖誕</span> <a href="2025-taoyuan-yangmei-dingzang-dayan-christmas.html">桃園楊梅聖誕晚會｜鼎藏大硯二期：氣球魔術秀 & 現場手折氣球雙重奏</a> </li>
-                        <h2 class="region-header">💡 新竹/竹北表演實錄</h2>
+                            <span class="region-tag tag-taoyuan">桃園｜社區活動</span>
+                            <a href="2025-taoyuan-farglory-qingjin-christmas-party-balloon-show.html">桃園小檜溪聖誕派對：遠雄青晉 × 永慶不動產鴻陞團隊｜氣球大叔 Sony 魔術秀</a>
+                        </li>
+                        <li>
+                            <span class="region-tag tag-taoyuan">桃園｜車聚活動</span>
+                            <a href="2023-taoyuan-qingpu-kia-ev6-car-meet-balloon-show.html">桃園青埔 KIA EV6 車聚活動｜氣球大叔魔術演出 × 親子互動造型氣球</a>
+                        </li>
+                        <li>    
+                            <span class="region-tag tag-taoyuan">桃園楊梅｜社區聖誕</span> 
+                            <a href="2025-taoyuan-yangmei-dingzang-dayan-christmas.html">桃園楊梅聖誕晚會｜鼎藏大硯二期：氣球魔術秀 & 現場手折氣球雙重奏</a> 
+                        </li>
+                    </ul>
+
+                    <h2 class="region-header" id="hsinchu">💡 新竹/竹北表演實錄</h2>
+                    <ul class="blog-list">
                         <li>
                             <span class="region-tag tag-hsinchu">新竹｜台積電運動會</span>
                             <a href="2025-tsmc-sports-day-balloon-artist.html">台積電 TSMC 運動會｜220公分巨型勞安氣球偶驚艷全場！ESH 人氣首選</a>
                         </li>
-
                         <li>
-    <span class="region-tag tag-hsinchu">新竹｜開幕佈置</span>
-    <a href="2026-hsinchu-hukou-am-baby-care-center-opening.html">艾寶童馨托嬰中心開幕佈置｜新竹湖口專業氣球佈置案例</a>
-</li>
+                            <span class="region-tag tag-hsinchu">新竹｜開幕佈置</span>
+                            <a href="2026-hsinchu-hukou-am-baby-care-center-opening.html">艾寶童馨托嬰中心開幕佈置｜新竹湖口專業氣球佈置案例</a>
+                        </li>
                         <li>
                             <span class="region-tag tag-hsinchu">新竹｜秋收市集</span>
                             <a href="2022-zhubei-hueiyu-autumn-show.html">新竹竹北親子市集活動｜惠宇大境秋收樂市 × 氣球魔術互動回顧</a>
@@ -380,8 +408,10 @@
                             <span class="region-tag tag-hsinchu">新竹｜品牌商場活動</span>
                             <a href="2025-sogo-hsinchu-ogawa-balloon-magic.html">SOGO 新竹 OGAWA 品牌活動 × 氣球魔術秀 × 九宮格遊戲互動</a>
                         </li>
+                    </ul>
 
-                        <h2 class="region-header">🍓 苗栗縣表演實錄</h2>
+                    <h2 class="region-header" id="miaoli">🍓 苗栗縣表演實錄</h2>
+                    <ul class="blog-list">
                         <li>
                             <span class="region-tag tag-miaoli">苗栗｜家族盛宴</span>
                             <a href="2025-miaoli-family-christmas-balloon-magic.html">苗栗苑裡家族聖誕派對｜Sony 大叔打造充滿「凝聚力」的家庭盛宴</a>
@@ -398,12 +428,14 @@
                             <span class="region-tag tag-miaoli">苗栗｜兒童生日會</span>
                             <a href="2022-miaoli-heyduggee-birthday-balloon-show.html">苗栗生日派對 × 阿奇幼幼園主題演出｜客製造型氣球帽</a>
                         </li>
+                    </ul>
 
-                        <h2 class="region-header">☀️ 台中市表演實錄</h2>
+                    <h2 class="region-header" id="taichung">☀️ 台中市表演實錄</h2>
+                    <ul class="blog-list">
                         <li>
-    <span class="region-tag tag-taichung">台中東區｜百貨活動</span>
-    <a href="2025-taichung-taroko-mall-balloon-magic-show.html">台中大魯閣新時代氣球魔術秀｜Sony 大叔鼻孔吹氣球特技嗨翻全場</a>
-</li>
+                            <span class="region-tag tag-taichung">台中東區｜百貨活動</span>
+                            <a href="2025-taichung-taroko-mall-balloon-magic-show.html">台中大魯閣新時代氣球魔術秀｜Sony 大叔鼻孔吹氣球特技嗨翻全場</a>
+                        </li>
                         <li>
                             <span class="region-tag tag-taichung">台中｜音樂節慶</span>
                             <a href="2025-taichung-houli-music-festival-balloon-magic.html">台中后里樂器節 × 氣球魔術秀 × 可樂爆破街頭互動演出</a>
@@ -428,10 +460,14 @@
                             <span class="region-tag tag-taichung">台中｜幼兒園謝師宴</span>
                             <a href="2025-nantun-kindergarten-balloon-party.html">台中南屯幼兒園謝師宴活動紀錄｜氣球大叔 Sony × 畢業氣球魔術秀</a>
                         </li>
-<li> 
-    <span class="region-tag tag-taichung">南投｜企業尾牙</span> 
-    <a href="2026-nantou-koharu-corporate-party-sony.html">草屯小春日本料理尾牙：抽獎控場 + 魔術唱跳 + 造型氣球 120 分鐘統包方案</a> 
-</li>
+                    </ul>
+
+                    <h2 class="region-header" id="nantou">⛰️ 南投縣表演實錄</h2>
+                    <ul class="blog-list">
+                        <li> 
+                            <span class="region-tag tag-nantou">南投｜企業尾牙</span> 
+                            <a href="2026-nantou-koharu-corporate-party-sony.html">草屯小春日本料理尾牙：抽獎控場 + 魔術唱跳 + 造型氣球 120 分鐘統包方案</a> 
+                        </li>
                     </ul>
                 </section>
 
