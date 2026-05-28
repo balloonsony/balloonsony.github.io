@@ -53,9 +53,9 @@
     var sidebar = document.getElementById('sidebar');
     if (sidebar) sidebar.innerHTML = sidebarContent;
 
-    // 手機版按鈕樣式與注入
+// 手機版按鈕樣式與注入
     var ctaStyles = `<style>#sticky-cta{display:none}@media (max-width:768px){#sticky-cta{display:block!important;position:fixed;bottom:0;left:0;width:100%;z-index:500;background:white;box-shadow:0 -2px 10px rgba(0,0,0,0.1);padding:10px 15px;box-sizing:border-box}#sticky-cta a{display:block;width:100%;background-color:#06C755;color:white!important;text-align:center;padding:12px 0;border-radius:50px;font-weight:700;text-decoration:none;font-size:1.1em;box-shadow:0 4px 6px rgba(6,199,85,.3)}body{padding-bottom:70px}}</style>`;
-    var ctaHTML = `<div id="sticky-cta"><a href="https://line.me/ti/p/ObX9ZjEBXu" target="_blank">💬 立即加 LINE 詢問檔期</a></div>`;
+    var ctaHTML = `<div id="sticky-cta"><a href="https://page.line.me/qxq3473t" target="_blank">💬 立即加 LINE 詢問檔期</a></div>`;
     document.head.insertAdjacentHTML("beforeend", ctaStyles);
     document.body.insertAdjacentHTML("beforeend", ctaHTML);
 })();
