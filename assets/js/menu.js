@@ -2,63 +2,68 @@
     var isSubPage = window.location.pathname.indexOf('/service/') !== -1 || window.location.pathname.indexOf('/blog/') !== -1;
     var prefix = isSubPage ? '../' : '';
 
-    var globalStyles = `
+    // 針對 HTML5 UP Editorial 模板量身打造的現代化寬螢幕樣式
+    var editorialModernStyles = `
     <style>
-        /* 1. 徹底清除舊側邊欄，讓主內容展開而不被夾在中間 */
+        /* 1. 完美解鎖 Editorial 模板的左側欄限制，轉為滿版寬螢幕 */
         #sidebar { display: none !important; }
-        #wrapper { padding: 0 !important; margin: 0 !important; width: 100% !important; max-width: 100% !important; }
-        
-        /* 讓主內容區塊可以適度展開，不再被死死限制在窄中間 */
+        #wrapper { 
+            padding-left: 0 !important; 
+            display: block !important; 
+            width: 100% !important; 
+            max-width: 100% !important;
+        }
         #main { 
             width: 100% !important; 
-            max-width: 1400px !important; 
+            max-width: 1300px !important; 
             margin: 0 auto !important; 
-            padding: 40px 30px !important; 
+            padding: 4em 3em !important; 
             box-sizing: border-box !important;
         }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif !important; 
-            color: #334155 !important; 
-            background-color: #f8fafc !important; 
-            margin: 0 !important;
+
+        @media screen and (max-width: 736px) {
+            #main { padding: 2em 1.5em !important; }
         }
 
-        /* 2. 頂部導覽列：拉寬至兩側，跟大螢幕完美貼合 */
+        /* 2. 頂部導覽列 (Sticky Header) 完美融入 Editorial 風格 */
         #site-header {
             position: sticky;
             top: 0;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            border-bottom: 1px solid #e2e8f0;
+            z-index: 10000;
+            background: #ffffff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+            border-bottom: solid 1px rgba(210, 215, 217, 0.75);
             width: 100%;
         }
         .nav-container {
-            max-width: 1400px;
+            max-width: 1350px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 14px 30px;
+            padding: 0 2.5em;
+            height: 4.5em;
             box-sizing: border-box;
         }
         .nav-brand {
+            font-family: "Roboto Slab", serif;
             font-size: 1.3em;
-            font-weight: 800;
-            color: #0f172a;
+            font-weight: 700;
+            color: #3d4449;
             text-decoration: none;
             display: flex;
             align-items: center;
             gap: 8px;
             white-space: nowrap;
+            border-bottom: none !important;
         }
-        .nav-brand span { color: #ea580c; }
+        .nav-brand span { color: #f56a6a; }
 
+        /* 電腦版選單 */
         .desktop-menu {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 5px;
             list-style: none;
             margin: 0;
             padding: 0;
@@ -67,97 +72,139 @@
         .desktop-menu a, .desktop-menu .menu-drop-btn {
             display: block;
             padding: 8px 14px;
-            color: #475569;
+            color: #7f888f;
             text-decoration: none;
+            font-family: "Open Sans", sans-serif;
             font-weight: 600;
             font-size: 0.95em;
-            border-radius: 8px;
+            border-radius: 4px;
             transition: all 0.2s ease;
             cursor: pointer;
             white-space: nowrap;
+            border-bottom: none !important;
         }
         .desktop-menu a:hover, .desktop-menu .menu-drop-btn:hover {
-            background-color: #fff7ed;
-            color: #ea580c;
+            background-color: rgba(245, 106, 106, 0.08);
+            color: #f56a6a !important;
         }
 
+        /* 下拉選單 */
         .dropdown-content {
             display: none;
             position: absolute;
             top: 100%;
             left: 0;
-            min-width: 220px;
+            min-width: 210px;
             background-color: #ffffff;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-            border-radius: 12px;
-            padding: 10px 0;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 6px;
+            padding: 8px 0;
             list-style: none;
-            z-index: 1001;
-            border: 1px solid #f1f5f9;
+            z-index: 10001;
+            border: solid 1px rgba(210, 215, 217, 0.75);
         }
         .dropdown-content a {
-            padding: 10px 20px;
+            padding: 10px 18px;
             font-size: 0.9em;
-            color: #334155;
-            font-weight: 500;
+            color: #7f888f;
+            font-weight: 400;
         }
         .dropdown-content a:hover {
-            background-color: #fff7ed;
-            color: #ea580c;
+            background-color: rgba(245, 106, 106, 0.08);
+            color: #f56a6a !important;
         }
         .desktop-menu > li:hover .dropdown-content { display: block; }
 
+        /* 預約亮點按鈕 */
         .btn-header-cta {
-            background: #ea580c !important;
+            background-color: #f56a6a !important;
             color: #ffffff !important;
-            border-radius: 50px !important;
-            padding: 9px 20px !important;
-            box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25);
-            font-weight: 700 !important;
+            border-radius: 4px !important;
+            padding: 8px 18px !important;
+            box-shadow: 0 2px 6px rgba(245, 106, 106, 0.3);
         }
-        .btn-header-cta:hover { background: #c2410c !important; }
+        .btn-header-cta:hover { background-color: #e05555 !important; color: #ffffff !important; }
 
-        /* 3. 內文區塊現代化卡片設計（改為舒適的寬幅滿版感） */
-        .inner > section, section.main {
-            background: #ffffff !important;
-            border-radius: 16px !important;
-            padding: 40px !important;
-            margin-bottom: 30px !important;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.03) !important;
-            border: 1px solid #f1f5f9 !important;
+        /* 手機版漢堡按鈕 */
+        .mobile-hamburger {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5em;
+            color: #3d4449;
+            cursor: pointer;
         }
-        h1 { font-size: 2.3em !important; color: #0f172a !important; font-weight: 800 !important; line-height: 1.3 !important; }
-        h2 { font-size: 1.6em !important; color: #1e293b !important; border-bottom: 2px solid #ffedd5 !important; padding-bottom: 8px !important; margin-top: 25px !important; }
 
-        /* 4. 手機版選單 */
-        .mobile-hamburger { display: none; background: none; border: none; font-size: 1.8em; color: #0f172a; cursor: pointer; }
+        /* 手機版抽屜選單 */
         .mobile-drawer {
-            display: none; position: fixed; top: 65px; left: 0; width: 100%; height: calc(100vh - 65px);
-            background: #ffffff; z-index: 999; overflow-y: auto; padding: 24px; box-sizing: border-box;
+            display: none;
+            position: fixed;
+            top: 4.5em;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 4.5em);
+            background: #ffffff;
+            z-index: 9999;
+            overflow-y: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            border-bottom: solid 1px rgba(210, 215, 217, 0.75);
         }
         .mobile-drawer ul { list-style: none; padding: 0; margin: 0; }
-        .mobile-drawer > ul > li { border-bottom: 1px solid #f1f5f9; padding: 14px 0; }
-        .mobile-drawer a, .mobile-drawer .mobile-cat-title { font-size: 1.1em; font-weight: 700; color: #0f172a; text-decoration: none; display: block; }
-        .mobile-sub-menu { list-style: none; padding-left: 15px !important; margin-top: 10px !important; }
-        .mobile-sub-menu a { font-size: 0.95em !important; font-weight: 500 !important; color: #64748b !important; padding: 6px 0; }
-
-        @media (max-width: 1024px) {
-            .desktop-menu { display: none; }
-            .mobile-hamburger { display: block; }
+        .mobile-drawer > ul > li { border-bottom: solid 1px rgba(210, 215, 217, 0.3); padding: 12px 0; }
+        .mobile-drawer a, .mobile-drawer .mobile-cat-title {
+            font-family: "Roboto Slab", serif;
+            font-size: 1.05em;
+            font-weight: 700;
+            color: #3d4449;
+            text-decoration: none;
+            display: block;
+            border-bottom: none !important;
+        }
+        .mobile-sub-menu { list-style: none; padding-left: 15px !important; margin-top: 8px !important; }
+        .mobile-sub-menu a {
+            font-family: "Open Sans", sans-serif !important;
+            font-size: 0.95em !important;
+            font-weight: 400 !important;
+            color: #7f888f !important;
+            padding: 6px 0;
         }
 
+        /* 響應式斷點 (低於 1024px 切換手機漢堡選單) */
+        @media screen and (max-width: 1024px) {
+            .desktop-menu { display: none; }
+            .mobile-hamburger { display: block; }
+            .nav-container { padding: 0 1.5em; }
+        }
+
+        /* 原有手機版 LINE 底部懸浮按鈕 */
         #sticky-cta { display: none; }
         @media (max-width: 768px) {
             #sticky-cta {
-                display: block !important; position: fixed; bottom: 0; left: 0; width: 100%; z-index: 2000;
-                background: white; box-shadow: 0 -4px 15px rgba(0,0,0,0.08); padding: 12px 20px; box-sizing: border-box;
+                display: block !important;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                z-index: 20000;
+                background: white;
+                box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+                padding: 10px 15px;
+                box-sizing: border-box;
             }
             #sticky-cta a {
-                display: block; width: 100%; background-color: #06C755; color: white !important;
-                text-align: center; padding: 12px 0; border-radius: 50px; font-weight: 700; text-decoration: none; font-size: 1.1em;
+                display: block;
+                width: 100%;
+                background-color: #06C755;
+                color: white !important;
+                text-align: center;
+                padding: 12px 0;
+                border-radius: 50px;
+                font-weight: 700;
+                text-decoration: none;
+                font-size: 1.1em;
             }
-            body { padding-bottom: 75px !important; }
-            #main { padding: 20px 15px !important; }
+            body { padding-bottom: 70px !important; }
         }
     </style>`;
 
@@ -247,12 +294,12 @@
                 <li><a href="${prefix}index.html#portfolio">作品集</a></li>
                 <li><a href="${prefix}blog/faq.html">FAQ 常見問題</a></li>
                 <li><a href="${prefix}blog/blog.html">活動足跡</a></li>
-                <li style="margin-top: 15px;"><a href="${prefix}index.html#contact" style="background:#ea580c;color:white;text-align:center;padding:12px;border-radius:25px;display:block;">立即預約檔期</a></li>
+                <li style="margin-top: 15px;"><a href="${prefix}index.html#contact" style="background:#f56a6a;color:white;text-align:center;padding:12px;border-radius:4px;display:block;">立即預約檔期</a></li>
             </ul>
         </div>
     </header>`;
 
-    document.head.insertAdjacentHTML("beforeend", globalStyles);
+    document.head.insertAdjacentHTML("beforeend", editorialModernStyles);
     document.body.insertAdjacentHTML("afterbegin", topHeaderHTML);
 
     var btn = document.getElementById('hamburger-btn');
