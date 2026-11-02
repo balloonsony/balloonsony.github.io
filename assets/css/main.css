@@ -2334,3 +2334,61 @@
     width: 100% !important;
     box-sizing: border-box !important;
 }
+
+/* ==========================================================
+   【氣球大叔 Sony 官網】Editorial 模板滿版置中終極覆蓋修正
+   ========================================================== */
+
+/* 1. 徹底隱藏左側邊欄並釋放空間 */
+#sidebar {
+    display: none !important;
+    width: 0 !important;
+    visibility: hidden !important;
+}
+
+#wrapper {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    position: relative !important;
+}
+
+#main {
+    position: relative !important;
+    float: none !important;
+    margin: 0 auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    max-width: 1300px !important;
+    box-sizing: border-box !important;
+    padding: 4em 3em !important;
+}
+
+/* 2. 強制覆蓋 Editorial 原本在各大螢幕尺寸下的左側留白 (Media Queries) */
+@media screen and (max-width: 1680px) {
+    #wrapper { padding-left: 0 !important; }
+    #main { max-width: 1200px !important; }
+}
+
+@media screen and (max-width: 1280px) {
+    #wrapper { padding-left: 0 !important; }
+    #main { max-width: 1100px !important; }
+}
+
+@media screen and (max-width: 980px) {
+    #wrapper { padding-left: 0 !important; }
+    #main { width: 100% !important; padding: 3em 2em !important; }
+}
+
+@media screen and (max-width: 736px) {
+    #wrapper { padding-left: 0 !important; }
+    #main { width: 100% !important; padding: 2em 1.5em !important; }
+}
+
+@media screen and (max-width: 480px) {
+    #wrapper { padding-left: 0 !important; }
+    #main { width: 100% !important; padding: 1.5em 1em !important; }
+}
