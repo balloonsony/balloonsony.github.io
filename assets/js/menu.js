@@ -2,33 +2,46 @@
     var isSubPage = window.location.pathname.indexOf('/service/') !== -1 || window.location.pathname.indexOf('/blog/') !== -1;
     var prefix = isSubPage ? '../' : '';
 
-    // 注入全站現代化視覺覆蓋 (Global Modern UI Override)
     var globalStyles = `
     <style>
-        /* 1. 徹底清除舊主題的左側邊欄與版面干擾 */
+        /* 1. 徹底清除舊側邊欄，讓主內容展開而不被夾在中間 */
         #sidebar { display: none !important; }
-        #wrapper { padding: 0 !important; margin: 0 !important; max-width: 100% !important; }
-        #main { max-width: 1200px !important; margin: 0 auto !important; padding: 40px 20px !important; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif !important; color: #334155 !important; background-color: #f8fafc !important; }
+        #wrapper { padding: 0 !important; margin: 0 !important; width: 100% !important; max-width: 100% !important; }
+        
+        /* 讓主內容區塊可以適度展開，不再被死死限制在窄中間 */
+        #main { 
+            width: 100% !important; 
+            max-width: 1400px !important; 
+            margin: 0 auto !important; 
+            padding: 40px 30px !important; 
+            box-sizing: border-box !important;
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif !important; 
+            color: #334155 !important; 
+            background-color: #f8fafc !important; 
+            margin: 0 !important;
+        }
 
-        /* 2. 全新質感頂部導覽列 */
+        /* 2. 頂部導覽列：拉寬至兩側，跟大螢幕完美貼合 */
         #site-header {
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
             border-bottom: 1px solid #e2e8f0;
             width: 100%;
         }
         .nav-container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 14px 24px;
+            padding: 14px 30px;
+            box-sizing: border-box;
         }
         .nav-brand {
             font-size: 1.3em;
@@ -45,7 +58,7 @@
         .desktop-menu {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             list-style: none;
             margin: 0;
             padding: 0;
@@ -104,18 +117,18 @@
         }
         .btn-header-cta:hover { background: #c2410c !important; }
 
-        /* 3. 內文與卡片質感提升 (Card UI Design) */
+        /* 3. 內文區塊現代化卡片設計（改為舒適的寬幅滿版感） */
         .inner > section, section.main {
             background: #ffffff !important;
             border-radius: 16px !important;
-            padding: 32px !important;
+            padding: 40px !important;
             margin-bottom: 30px !important;
             box-shadow: 0 4px 20px rgba(0,0,0,0.03) !important;
             border: 1px solid #f1f5f9 !important;
         }
-        h1 { font-size: 2.2em !important; color: #0f172a !important; font-weight: 800 !important; line-height: 1.3 !important; }
+        h1 { font-size: 2.3em !important; color: #0f172a !important; font-weight: 800 !important; line-height: 1.3 !important; }
         h2 { font-size: 1.6em !important; color: #1e293b !important; border-bottom: 2px solid #ffedd5 !important; padding-bottom: 8px !important; margin-top: 25px !important; }
-        
+
         /* 4. 手機版選單 */
         .mobile-hamburger { display: none; background: none; border: none; font-size: 1.8em; color: #0f172a; cursor: pointer; }
         .mobile-drawer {
@@ -128,12 +141,11 @@
         .mobile-sub-menu { list-style: none; padding-left: 15px !important; margin-top: 10px !important; }
         .mobile-sub-menu a { font-size: 0.95em !important; font-weight: 500 !important; color: #64748b !important; padding: 6px 0; }
 
-        @media (max-width: 960px) {
+        @media (max-width: 1024px) {
             .desktop-menu { display: none; }
             .mobile-hamburger { display: block; }
         }
 
-        /* 手機版 LINE 底部懸浮按鈕 */
         #sticky-cta { display: none; }
         @media (max-width: 768px) {
             #sticky-cta {
@@ -145,6 +157,7 @@
                 text-align: center; padding: 12px 0; border-radius: 50px; font-weight: 700; text-decoration: none; font-size: 1.1em;
             }
             body { padding-bottom: 75px !important; }
+            #main { padding: 20px 15px !important; }
         }
     </style>`;
 
