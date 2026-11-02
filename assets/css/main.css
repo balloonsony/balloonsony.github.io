@@ -2533,3 +2533,47 @@ section > header.major > h2::after {
 #header {
     display: block !important;
 }
+/* ==========================================================
+   【手機版 RWD 專屬修正】確保手機瀏覽完美自適應、絕不超出螢幕
+   ========================================================== */
+@media screen and (max-width: 768px) {
+    /* 1. 確保主容器在手機上滿版且左右有舒適的 15px 安全距離 */
+    #main {
+        padding: 1.5em 1em !important;
+        margin: 10px !important;
+        border-radius: 12px !important;
+        width: auto !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 2. 讓首頁第一屏 (Hero 區塊) 在手機上自動改為單欄上下排列，並消除過寬的內距 */
+    section[style*="background: linear-gradient"] {
+        padding: 25px 15px !important;
+        margin: 15px 0 !important;
+        border-radius: 14px !important;
+    }
+
+    section[style*="background: linear-gradient"] > div {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    /* 3. 讓「關於我」白卡片在手機上滿版舒適顯示 */
+    #intro-seo .content {
+        padding: 20px 15px !important;
+    }
+
+    /* 4. 讓品牌故事區塊在手機上改為上下堆疊 */
+    #story-cert {
+        flex-direction: column !important;
+        padding: 20px 15px !important;
+        gap: 20px !important;
+        margin: 20px 0 !important;
+    }
+
+    /* 5. 確保所有圖片與區塊不會撐破手機螢幕 */
+    img, video, iframe {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
