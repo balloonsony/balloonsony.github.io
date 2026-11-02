@@ -38,7 +38,35 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/main.css" />
+<style>
+/* ==========================================================
+   【直接寫在 HTML 內的強制修正碼】保證手機版完美生效
+   ========================================================== */
+@media screen and (max-width: 768px) {
+    /* 1. 徹底清除右上角選單按鈕的醜外框 */
+    #sidebar .toggle, 
+    a.toggle {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+    }
+    
+    #sidebar .toggle::before {
+        color: #ea580c !important;
+        font-size: 1.5em !important;
+    }
 
+    /* 2. 讓首頁橘色漸層卡片在手機上正確內縮，絕對不貼邊 */
+    section[style*="background: linear-gradient"] {
+        width: 90% !important;
+        max-width: 90% !important;
+        margin: 15px auto 25px auto !important;
+        padding: 20px 15px !important;
+        box-sizing: border-box !important;
+    }
+}
+</style>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
