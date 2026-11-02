@@ -2392,3 +2392,117 @@
     #wrapper { padding-left: 0 !important; }
     #main { width: 100% !important; padding: 1.5em 1em !important; }
 }
+/* ==========================================================
+   【氣球大叔 Sony 官網】專業化視覺精雕與質感升級
+   ========================================================== */
+
+/* 1. 調整整體網頁背景與字體抗鋸齒，提升現代感 */
+body {
+    background-color: #fcfcfd !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 2. 徹底重置側邊欄與展開主內容區，並給予大氣的置中與圓角包覆 */
+#sidebar {
+    display: none !important;
+}
+
+#wrapper {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    background: transparent !important;
+}
+
+#main {
+    max-width: 1240px !important;
+    margin: 40px auto !important;
+    padding: 4em 3em !important;
+    background: #ffffff !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04) !important;
+    border: 1px solid #f1f5f9 !important;
+    box-sizing: border-box !important;
+}
+
+/* 3. 精緻化首頁標題區 (#header) */
+#header {
+    border-bottom: 2px solid #f1f5f9 !important;
+    padding-bottom: 2.5em !important;
+    margin-bottom: 3em !important;
+    text-align: center !important;
+}
+
+#header h1 {
+    font-size: 2.2em !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    letter-spacing: -0.02em !important;
+}
+
+#header p {
+    font-size: 1.1em !important;
+    color: #64748b !important;
+    margin-top: 0.5em !important;
+}
+
+/* 4. 賦予所有圖片高質感圓角與陰影 */
+.image.main img, 
+.image img, 
+#banner .image-block img,
+#story-cert .story-img img,
+.gallery img {
+    border-radius: 14px !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.gallery img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* 5. 區塊標題 (Major Headers) 質感升級 */
+section > header.major > h2, 
+section > .major > h2 {
+    font-size: 1.8em !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+section > header.major > h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: #ea580c;
+    border-radius: 2px;
+}
+
+/* 6. 功能卡片與服務項目 (Feature Cards) 現代化微調 */
+.feature-card {
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 1.8em !important;
+    transition: all 0.3s ease !important;
+}
+
+.feature-card:hover {
+    background: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05) !important;
+    transform: translateY(-3px) !important;
+}
+
+/* 7. 手機與響應式微調 */
+@media screen and (max-width: 736px) {
+    #main {
+        padding: 2em 1.5em !important;
+        margin: 15px !important;
+        border-radius: 12px !important;
+    }
+}
