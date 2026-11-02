@@ -2304,3 +2304,17 @@
 	.contact .icon {
 	  font-size: 1em; /* 再微縮一點 */
 	}
+
+/* 徹底移除側邊欄佔位並滿版置中 */
+#sidebar {
+    display: none !important;
+}
+#wrapper {
+    padding-left: 0 !important;
+}
+#main {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 3em 2em !important;
+    width: 100% !important;
+}
