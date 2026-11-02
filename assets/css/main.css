@@ -2577,3 +2577,67 @@ section > header.major > h2::after {
         height: auto !important;
     }
 }
+/* ==========================================================
+   【全面手機版 RWD 強制修正】確保手機瀏覽完美滿版、不變形
+   ========================================================== */
+@media screen and (max-width: 768px) {
+    /* 1. 強制重置主容器在手機上的邊距與寬度 */
+    #wrapper {
+        width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    #main {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 15px 12px !important;
+        border-radius: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 2. 第一屏 Hero 區塊在手機上改為單欄，自動填滿寬度 */
+    section[style*="background: linear-gradient"] {
+        width: 100% !important;
+        margin: 10px 0 20px 0 !important;
+        padding: 20px 15px !important;
+        border-radius: 12px !important;
+        box-sizing: border-box !important;
+    }
+
+    section[style*="background: linear-gradient"] > div {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+
+    section[style*="background: linear-gradient"] > div > div {
+        width: 100% !important;
+        flex: none !important;
+    }
+
+    /* 3. 調整下方「關於我」與「故事區」在手機上的顯示 */
+    #intro-seo .content {
+        padding: 20px 15px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    #story-cert {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        margin: 20px 0 !important;
+        padding: 20px 15px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 4. 防止任何圖片撐破手機螢幕 */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
