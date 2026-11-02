@@ -2336,64 +2336,7 @@
 }
 
 /* ==========================================================
-   【氣球大叔 Sony 官網】Editorial 模板滿版置中終極覆蓋修正
-   ========================================================== */
-
-/* 1. 徹底隱藏左側邊欄並釋放空間 */
-#sidebar {
-    display: none !important;
-    width: 0 !important;
-    visibility: hidden !important;
-}
-
-#wrapper {
-    padding-left: 0 !important;
-    margin-left: 0 !important;
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    position: relative !important;
-}
-
-#main {
-    position: relative !important;
-    float: none !important;
-    margin: 0 auto !important;
-    left: auto !important;
-    right: auto !important;
-    width: 100% !important;
-    max-width: 1300px !important;
-    box-sizing: border-box !important;
-    padding: 4em 3em !important;
-}
-
-/* 2. 強制覆蓋 Editorial 原本在各大螢幕尺寸下的左側留白 (Media Queries) */
-@media screen and (max-width: 1680px) {
-    #wrapper { padding-left: 0 !important; }
-    #main { max-width: 1200px !important; }
-}
-
-@media screen and (max-width: 1280px) {
-    #wrapper { padding-left: 0 !important; }
-    #main { max-width: 1100px !important; }
-}
-
-@media screen and (max-width: 980px) {
-    #wrapper { padding-left: 0 !important; }
-    #main { width: 100% !important; padding: 3em 2em !important; }
-}
-
-@media screen and (max-width: 736px) {
-    #wrapper { padding-left: 0 !important; }
-    #main { width: 100% !important; padding: 2em 1.5em !important; }
-}
-
-@media screen and (max-width: 480px) {
-    #wrapper { padding-left: 0 !important; }
-    #main { width: 100% !important; padding: 1.5em 1em !important; }
-}
-/* ==========================================================
-   【氣球大叔 Sony 官網】專業化視覺精雕與質感升級
+   【氣球大叔 Sony 官網】專業化視覺精雕與現代化升級 (最終整合版)
    ========================================================== */
 
 /* 1. 調整整體網頁背景與字體抗鋸齒，提升現代感 */
@@ -2411,6 +2354,8 @@ body {
     padding-left: 0 !important;
     margin-left: 0 !important;
     background: transparent !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 #main {
@@ -2426,22 +2371,25 @@ body {
 
 /* 3. 精緻化首頁標題區 (#header) */
 #header {
-    border-bottom: 2px solid #f1f5f9 !important;
-    padding-bottom: 2.5em !important;
-    margin-bottom: 3em !important;
-    text-align: center !important;
+    display: block !important;
+    padding: 2em 0 1.5em 0 !important;
+    text-align: left !important;
+    border-bottom: 2px solid #f3f4f6 !important;
+    margin-bottom: 2.5em !important;
 }
 
 #header h1 {
-    font-size: 2.2em !important;
-    font-weight: 800 !important;
-    color: #0f172a !important;
+    font-size: 1.8em !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+    color: #111827 !important;
+    max-width: 800px !important;
     letter-spacing: -0.02em !important;
 }
 
 #header p {
-    font-size: 1.1em !important;
-    color: #64748b !important;
+    font-size: 1.05em !important;
+    color: #4b5563 !important;
     margin-top: 0.5em !important;
 }
 
@@ -2498,112 +2446,46 @@ section > header.major > h2::after {
     transform: translateY(-3px) !important;
 }
 
-/* 7. 手機與響應式微調 */
-@media screen and (max-width: 736px) {
-    #main {
-        padding: 2em 1.5em !important;
-        margin: 15px !important;
-        border-radius: 12px !important;
-    }
-}
 
-/* 修正過大的標題區 (#header)，讓它恢復精緻專業的比例 */
-#header {
-    padding: 2em 0 1.5em 0 !important;
-    text-align: left !important;
-    border-bottom: 2px solid #f3f4f6 !important;
-    margin-bottom: 2.5em !important;
-}
-
-#header h1 {
-    font-size: 1.8em !important; /* 縮小大標題，避免過大 */
-    font-weight: 700 !important;
-    line-height: 1.3 !important;
-    color: #111827 !important;
-    max-width: 800px !important;
-}
-
-#header p {
-    font-size: 1.05em !important;
-    color: #4b5563 !important;
-    margin-top: 0.5em !important;
-}
-
-/* 如果原本右上方的小字跑版，讓它自然排列 */
-#header {
-    display: block !important;
-}
 /* ==========================================================
-   【手機版 RWD 專屬修正】確保手機瀏覽完美自適應、絕不超出螢幕
+   【全面手機版 RWD 專屬優化與修正】
    ========================================================== */
 @media screen and (max-width: 768px) {
-    /* 1. 確保主容器在手機上滿版且左右有舒適的 15px 安全距離 */
-    #main {
-        padding: 1.5em 1em !important;
-        margin: 10px !important;
-        border-radius: 12px !important;
-        width: auto !important;
-        box-sizing: border-box !important;
-    }
-
-    /* 2. 讓首頁第一屏 (Hero 區塊) 在手機上自動改為單欄上下排列，並消除過寬的內距 */
-    section[style*="background: linear-gradient"] {
-        padding: 25px 15px !important;
-        margin: 15px 0 !important;
-        border-radius: 14px !important;
-    }
-
-    section[style*="background: linear-gradient"] > div {
-        flex-direction: column !important;
-        gap: 20px !important;
-    }
-
-    /* 3. 讓「關於我」白卡片在手機上滿版舒適顯示 */
-    #intro-seo .content {
-        padding: 20px 15px !important;
-    }
-
-    /* 4. 讓品牌故事區塊在手機上改為上下堆疊 */
-    #story-cert {
-        flex-direction: column !important;
-        padding: 20px 15px !important;
-        gap: 20px !important;
-        margin: 20px 0 !important;
-    }
-
-    /* 5. 確保所有圖片與區塊不會撐破手機螢幕 */
-    img, video, iframe {
-        max-width: 100% !important;
-        height: auto !important;
-    }
-}
-/* ==========================================================
-   【全面手機版 RWD 強制修正】確保手機瀏覽完美滿版、不變形
-   ========================================================== */
-@media screen and (max-width: 768px) {
-    /* 1. 強制重置主容器在手機上的邊距與寬度 */
-    #wrapper {
-        width: 100% !important;
-        overflow-x: hidden !important;
-    }
-
+    /* 1. 手機主容器滿版與邊距重置 */
     #main {
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 !important;
-        padding: 15px 12px !important;
+        padding: 20px 15px !important;
         border-radius: 0 !important;
         border: none !important;
         box-shadow: none !important;
         box-sizing: border-box !important;
     }
 
-    /* 2. 第一屏 Hero 區塊在手機上改為單欄，自動填滿寬度 */
+    /* 2. 修正右上角手機選單按鈕的框線與對齊 */
+    #sidebar .toggle, 
+    a.toggle {
+        background: #ffffff !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 10px !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+        top: 15px !important;
+        right: 15px !important;
+        width: 48px !important;
+        height: 48px !important;
+    }
+    
+    #sidebar .toggle::before {
+        color: #c0392b !important;
+    }
+
+    /* 3. 第一屏 Hero 區塊在手機上的完美留白與自適應單欄 */
     section[style*="background: linear-gradient"] {
-        width: 100% !important;
-        margin: 10px 0 20px 0 !important;
-        padding: 20px 15px !important;
-        border-radius: 12px !important;
+        width: 94% !important;
+        margin: 10px auto 20px auto !important;
+        padding: 25px 16px !important;
+        border-radius: 16px !important;
         box-sizing: border-box !important;
     }
 
@@ -2619,7 +2501,12 @@ section > header.major > h2::after {
         flex: none !important;
     }
 
-    /* 3. 調整下方「關於我」與「故事區」在手機上的顯示 */
+    section[style*="background: linear-gradient"] h1 {
+        font-size: 1.85em !important;
+        word-break: break-word;
+    }
+
+    /* 4. 調整下方「關於我」與「故事區」在手機上的顯示 */
     #intro-seo .content {
         padding: 20px 15px !important;
         width: 100% !important;
@@ -2633,10 +2520,11 @@ section > header.major > h2::after {
         margin: 20px 0 !important;
         padding: 20px 15px !important;
         box-sizing: border-box !important;
+        gap: 20px !important;
     }
 
-    /* 4. 防止任何圖片撐破手機螢幕 */
-    img {
+    /* 5. 防止圖片撐破螢幕 */
+    img, video, iframe {
         max-width: 100% !important;
         height: auto !important;
     }
