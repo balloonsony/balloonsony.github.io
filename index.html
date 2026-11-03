@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW" class="scroll-smooth">
 <head>
     <!-- Google Tag Manager (GTAG) 完整保留 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SSN5GTCBBL"></script>
@@ -34,7 +34,7 @@
     <meta property="og:url" content="https://balloonsony.com/" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="氣球大叔 Sony｜中北部縣市派對魔術師・泡泡秀・會場佈置" />
+    <meta name="twitter:title" content="氣球大叔 Sony｜中北部縣市派對魔術師・泡泡秀・佈置專家" />
     <meta name="twitter:description" content="氣球魔術、造型氣球、泡泡秀、氣球佈置一站式。企業家庭日／兒童生日派對／校園活動。" />
     <meta name="twitter:image" content="https://balloonsony.com/images/cover.webp" />
 
@@ -222,40 +222,54 @@
 </head>
 <body class="bg-white text-slate-800 font-sans antialiased overflow-x-hidden">
 
+    <!-- 手機版懸浮靈動漢堡按鈕 (僅在手機平板顯示) -->
+    <button onclick="toggleMobileSidebar()" class="lg:hidden fixed top-4 right-4 z-50 bg-orange-600 text-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center text-xl hover:bg-orange-700 transition-transform active:scale-95 focus:outline-none">
+        <i id="hamburger-icon" class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- 手機版黑色半透明遮罩背景 -->
+    <div id="sidebar-overlay" onclick="toggleMobileSidebar()" class="fixed inset-0 bg-slate-900/50 z-40 hidden lg:hidden backdrop-blur-sm transition-opacity"></div>
+
     <!-- 全頁 GaryVee 式雙欄 Layout：左側固定豎排導覽列 + 右側滿版內容 -->
     <div class="min-h-screen flex flex-col lg:flex-row">
 
         <!-- ========================================== -->
-        <!-- 左側：GaryVee 風格純白極簡豎排固定導覽列 -->
+        <!-- 左側：純白極簡豎排導覽列 (支援手機抽屜滑動) -->
         <!-- ========================================== -->
-        <aside class="w-full lg:w-80 bg-slate-50/90 border-r border-slate-200/80 flex flex-col justify-between p-6 lg:p-8 lg:fixed lg:h-screen lg:z-50 backdrop-blur-md">
+        <aside id="sidebar-nav" class="w-80 bg-slate-50/95 border-r border-slate-200/80 flex flex-col justify-between p-6 lg:p-8 fixed lg:h-screen h-full top-0 left-0 -translate-x-full lg:translate-x-0 z-50 transition-transform duration-300 backdrop-blur-md overflow-y-auto">
             
             <div>
                 <!-- 個人手寫 Signature 風格 Logo -->
-                <a href="#" class="block group">
-                    <span class="font-signature text-4xl text-orange-600 font-bold tracking-wide group-hover:text-amber-500 transition-colors">
-                        Balloon Sony 🎈
-                    </span>
-                    <span class="block text-xs font-black tracking-widest text-slate-400 uppercase mt-1">
-                        氣球大叔 Sony 官方品牌
-                    </span>
-                </a>
+                <div class="flex items-center justify-between">
+                    <a href="#" class="block group">
+                        <span class="font-signature text-4xl text-orange-600 font-bold tracking-wide group-hover:text-amber-500 transition-colors">
+                            Balloon Sony 🎈
+                        </span>
+                        <span class="block text-xs font-black tracking-widest text-slate-400 uppercase mt-1">
+                            氣球大叔 Sony 官方品牌
+                        </span>
+                    </a>
+                    <!-- 手機關閉按鈕 -->
+                    <button onclick="toggleMobileSidebar()" class="lg:hidden text-slate-400 hover:text-slate-700 text-xl p-2">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
 
                 <!-- 導覽菜單 -->
                 <nav class="mt-8 space-y-2">
-                    <a href="#hero" class="flex items-center space-x-3 text-base font-bold text-orange-600 bg-orange-100/60 py-2.5 px-4 rounded-xl">
+                    <a href="#hero" onclick="closeMobileSidebar()" class="flex items-center space-x-3 text-base font-bold text-orange-600 bg-orange-100/60 py-2.5 px-4 rounded-xl">
                         <span class="w-2.5 h-2.5 rounded-full bg-orange-600"></span>
                         <span>01. 首頁與簡介</span>
                     </a>
-                    <a href="#intro-seo" class="flex items-center space-x-3 text-base font-bold text-slate-600 hover:text-orange-600 hover:bg-slate-100/80 py-2.5 px-4 rounded-xl transition-all">
+                    <a href="#intro-seo" onclick="closeMobileSidebar()" class="flex items-center space-x-3 text-base font-bold text-slate-600 hover:text-orange-600 hover:bg-slate-100/80 py-2.5 px-4 rounded-xl transition-all">
                         <span class="w-2.5 h-2.5 rounded-full bg-slate-300"></span>
                         <span>02. 關於 Sony 叔叔</span>
                     </a>
-                    <a href="#story-cert" class="flex items-center space-x-3 text-base font-bold text-slate-600 hover:text-orange-600 hover:bg-slate-100/80 py-2.5 px-4 rounded-xl transition-all">
+                    <a href="#story-cert" onclick="closeMobileSidebar()" class="flex items-center space-x-3 text-base font-bold text-slate-600 hover:text-orange-600 hover:bg-slate-100/80 py-2.5 px-4 rounded-xl transition-all">
                         <span class="w-2.5 h-2.5 rounded-full bg-slate-300"></span>
                         <span>03. 品牌故事與理念</span>
                     </a>
-                    <a href="#services" class="flex items-center space-x-3 text-base font-bold text-slate-600 hover:text-orange-600 hover:bg-slate-100/80 py-2.5 px-4 rounded-xl transition-all">
+                    <a href="#services" onclick="closeMobileSidebar()" class="flex items-center space-x-3 text-base font-bold text-slate-600 hover:text-orange-600 hover:bg-slate-100/80 py-2.5 px-4 rounded-xl transition-all">
                         <span class="w-2.5 h-2.5 rounded-full bg-slate-300"></span>
                         <span>04. 核心表演項目</span>
                     </a>
@@ -270,11 +284,11 @@
                             <i class="fas fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition-transform"></i>
                         </summary>
                         <div class="pl-8 pr-2 py-2 space-y-1 text-sm font-medium text-slate-500">
-                            <a href="#event-scenes" class="block py-1 hover:text-orange-600">🎂 兒童生日派對</a>
-                            <a href="#event-scenes" class="block py-1 hover:text-orange-600">🏫 幼兒園/校園慶典</a>
-                            <a href="#event-scenes" class="block py-1 hover:text-orange-600">🏢 企業家庭日/尾牙</a>
-                            <a href="#event-scenes" class="block py-1 hover:text-orange-600">🎄 社區聖誕節/中秋節</a>
-                            <a href="#event-scenes" class="block py-1 hover:text-orange-600">🎡 百貨商場聚客表演</a>
+                            <a href="#event-scenes" onclick="closeMobileSidebar()" class="block py-1 hover:text-orange-600">🎂 兒童生日派對</a>
+                            <a href="#event-scenes" onclick="closeMobileSidebar()" class="block py-1 hover:text-orange-600">🏫 幼兒園/校園慶典</a>
+                            <a href="#event-scenes" onclick="closeMobileSidebar()" class="block py-1 hover:text-orange-600">🏢 企業家庭日/尾牙</a>
+                            <a href="#event-scenes" onclick="closeMobileSidebar()" class="block py-1 hover:text-orange-600">🎄 社區聖誕節/中秋節</a>
+                            <a href="#event-scenes" onclick="closeMobileSidebar()" class="block py-1 hover:text-orange-600">🎡 百貨商場聚客表演</a>
                         </div>
                     </details>
 
@@ -288,23 +302,23 @@
                             <i class="fas fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition-transform"></i>
                         </summary>
                         <div class="pl-8 pr-2 py-2 space-y-1 text-sm font-medium text-slate-500">
-                            <a href="#service-locations" class="block py-1 hover:text-orange-600">⚓ 基隆市 / 台北市 / 新北市</a>
-                            <a href="#service-locations" class="block py-1 hover:text-orange-600">✈️ 桃園市 (大本營/青埔/楊梅)</a>
-                            <a href="#service-locations" class="block py-1 hover:text-orange-600">🔬 新竹縣市 (竹北/湖口)</a>
-                            <a href="#service-locations" class="block py-1 hover:text-orange-600">🍓 苗栗縣 (苑裡/頭份)</a>
-                            <a href="#service-locations" class="block py-1 hover:text-orange-600">🧋 台中市 / ⛰️ 南投縣</a>
+                            <a href="#service-locations" onclick="closeMobileSidebar()" class="block py-1 hover:text-orange-600">⚓ 基隆市 / 台北市 / 新北市</a>
+                            <a href="#service-locations" onclick="closeMobileSidebar()" class="block py-1 hover:text-orange-600">✈️ 桃園市 (大本營/青埔/楊梅)</a>
+                            <a href="#service-locations" onclick="closeMobileSidebar()" class="block py-1 hover:text-orange-600">🔬 新竹縣市 (竹北/湖口)</a>
+                            <a href="#service-locations" onclick="closeMobileSidebar()" class="block py-1 hover:text-orange-600">🍓 苗栗縣 (苑裡/頭份)</a>
+                            <a href="#service-locations" onclick="closeMobileSidebar()" class="block py-1 hover:text-orange-600">🧋 台中市 / ⛰️ 南投縣</a>
                         </div>
                     </details>
 
-                    <a href="#portfolio" class="flex items-center space-x-3 text-base font-bold text-slate-600 hover:text-orange-600 hover:bg-slate-100/80 py-2.5 px-4 rounded-xl transition-all">
+                    <a href="#portfolio" onclick="closeMobileSidebar()" class="flex items-center space-x-3 text-base font-bold text-slate-600 hover:text-orange-600 hover:bg-slate-100/80 py-2.5 px-4 rounded-xl transition-all">
                         <span class="w-2.5 h-2.5 rounded-full bg-slate-300"></span>
                         <span>07. 精彩作品集</span>
                     </a>
-                    <a href="#blog-highlight" class="flex items-center space-x-3 text-base font-bold text-slate-600 hover:text-orange-600 hover:bg-slate-100/80 py-2.5 px-4 rounded-xl transition-all">
+                    <a href="#blog-highlight" onclick="closeMobileSidebar()" class="flex items-center space-x-3 text-base font-bold text-slate-600 hover:text-orange-600 hover:bg-slate-100/80 py-2.5 px-4 rounded-xl transition-all">
                         <span class="w-2.5 h-2.5 rounded-full bg-slate-300"></span>
                         <span>08. 精選活動紀錄</span>
                     </a>
-                    <a href="#homepage-faq" class="flex items-center space-x-3 text-base font-bold text-slate-600 hover:text-orange-600 hover:bg-slate-100/80 py-2.5 px-4 rounded-xl transition-all">
+                    <a href="#homepage-faq" onclick="closeMobileSidebar()" class="flex items-center space-x-3 text-base font-bold text-slate-600 hover:text-orange-600 hover:bg-slate-100/80 py-2.5 px-4 rounded-xl transition-all">
                         <span class="w-2.5 h-2.5 rounded-full bg-slate-300"></span>
                         <span>09. 常見問題 FAQ</span>
                     </a>
@@ -724,6 +738,34 @@
 
         </main>
     </div>
+
+    <!-- 手機抽屜選單互動 Script -->
+    <script>
+        function toggleMobileSidebar() {
+            const sidebar = document.getElementById('sidebar-nav');
+            const overlay = document.getElementById('sidebar-overlay');
+            const icon = document.getElementById('hamburger-icon');
+            
+            sidebar.classList.toggle('-translate-x-full');
+            overlay.classList.toggle('hidden');
+            
+            if (sidebar.classList.contains('-translate-x-full')) {
+                icon.className = 'fa-solid fa-bars';
+            } else {
+                icon.className = 'fa-solid fa-xmark';
+            }
+        }
+
+        function closeMobileSidebar() {
+            const sidebar = document.getElementById('sidebar-nav');
+            const overlay = document.getElementById('sidebar-overlay');
+            const icon = document.getElementById('hamburger-icon');
+            
+            sidebar.classList.add('-translate-x-full');
+            overlay.classList.add('hidden');
+            icon.className = 'fa-solid fa-bars';
+        }
+    </script>
 
 </body>
 </html>
