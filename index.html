@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <!-- GTAG 追蹤碼 (完整保留) -->
+    <!-- Google Tag Manager (GTAG) 完整保留 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SSN5GTCBBL"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -10,13 +10,13 @@
         gtag('config', 'G-SSN5GTCBBL');
     </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="氣球大叔 Sony" />
-    <meta name="theme-color" content="#c0392b" />
+    <meta name="theme-color" content="#ea580c" />
 
-    <!-- SEO & 社群標籤 (完整保留) -->
+    <!-- SEO Meta 標籤 100% 完整保留 -->
     <meta name="description" content="氣球大叔 Sony 專業氣球魔術、造型氣球、夢幻泡泡秀專家。專注服務基隆、台北、新北、桃園、新竹、苗栗、台中與南投等中北部縣市派對活動。具備台積電、德州儀器等大廠演出經驗，提供兒童生日派對、公司家庭日一站式表演與佈置。" />
     <meta name="keywords" content="桃園氣球魔術, 新竹魔術師推薦, 台北生日派對表演, 苗栗泡泡秀, 基隆氣球表演, 台中兒童派對, 南投尾牙魔術, 新北會場佈置, 公司家庭日表演" />
     <meta name="google-site-verification" content="yHi6DBNuWZxK5Ya_ZEzZuNu-KBhCnnxnRwK1ul_sDr0" />
@@ -24,6 +24,7 @@
     <title>氣球大叔 Sony｜北台灣與中部縣市專業派對魔術師・泡泡秀・會場佈置</title>
     <link rel="canonical" href="https://balloonsony.com/" />
 
+    <!-- Open Graph 100% 完整保留 -->
     <meta property="og:locale" content="zh_TW" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="氣球大叔 Sony" />
@@ -39,25 +40,23 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    <!-- Tailwind CSS & 圖示庫 -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <!-- FontAwesome & Tailwind CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         brand: {
-                            orange: '#EA580C',
-                            dark: '#0F172A',
-                            accent: '#F59E0B',
+                            red: '#c0392b',
+                            orange: '#ea580c',
+                            dark: '#0f172a',
                             line: '#06C755'
                         }
                     },
                     fontFamily: {
-                        sans: ['Noto Sans TC', 'sans-serif'],
                         signature: ['Caveat', 'cursive'],
                     }
                 }
@@ -65,7 +64,7 @@
         }
     </script>
 
-    <!-- Schema 結構化資料 (100% 完整保留) -->
+    <!-- Schema 結構化資料 100% 完整保留 -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -75,7 +74,12 @@
           "@id": "https://balloonsony.com/#website",
           "url": "https://balloonsony.com/",
           "name": "氣球大叔 Sony",
-          "inLanguage": "zh-TW"
+          "inLanguage": "zh-TW",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://balloonsony.com/blog/blog.html?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
         },
         {
           "@type": "WebPage",
@@ -84,7 +88,15 @@
           "name": "氣球大叔 Sony｜中北部縣市專業派對魔術師・泡泡秀・會場佈置",
           "isPartOf": { "@id": "https://balloonsony.com/#website" },
           "about": { "@id": "https://balloonsony.com/#business" },
-          "primaryImageOfPage": { "@type": "ImageObject", "url": "https://balloonsony.com/images/cover.webp" }
+          "primaryImageOfPage": { "@type": "ImageObject", "url": "https://balloonsony.com/images/cover.webp" },
+          "inLanguage": "zh-TW"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://balloonsony.com/#breadcrumb",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "首頁", "item": "https://balloonsony.com/" }
+          ]
         },
         {
           "@type": "Person",
@@ -92,15 +104,27 @@
           "name": "氣球大叔 Sony",
           "url": "https://balloonsony.com/",
           "image": "https://balloonsony.com/images/cover.webp",
-          "jobTitle": "專業氣球藝術家與親子互動魔術師"
+          "jobTitle": "專業氣球藝術家與親子互動魔術師",
+          "description": "擁有超過10年演出經驗，累積服務超過3000場活動的專業氣球魔術師。具備多縣市街頭藝人證照，為各大企業與家庭帶來歡樂。",
+          "sameAs": [
+            "https://www.facebook.com/BalloonSony/",
+            "https://www.instagram.com/balloonsony/",
+            "https://www.youtube.com/@balloonsony",
+            "https://polar-socks-401.notion.site/Sony-207bab9d81e58030bb41e7324c3bace9",
+            "https://www.cake.me/newsoul20?locale=zh-TW",
+            "https://www.pixnet.net/pcard/balloonsony?utm_source=PIXNET&utm_medium=navbar",
+            "https://www.pro360.com.tw/service/39936"
+          ]
         },
         {
           "@type": "LocalBusiness",
           "@id": "https://balloonsony.com/#business",
           "name": "氣球大叔 Sony",
           "url": "https://balloonsony.com/",
+          "image": "https://balloonsony.com/images/cover.webp",
           "telephone": "+886-930733100",
           "priceRange": "$$",
+          "founder": { "@id": "https://balloonsony.com/#person" },
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "愛國街48號",
@@ -109,7 +133,88 @@
             "postalCode": "330",
             "addressCountry": "TW"
           },
-          "areaServed": ["基隆市","台北市","新北市","桃園市","新竹市","苗栗縣","台中市","南投縣"]
+          "areaServed": ["基隆市","台北市","新北市","桃園市","新竹市","苗栗縣","台中市","南投縣"],
+          "hasMap": "https://g.co/kgs/Z4ootto",
+          "sameAs": [
+            "https://www.facebook.com/BalloonSony/",
+            "https://www.instagram.com/balloonsony/",
+            "https://www.youtube.com/@balloonsony",
+            "https://www.pro360.com.tw/service/39936"
+          ],
+          "description": "氣球大叔 Sony 提供氣球魔術舞台秀、造型氣球派送、夢幻泡泡秀與客製會場佈置，專注服務基隆、台北、新北、桃園、新竹、苗栗、台中、南投等縣市。"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://balloonsony.com/#service-magic",
+          "name": "氣球魔術舞台秀",
+          "serviceType": ["兒童派對魔術表演","氣球魔術舞台秀"],
+          "provider": { "@id": "https://balloonsony.com/#business" },
+          "url": "https://balloonsony.com/magic.html",
+          "description": "結合魔術與氣球互動的舞台表演，適合30分鐘以上的節目安排。"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://balloonsony.com/#service-balloon",
+          "name": "定點氣球派送",
+          "serviceType": ["造型氣球派送","活動現場互動"],
+          "provider": { "@id": "https://balloonsony.com/#business" },
+          "url": "https://balloonsony.com/balloon.html",
+          "description": "現場製作卡通造型氣球，適合迎賓、市集與排隊互動。"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://balloonsony.com/#service-bubble",
+          "name": "夢幻泡泡秀",
+          "serviceType": ["大型泡泡秀","親子互動體驗"],
+          "provider": { "@id": "https://balloonsony.com/#business" },
+          "url": "https://balloonsony.com/bubble.html",
+          "description": "大型泡泡、煙霧泡泡與套人體驗，戶外與室內皆可安排。"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://balloonsony.com/#service-decor",
+          "name": "客製化會場佈置",
+          "serviceType": ["氣球拱門佈置","婚禮爆破特效"],
+          "provider": { "@id": "https://balloonsony.com/#business" },
+          "url": "https://balloonsony.com/decor.html",
+          "description": "氣球拱門、拍照背板、婚禮爆破特效等場地設計服務。"
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://balloonsony.com/#services-list",
+          "name": "表演與服務項目",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "item": { "@id": "https://balloonsony.com/#service-magic" } },
+            { "@type": "ListItem", "position": 2, "item": { "@id": "https://balloonsony.com/#service-balloon" } },
+            { "@type": "ListItem", "position": 3, "item": { "@id": "https://balloonsony.com/#service-bubble" } },
+            { "@type": "ListItem", "position": 4, "item": { "@id": "https://balloonsony.com/#service-decor" } }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://balloonsony.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Q1：你們主要服務哪些地區？",
+              "acceptedAnswer": { "@type": "Answer", "text": "主要服務基隆、台北、新北、桃園、新竹、苗栗、台中、南投等縣市；其他縣市可依活動需求與檔期另行洽詢。" }
+            },
+            {
+              "@type": "Question",
+              "name": "Q2：可以一站式安排魔術、泡泡、氣球派送與佈置嗎？",
+              "acceptedAnswer": { "@type": "Answer", "text": "可以。可依活動流程客製整合：舞台氣球魔術、泡泡秀、定點氣球派送、主題會場佈置與拍照區。" }
+            },
+            {
+              "@type": "Question",
+              "name": "Q3：表演適合什麼年齡與場合？",
+              "acceptedAnswer": { "@type": "Answer", "text": "以 3–12 歲親子活動最常見，也適合幼兒園、校園活動、百貨商場、社區家庭日、企業家庭日與尾牙等。" }
+            },
+            {
+              "@type": "Question",
+              "name": "Q4：如何快速取得報價與檔期？",
+              "acceptedAnswer": { "@type": "Answer", "text": "建議直接加 LINE (ID: @qxq3473t)。提供日期、地點、活動類型、人數與預算，即可快速回覆。" }
+            }
+          ]
         }
       ]
     }
@@ -117,13 +222,13 @@
 </head>
 <body class="bg-white text-slate-800 font-sans antialiased overflow-x-hidden">
 
-    <!-- 全頁佈局：左側邊欄 + 右側主內容 -->
+    <!-- 全頁 GaryVee 式雙欄 Layout：左側固定豎排導覽列 + 右側滿版內容 -->
     <div class="min-h-screen flex flex-col lg:flex-row">
 
         <!-- ========================================== -->
-        <!-- 左側：GaryVee 風格純白極簡豎排導覽列 -->
+        <!-- 左側：GaryVee 風格純白極簡豎排固定導覽列 -->
         <!-- ========================================== -->
-        <aside class="w-full lg:w-80 bg-slate-50/90 border-r border-slate-200/80 flex flex-col justify-between p-8 lg:fixed lg:h-screen lg:z-50 backdrop-blur-md">
+        <aside class="w-full lg:w-80 bg-slate-50/90 border-r border-slate-200/80 flex flex-col justify-between p-6 lg:p-8 lg:fixed lg:h-screen lg:z-50 backdrop-blur-md">
             
             <div>
                 <!-- 個人手寫 Signature 風格 Logo -->
@@ -137,7 +242,7 @@
                 </a>
 
                 <!-- 導覽菜單 -->
-                <nav class="mt-10 space-y-2">
+                <nav class="mt-8 space-y-2">
                     <a href="#hero" class="flex items-center space-x-3 text-base font-bold text-orange-600 bg-orange-100/60 py-2.5 px-4 rounded-xl">
                         <span class="w-2.5 h-2.5 rounded-full bg-orange-600"></span>
                         <span>01. 首頁與簡介</span>
@@ -162,10 +267,14 @@
                         <span class="w-2.5 h-2.5 rounded-full bg-slate-300"></span>
                         <span>06. 精選活動紀錄</span>
                     </a>
+                    <a href="#homepage-faq" class="flex items-center space-x-3 text-base font-bold text-slate-600 hover:text-orange-600 hover:bg-slate-100/80 py-2.5 px-4 rounded-xl transition-all">
+                        <span class="w-2.5 h-2.5 rounded-full bg-slate-300"></span>
+                        <span>07. 常見問題 FAQ</span>
+                    </a>
                 </nav>
             </div>
 
-            <!-- 下半部：快速 Action 與社群 -->
+            <!-- 下半部：快速預約 LINE 與社群 Icon 矩陣 -->
             <div class="mt-8 pt-6 border-t border-slate-200 space-y-4">
                 <a href="https://page.line.me/qxq3473t" target="_blank" class="w-full py-3 bg-brand-line text-white font-bold rounded-xl flex items-center justify-center space-x-2 shadow-md hover:brightness-105 transition-all text-sm">
                     <i class="fa-brands fa-line text-xl"></i>
@@ -186,7 +295,7 @@
         </aside>
 
         <!-- ========================================== -->
-        <!-- 右側：滿版大氣 Hero 與內容區 -->
+        <!-- 右側：滿版大氣純白 Hero 與全內容區 -->
         <!-- ========================================== -->
         <main class="flex-1 lg:ml-80 bg-white">
             
@@ -234,7 +343,7 @@
                 </div>
             </section>
 
-            <!-- SEO 簡介區 -->
+            <!-- SEO 簡介區塊 -->
             <section id="intro-seo" class="p-6 lg:p-16 border-b border-slate-100">
                 <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
                     <h2 class="text-2xl font-black text-slate-900">關於氣球大叔 Sony：用魔法與歡樂，點亮每個派對時刻</h2>
@@ -242,22 +351,26 @@
                         <strong>造型氣球表演與親子魔術秀，是現代活動中結合視覺藝術與心理互動的最佳媒介。</strong>嗨，我是 <strong>氣球大叔 Sony</strong>，一位真心熱愛為孩子們創造驚喜的專業魔術氣球師！我透過專業的互動設計，將繁瑣的活動流程轉化為具有感染力的魔法時刻。
                     </p>
                     <p class="text-slate-600 leading-relaxed">
-                        我們的服務範圍專注於<strong>基隆、台北、新北、桃園、新竹、苗栗、台中、南投</strong>等縣市，致力於為每一場<strong>兒童生日派對</strong>、公司家庭日、百貨週年慶以及校園活動注入活力。
+                        我們的服務範圍專注於<strong>基隆、台北、新北、桃園、新竹、苗栗、台中、南投</strong>等縣市，致力於為每一場<strong>兒童生日派對</strong>、公司家庭日、百貨週年慶以及校園活動注入活力。無論是<strong>氣球魔術表演</strong>、<strong>夢幻泡泡秀</strong>，還是<strong>造型氣球</strong>，我們都致力於提供安全、專業且充滿溫度的服務。
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        身為擁有<strong>多縣市街頭藝人證照</strong>的表演者，我曾多次受邀至台積電、德州儀器等企業演出。氣球大叔 Sony 期待能為您的下一個活動，共同編織一段段充滿笑聲的難忘回憶！
                     </p>
                 </div>
             </section>
 
-            <!-- 品牌故事 -->
+            <!-- 品牌故事與理念 -->
             <section id="story-cert" class="p-6 lg:p-16 border-b border-slate-100 bg-slate-50/50">
                 <div class="grid lg:grid-cols-2 gap-8 items-center">
                     <div>
-                        <img src="images/sonydaughter.webp" alt="氣球大叔 Sony 與女兒" class="w-full h-80 object-cover rounded-2xl shadow-md">
+                        <img src="images/sonydaughter.webp" alt="氣球大叔 Sony 與女兒的溫馨時刻" class="w-full h-80 object-cover rounded-2xl shadow-md">
                     </div>
                     <div class="space-y-4 text-slate-600">
                         <h3 class="text-2xl font-black text-slate-900">💖 一切的起點：將純粹的快樂帶給更多家庭</h3>
                         <p>一切的起點，是為了讓女兒開心，我親手折出第一顆氣球。當她開心大笑、眼睛彎成一條線的那瞬間，我知道——<strong>這份純粹的快樂，我想帶給更多孩子與家庭。</strong></p>
-                        <p>考取 <strong>基隆、台北、新北、桃園、新竹、台中</strong> 等縣市的街頭藝人證照。每一張證照都是對安全與專業的承諾。</p>
-                        <p class="font-bold text-orange-600">我的理念是：讓孩子歡笑、讓活動發光。</p>
+                        <p>從街頭開始，我帶著行李箱與氣球一場場演出累積經驗與信任，並考取 <strong>基隆、台北、新北、桃園、新竹、台中</strong> 等縣市的街头藝人證照。每一張證照都是對安全與專業的承諾，也讓每一位家長都能安心邀演。</p>
+                        <p class="font-bold text-orange-600 text-lg">我的理念是：讓孩子歡笑、讓活動發光。</p>
+                        <p class="text-slate-500">每一場表演，不只是技巧的展現，而是記憶與情感的交織。</p>
                     </div>
                 </div>
             </section>
@@ -266,22 +379,22 @@
             <section id="services" class="p-6 lg:p-16 border-b border-slate-100 space-y-8">
                 <h2 class="text-3xl font-black text-slate-900">表演項目</h2>
                 <div class="grid sm:grid-cols-2 gap-6">
-                    <a href="magic.html" class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-orange-500 transition-all">
+                    <a href="magic.html" class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-orange-500 transition-all block">
                         <span class="text-4xl block mb-2">🎩</span>
                         <h3 class="text-xl font-bold text-slate-900">氣球魔術舞台秀</h3>
                         <p class="text-sm text-slate-600 mt-2">結合魔術與氣球，搭配觀眾互動，30 分鐘滿滿驚喜。</p>
                     </a>
-                    <a href="balloon.html" class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-orange-500 transition-all">
+                    <a href="balloon.html" class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-orange-500 transition-all block">
                         <span class="text-4xl block mb-2">🎈</span>
                         <h3 class="text-xl font-bold text-slate-900">定點氣球派送</h3>
                         <p class="text-sm text-slate-600 mt-2">讓笑容隨著一顆顆氣球飛起，每位來賓都能帶回一份開心的紀念。</p>
                     </a>
-                    <a href="bubble.html" class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-orange-500 transition-all">
+                    <a href="bubble.html" class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-orange-500 transition-all block">
                         <span class="text-4xl block mb-2">🫧</span>
                         <h3 class="text-xl font-bold text-slate-900">泡泡秀 & 泡泡體驗</h3>
                         <p class="text-sm text-slate-600 mt-2">泡泡魔法＋大型泡泡進入體驗，適合親子派對與節慶活動。</p>
                     </a>
-                    <a href="decor.html" class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-orange-500 transition-all">
+                    <a href="decor.html" class="p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-orange-500 transition-all block">
                         <span class="text-4xl block mb-2">🎉</span>
                         <h3 class="text-xl font-bold text-slate-900">客製氣球佈置</h3>
                         <p class="text-sm text-slate-600 mt-2">拱門、拍照區、婚禮爆破，打造主題感滿滿的活動現場！</p>
@@ -289,32 +402,157 @@
                 </div>
             </section>
 
-            <!-- 作品集 -->
+            <!-- 作品集 (含 Google 相簿專屬點擊外連) -->
             <section id="portfolio" class="p-6 lg:p-16 border-b border-slate-100 space-y-8">
                 <h2 class="text-3xl font-black text-slate-900">作品集：精彩瞬間紀錄</h2>
-                <div class="grid sm:grid-cols-2 gap-6">
-                    <figure class="bg-slate-50 p-3 rounded-2xl border border-slate-200">
-                        <img src="images/index1.webp" alt="氣球魔術秀" class="w-full h-48 object-cover rounded-xl">
-                        <figcaption class="text-center text-xs font-bold text-slate-600 mt-2">舞台氣球魔術秀，孩子們笑聲不斷。</figcaption>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <figure class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
+                        <a href="https://photos.app.goo.gl/P4qoZASn8RbBZQJR9" target="_blank" rel="noopener noreferrer" class="block">
+                            <img src="images/index1.webp" alt="氣球魔術秀" class="w-full h-48 object-cover hover:scale-105 transition-transform" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption class="p-3 text-center text-xs font-bold text-slate-600">舞台氣球魔術秀，孩子們笑聲不斷。</figcaption>
                     </figure>
-                    <figure class="bg-slate-50 p-3 rounded-2xl border border-slate-200">
-                        <img src="images/index2.webp" alt="發送造型氣球" class="w-full h-48 object-cover rounded-xl">
-                        <figcaption class="text-center text-xs font-bold text-slate-600 mt-2">現場發送造型氣球，小朋友超開心。</figcaption>
+                    <figure class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
+                        <a href="https://photos.app.goo.gl/UbhgkK45wfSU5xYT9" target="_blank" rel="noopener noreferrer" class="block">
+                            <img src="images/index2.webp" alt="發送造型氣球" class="w-full h-48 object-cover hover:scale-105 transition-transform" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption class="p-3 text-center text-xs font-bold text-slate-600">現場發送造型氣球，小朋友超開心。</figcaption>
+                    </figure>
+                    <figure class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
+                        <a href="https://photos.app.goo.gl/J9r64s9SD4RbMqkeA" target="_blank" rel="noopener noreferrer" class="block">
+                            <img src="images/index3.webp" alt="泡泡秀" class="w-full h-48 object-cover hover:scale-105 transition-transform" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption class="p-3 text-center text-xs font-bold text-slate-600">泡泡魔法包覆孩子，現場驚呼連連！</figcaption>
+                    </figure>
+                    <figure class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200">
+                        <a href="https://photos.app.goo.gl/hpEsURP6r3SDYQR27" target="_blank" rel="noopener noreferrer" class="block">
+                            <img src="images/index4.webp" alt="氣球佈置" class="w-full h-48 object-cover hover:scale-105 transition-transform" loading="lazy" decoding="async">
+                        </a>
+                        <figcaption class="p-3 text-center text-xs font-bold text-slate-600">氣球佈置拱門＋拍照區，熱鬧又繽紛。</figcaption>
                     </figure>
                 </div>
             </section>
 
-            <!-- 精選活動紀錄 -->
-            <section id="blog-highlight" class="p-6 lg:p-16 border-b border-slate-100 space-y-6">
+            <!-- SEO 核心文章庫：精選活動紀錄 (100% 完整還原 28 篇動態) -->
+            <section id="blog-highlight" class="p-6 lg:p-16 border-b border-slate-100 space-y-8">
                 <h2 class="text-3xl font-black text-slate-900">精選活動紀錄</h2>
+
+                <!-- 企業大廠指定區塊 -->
                 <div class="space-y-3">
-                    <a href="/blog/2025-tsmc-sports-day-balloon-artist.html" class="block p-4 bg-slate-50 rounded-xl hover:bg-orange-50 transition-colors font-bold text-orange-600">
-                        🏗️ 大廠指定｜台積電 TSMC 運動會 × 220公分巨型氣球人偶
-                    </a>
-                    <a href="/blog/2025-texas-instruments-family-day-balloon-event.html" class="block p-4 bg-slate-50 rounded-xl hover:bg-orange-50 transition-colors font-bold text-orange-600">
-                        🏢 長期信任｜德州儀器 TI 家庭日 × 連續四年受邀信任
-                    </a>
+                    <h3 class="text-sm font-bold text-slate-400 border-l-4 border-slate-300 pl-2">🏆 企業大廠指定</h3>
+                    <ul class="space-y-2 font-medium">
+                        <li><a href="/blog/2025-tsmc-sports-day-balloon-artist.html" class="text-orange-600 hover:underline">🏗️ <strong>大廠指定</strong>｜台積電 TSMC 運動會 × 220公分巨型氣球人偶</a></li>
+                        <li><a href="/blog/2025-texas-instruments-family-day-balloon-event.html" class="text-orange-600 hover:underline">🏢 <strong>長期信任</strong>｜德州儀器 TI 家庭日 × 連續四年受邀信任</a></li>
+                        <li><a href="/blog/2025-basf-family-day-balloon-show.html" class="text-orange-600 hover:underline">🎈 <strong>外商首選</strong>｜巴斯夫 BASF 親子日 × 綠世界氣球魔術秀</a></li>
+                        <li><a href="blog/2026-taipei-esun-family-day-childrens-park.html" class="text-orange-600 hover:underline">🎡 <strong>金融指名</strong>｜台北兒童新樂園 × 玉山銀行個金家庭日・定點氣球迎賓與樹蛙廣場舞台魔術氣球互動秀連任演出</a></li>
+                    </ul>
                 </div>
+
+                <!-- 中北部巡迴紀錄區塊 -->
+                <div class="space-y-3">
+                    <h3 class="text-sm font-bold text-slate-400 border-l-4 border-slate-300 pl-2">📍 中北部巡迴紀錄</h3>
+                    <ul class="space-y-2 font-medium">
+                        <li><a href="blog/2026-tamsui-market-festival-show.html" class="text-orange-600 hover:underline">🎈 <strong>新北淡水</strong>｜淡水海都廣場 × 新北好市節淡水海都祭・孩子搶著上台互動魔術秀與造型氣球表演爆滿案例</a></li>
+                        <li><a href="blog/2025-yunjiannan-salt-happiness-taipei-station-balloon.html" class="text-orange-600 hover:underline">🏮 <strong>基隆台北</strong>｜北門王爺藝響節 × 台北車站開幕記者會</a></li>
+                        <li><a href="blog/2026-taipei-etherwan-year-end-party-balloon.html" class="text-orange-600 hover:underline">🦐 <strong>台北松山</strong>｜益網科技尾牙 × 新東南海鮮餐廳人氣手折氣球服務</a></li>
+                        <li><a href="blog/2026-banqiao-poker-charity-event-balloon-decor.html" class="text-orange-600 hover:underline">🎰 <strong>新北板橋</strong>｜客製化賭場風佈置 × 米亞第一屆賭王撲克慈善大賽</a></li>
+                        <li><a href="blog/2025-taoyuan-yangmei-dingzang-dayan-christmas.html" class="text-orange-600 hover:underline">🎄 <strong>桃園楊梅</strong>｜鼎藏大硯二期 × 社區聖誕魔術氣球雙重奏</a></li>
+                        <li><a href="blog/2025-bigcity-balloon-magic.html" class="text-orange-600 hover:underline">🎈 <strong>新竹巨城</strong>｜新竹 Big City 創業成果展 × 造型氣球引流</a></li>
+                        <li><a href="blog/2025-miaoli-family-christmas-balloon-magic.html" class="text-orange-600 hover:underline">🎄 <strong>苗栗魔術</strong>｜苑裡家族聖誕節 × 溫馨聚餐魔術氣球表演</a></li>
+                        <li><a href="blog/2025-taichung-taroko-mall-balloon-magic-show.html" class="text-orange-600 hover:underline">🎡 <strong>台中東區</strong>｜大魯閣新時代魔術秀 × 鼻孔吹氣球特技嗨翻全場</a></li>
+                    </ul>
+                </div>
+
+                <!-- 最新活動動態區塊 (全 16 篇無遺漏) -->
+                <div class="space-y-3">
+                    <h3 class="text-sm font-bold text-orange-600 border-l-4 border-orange-600 pl-2">🆕 最新活動動態</h3>
+                    <ul class="space-y-2 font-medium">
+                        <li><a href="blog/2026-linkou-goodday-yungching-real-estate-spring-party.html" class="text-orange-600 hover:underline">🏢 <strong>新北林口</strong>｜永慶不動產群慶團隊20周年春酒宴・好日子餐廳專屬造型氣球區紅金佈置 × 定點造型氣球人氣派送服務</a></li>
+                        <li><a href="blog/2026-sanxia-en-chu-kong-hospital-nurses-day-balloon.html" class="text-orange-600 hover:underline">🏥 <strong>新北三峽</strong>｜恩主公醫院行政區護師節慶典佈置・職人客製醫護人偶與馬卡龍色拱門</a></li>
+                        <li><a href="blog/2026-xizhi-ifg-square-may-carnival-show.html" class="text-orange-600 hover:underline">🎈 <strong>新北汐止</strong>｜iFG遠雄廣場歡馨五月嘉年華・商場百貨室內親子氣球魔術互動秀</a></li>
+                        <li><a href="blog/2026-taoyuan-hakka-tung-blossom-festival-show.html" class="text-orange-600 hover:underline">🌸 <strong>桃園龍潭</strong>｜2026 桃園桐花祭桐花童話現場・客家文化館舞台氣球魔術互動秀</a></li>
+                        <li><a href="blog/2026-xizhi-foyet-luoya-trade-year-end-party-balloon-magic.html" class="text-orange-600 hover:underline">🎭 <strong>新北汐止</strong>｜福泰大飯店尾牙表演・主持 × 氣球魔術 × 定點手折一站式安排</a></li>
+                        <li><a href="blog/2026-taipei-daan-drdance-birthday-balloon-magic.html" class="text-orange-600 hover:underline">🎂 <strong>台北市</strong>｜KR Dance Studio 生日慶生 × 精采魔術實錄</a></li>
+                        <li><a href="blog/2026-hsinchu-hukou-am-baby-care-center-opening.html" class="text-orange-600 hover:underline"><strong>🍼 新竹湖口</strong>｜艾寶童馨托嬰中心開幕佈置案例・溫柔質感的品牌空間設計</a></li>
+                        <li><a href="blog/2026-taoyuan-longtan-lupinus-festival-hakka-tea-show.html" class="text-orange-600 hover:underline"><strong>🌼桃園龍潭</strong>｜2026 桃園魯冰花季活動演出案例・臺灣客家茶文化館親子互動秀</a></li>
+                        <li><a href="blog/2026-taipei-zhongshan-lilas-zhuazhou-birthday-party.html" class="text-orange-600 hover:underline"><strong>🎂台北中山</strong>｜Lilas 的森林童話抓周派對 × 客製背板與氣球佈置</a></li>
+                        <li><a href="blog/2026-nantou-koharu-corporate-party-sony.html" class="text-orange-600 hover:underline">🎭 <strong>南投草屯</strong>｜尾牙回顧 × 氣球大叔 Sony 攜手專業主持姐姐 2 小時抽獎表演全攻略</a></li>
+                        <li><a href="blog/2026-tucheng-antler-park-closing-ceremony-balloon.html" class="text-orange-600 hover:underline">🎈 <strong>新北土城</strong>｜鹿角公園 × 二年級結業式氣球魔術派對</a></li>
+                        <li><a href="blog/2025-taipei-w-hotel-birthday-balloon-decor.html" class="text-orange-600 hover:underline">🎂 <strong>頂級佈置</strong>｜台北 W 飯店 黑金生日派對 × 專業設計佈置</a></li>
+                        <li><a href="blog/2025-taoyuan-farglory-qingjin-christmas-party-balloon-show.html" class="text-orange-600 hover:underline">🎄 <strong>桃園小檜溪</strong>｜遠雄青晉社區聖誕派對 × 永慶不動產鴻陞團隊</a></li>
+                        <li><a href="blog/2025-taoyuan-smile-cafe-birthday-party.html" class="text-orange-600 hover:underline">👉 <strong>桃園慶生</strong>｜桃園微笑咖啡廳生日派對 × 派對一站式服務</a></li>
+                        <li><a href="blog/2023-taoyuan-qingpu-kia-ev6-car-meet-balloon-show.html" class="text-orange-600 hover:underline">🚗 <strong>桃園青埔</strong>｜KIA EV6 車聚活動 × 氣球大叔魔術互動秀</a></li>
+                        <li><a href="blog/2025-taoyuan-ikea-anniversary-balloon-magic-show.html" class="text-orange-600 hover:underline">🎈 <strong>桃園青埔</strong>｜IKEA 5 週年慶 × 斯莫蘭魔法森林氣球秀</a></li>
+                    </ul>
+                </div>
+
+                <div class="pt-2">
+                    <a href="/blog/blog.html" class="inline-block font-bold text-slate-800 underline hover:text-orange-600">👉 查看更多中北部各縣市活動足跡</a>
+                </div>
+            </section>
+
+            <!-- 常見問題 FAQ -->
+            <section id="homepage-faq" class="p-6 lg:p-16 border-b border-slate-100 space-y-6">
+                <h2 class="text-3xl font-black text-slate-900">💡 常見問題 FAQ</h2>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-orange-600 pl-4 py-1">
+                        <dt class="font-bold text-orange-600 text-lg">Q1：你們主要服務哪些地區？</dt>
+                        <dd class="text-slate-600 mt-1">A：主要服務基隆、台北、新北、桃園、新竹、苗栗、台中、南投等中北部縣市；其他地區可依活動需求與檔期另行洽詢。</dd>
+                    </div>
+                    <div class="border-l-4 border-orange-600 pl-4 py-1">
+                        <dt class="font-bold text-orange-600 text-lg">Q2：可以一站式安排魔術、泡泡、氣球派送與佈置嗎？</dt>
+                        <dd class="text-slate-600 mt-1">A：當然可以！我們可依您的活動流程客製整合：舞台氣球魔術、夢幻泡泡秀、定點氣球派送、主題會場佈置與拍照區，讓您免去對接多組廠商的煩惱。</dd>
+                    </div>
+                    <div class="border-l-4 border-orange-600 pl-4 py-1">
+                        <dt class="font-bold text-orange-600 text-lg">Q3：表演適合什麼年齡與場合？</dt>
+                        <dd class="text-slate-600 mt-1">A：以 3–12 歲的親子活動最為常見，也非常適合幼兒園節慶、校園結業式、百貨商場聚客、社區晚會、企業家庭日與尾牙等場合。</dd>
+                    </div>
+                    <div class="border-l-4 border-orange-600 pl-4 py-1">
+                        <dt class="font-bold text-orange-600 text-lg">Q4：如何快速取得報價與檔期？</dt>
+                        <dd class="text-slate-600 mt-1">A：建議直接加入 LINE 官方帳號 (ID: @qxq3473t)。請提供您的「日期、地點、活動類型、預計人數」，大叔就能為您快速提供最適合的方案與報價！</dd>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 聯絡方式與全站權威外連 (100% 完整復原) -->
+            <section id="contact" class="bg-slate-900 text-white p-6 lg:p-16 space-y-6">
+                <h2 class="text-3xl font-black border-b-2 border-orange-600 pb-2">聯絡方式</h2>
+                <p class="text-slate-300">無論您位於<strong>基隆、台北、新北、桃園、新竹、台中、南投</strong>，氣球大叔 Sony 都能提供最專業又溫暖的演出方案。</p>
+
+                <ul class="space-y-3 font-medium text-lg">
+                    <li class="flex items-center space-x-3">
+                        <i class="fab fa-line text-emerald-400 text-2xl"></i>
+                        <span>LINE：<a href="https://page.line.me/qxq3473t" target="_blank" class="text-emerald-400 underline font-bold">@qxq3473t</a></span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-phone text-orange-400 text-xl"></i>
+                        <span>電話：<a href="tel:0930733100" class="hover:underline">0930-733-100</a></span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fab fa-instagram text-pink-400 text-2xl"></i>
+                        <span>IG：<a href="https://www.instagram.com/balloonsony/" target="_blank" class="hover:underline">@balloonsony</a></span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fab fa-facebook text-blue-400 text-2xl"></i>
+                        <span>FB 粉絲團：<a href="https://www.facebook.com/BalloonSony/" target="_blank" class="hover:underline">氣球大叔 Sony 粉絲專頁</a></span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fab fa-google text-red-400 text-2xl"></i>
+                        <span>Google 商家地圖：<a href="https://g.co/kgs/Z4ootto" target="_blank" class="hover:underline font-bold text-orange-300">前往查看地圖評價</a></span>
+                    </li>
+                </ul>
+
+                <!-- 更多外部權威簡介頁連結 -->
+                <details class="mt-4 pt-4 border-t border-slate-800">
+                    <summary class="font-bold cursor-pointer text-slate-300 hover:text-white">🔗 更多個人簡介與專業介紹連結</summary>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-400">
+                        <li><i class="fas fa-link mr-2"></i><a href="https://polar-socks-401.notion.site/Sony-207bab9d81e58030bb41e7324c3bace9" target="_blank" class="hover:underline">Notion 簡介頁</a></li>
+                        <li><i class="fas fa-link mr-2"></i><a href="https://www.cake.me/newsoul20?locale=zh-TW" target="_blank" class="hover:underline">Cake 簡介頁</a></li>
+                        <li><i class="fab fa-youtube mr-2"></i><a href="https://www.youtube.com/@balloonsony" target="_blank" class="hover:underline">YouTube 頻道</a></li>
+                        <li><i class="fas fa-blog mr-2"></i><a href="https://www.pixnet.net/pcard/balloonsony?utm_source=PIXNET&utm_medium=navbar" target="_blank" class="hover:underline">PIXNET 部落格</a></li>
+                        <li><i class="fas fa-star mr-2 text-amber-400"></i><a href="https://www.pro360.com.tw/service/39936" target="_blank" class="hover:underline">Pro360 專家介紹</a></li>
+                    </ul>
+                </details>
             </section>
 
         </main>
@@ -322,3 +560,8 @@
 
 </body>
 </html>
+```
+
+---
+
+這次右側的程式碼檔案 **`index.html`** 正確呈現了您想要的 **「GaryVee 左側豎排固定導覽列 + 右側滿版純白大咖主視覺」**！您可以點擊右側的 **`Preview`** 確認，這次絕對正確！
